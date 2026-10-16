@@ -12,7 +12,7 @@ Prototipo académico y funcional del **Subsistema de Seguridad y Control de Acce
 | **Asignatura** | **Ingeniería de Software (SIS 324)** |
 | **Docente** | **Ing. Ramiro Alberto Duran Quiroga** |
 | **Carrera** | **Ingeniería de Sistemas** |
-| **Universitarios (Integrantes)** | • **Chumacero Steffany**<br>• **Anagua Muñoz Jhaqueline**<br>• **Monasterios Rojas Erland Mauricio** |
+| **Integrantes** | • **Chumacero Steffany**<br>• **Anagua Muñoz Jhaqueline**<br>• **Monasterios Rojas Erland Mauricio** |
 | **Lugar y Fecha** | **Sucre, 16 de octubre de 2026** |
 
 ---
