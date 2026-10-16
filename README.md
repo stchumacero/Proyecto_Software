@@ -4,6 +4,19 @@ Prototipo académico y funcional del **Subsistema de Seguridad y Control de Acce
 
 ---
 
+### 📋 Información del Proyecto Académico
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Grupo** | **Grupo 22** |
+| **Asignatura** | **Ingeniería de Software (SIS 324)** |
+| **Docente** | **Ing. Ramiro Alberto Duran Quiroga** |
+| **Carrera** | **Ingeniería de Sistemas** |
+| **Universitarios (Integrantes)** | • **Chumacero Steffany**<br>• **Anagua Muñoz Jhaqueline**<br>• **Monasterios Rojas Erland Mauricio** |
+| **Lugar y Fecha** | **Sucre, 16 de octubre de 2026** |
+
+---
+
 ## 1. Objetivo del Prototipo
 
 El objetivo primordial de este prototipo es proveer una arquitectura segura, escalable y robusta para la autenticación y administración de usuarios en el e-commerce de relojes **Élan Watches**. Implementa:
@@ -345,6 +358,20 @@ Si desea versionar y publicar este proyecto en su cuenta de GitHub:
    git remote add origin https://github.com/<TU_USUARIO>/elan-watches-seguridad.git
    git push -u origin main
    ```
+
+---
+
+## 19. Información del Equipo y Datos Académicos
+
+- **Asignatura:** Ingeniería de Software (SIS 324)
+- **Docente:** Ing. Ramiro Alberto Duran Quiroga
+- **Carrera:** Ingeniería de Sistemas
+- **Grupo:** 22
+- **Universitarios (Integrantes):**
+  1. **Chumacero Steffany**
+  2. **Anagua Muñoz Jhaqueline**
+  3. **Monasterios Rojas Erland Mauricio**
+- **Lugar y Fecha:** Sucre, 16 de octubre de 2026
 
 ---
 *Élan Watches — Subsistema de Seguridad desarrollado con altos estándares de ingeniería de software.*
