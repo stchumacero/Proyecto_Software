@@ -43,7 +43,9 @@ async function request(url, options = {}) {
 
   let response;
   try {
-    response = await fetch(url, config);
+    const API_URL = import.meta.env.VITE_API_URL || '';
+
+    response = await fetch(`${API_URL}${url}`, config);
   } catch (netErr) {
     throw new Error('No se pudo conectar con el servidor backend. Verifique que esté ejecutándose en http://localhost:5000.');
   }
