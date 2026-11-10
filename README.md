@@ -13,7 +13,6 @@ Prototipo académico y funcional del **Subsistema de Seguridad y Control de Acce
 | **Docente** | **Ing. Ramiro Alberto Duran Quiroga** |
 | **Carrera** | **Ingeniería de Sistemas** |
 | **Integrantes** | • **Chumacero Steffany**<br>• **Anagua Muñoz Jhaqueline**<br>• **Monasterios Rojas Erland Mauricio** |
-| **Lugar y Fecha** | **Sucre, 16 de octubre de 2026** |
 
 ---
 
@@ -262,11 +261,15 @@ El subsistema aplica un modelo de control de acceso basado en roles (**RBAC**):
 
 ## 15. Cómo Probar Cada Operación y el Login
 
-### A. Prueba de Inicio de Sesión
+### A. Prueba de Inicio de Sesión (Facilidad de Evaluación Docente)
 1. Ingrese a `http://localhost:5173`.
-2. Intente enviar el formulario en blanco: comprobará las validaciones en tiempo real.
-3. Ingrese credenciales erróneas: observará el mensaje de error: *"Credenciales incorrectas"*.
-4. Ingrese con el administrador inicial (`admin@elanwatches.com` y la contraseña asignada): el sistema le otorgará acceso al **Panel de Seguridad**.
+2. **Credenciales Pre-cargadas**: La pantalla de inicio de sesión ya incluye de manera predeterminada el correo `admin@elanwatches.com` y la contraseña `AdminPass2026!` del **Administrador Principal**, permitiendo al docente presionar directamente **"Ingresar al Sistema"** para evaluar la plataforma sin fricción.
+3. **Botones de Acceso Rápido**: El panel inferior de evaluación permite cargar con un solo clic:
+   - 👑 **Administrador Principal**: `admin@elanwatches.com` / `AdminPass2026!`.
+   - 👤 **Cliente de Prueba**: `juanperes@gmail.com` / `12345678` (para explorar el catálogo de piezas y compras simuladas).
+   - 🚫 **Cuenta Inactiva (Almacén)**: `gerard@elanwatches.com` / `AlmacenPass2026!` (para comprobar el bloqueo inmediato 403 Forbidden por cuenta desactivada).
+4. **Verificación de Seguridad**: Puede alternar la visibilidad de la contraseña con el ícono del ojo para corroborar los datos antes de enviar.
+5. Intente enviar el formulario en blanco o con datos erróneos: observará las validaciones en tiempo real y el rechazo 401.
 
 ### B. Prueba de Creación de Usuarios (CRUD - Create)
 1. En el panel de administrador, haga clic en el botón dorado **"Nuevo Usuario"**.

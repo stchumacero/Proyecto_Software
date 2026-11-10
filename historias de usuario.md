@@ -13,7 +13,6 @@ Sistema de Comercio Electrónico para la Venta y Distribución de Relojes de Alt
 | **Docente** | **Ing. Ramiro Alberto Duran Quiroga** |
 | **Carrera** | **Ingeniería de Sistemas** |
 | **Universitarios (Integrantes)** | • **Chumacero Steffany**<br>• **Anagua Muñoz Jhaqueline**<br>• **Monasterios Rojas Erland Mauricio** |
-| **Lugar y Fecha** | **Sucre, 16 de octubre de 2026** |
 
 ---
 

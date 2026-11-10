@@ -27,23 +27,41 @@ export function Navbar({ activeTab, onSelectTab }) {
           </div>
           <div className="brand-titles">
             <span className="brand-name">ÉLAN WATCHES</span>
-            <span className="brand-subtitle">SUBSISTEMA SEGURIDAD</span>
+            <span className="brand-subtitle">ALTA RELOJERÍA SUIZA — SEGURIDAD</span>
           </div>
         </div>
 
-        {/* Enlaces de Navegación según Rol */}
+        {/* Enlaces de Navegación según Rol y Permisos de Visión 22 */}
         {user && (
           <nav>
             <ul className="nav-links">
               {isAdmin && (
-                <li>
-                  <button
-                    className={`nav-link ${activeTab === 'admin' ? 'active' : ''}`}
-                    onClick={() => onSelectTab('admin')}
-                  >
-                    Gestión de Usuarios
-                  </button>
-                </li>
+                <>
+                  <li>
+                    <button
+                      className={`nav-link ${activeTab === 'admin' ? 'active' : ''}`}
+                      onClick={() => onSelectTab('admin')}
+                    >
+                      🛡️ Seguridad & Usuarios
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      className={`nav-link ${activeTab === 'almacen' ? 'active' : ''}`}
+                      onClick={() => onSelectTab('almacen')}
+                    >
+                      📦 Vista Almacén
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      className={`nav-link ${activeTab === 'cliente' ? 'active' : ''}`}
+                      onClick={() => onSelectTab('cliente')}
+                    >
+                      ⌚ Catálogo E-Commerce
+                    </button>
+                  </li>
+                </>
               )}
               {isAlmacen && (
                 <li>
@@ -51,7 +69,7 @@ export function Navbar({ activeTab, onSelectTab }) {
                     className={`nav-link ${activeTab === 'almacen' ? 'active' : ''}`}
                     onClick={() => onSelectTab('almacen')}
                   >
-                    Módulo de Almacén
+                    📦 Módulo de Almacén
                   </button>
                 </li>
               )}
@@ -61,7 +79,7 @@ export function Navbar({ activeTab, onSelectTab }) {
                     className={`nav-link ${activeTab === 'cliente' ? 'active' : ''}`}
                     onClick={() => onSelectTab('cliente')}
                   >
-                    Portal de Cliente
+                    ⌚ Catálogo & Pedidos
                   </button>
                 </li>
               )}

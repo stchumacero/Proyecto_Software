@@ -57,10 +57,10 @@ export function AppContent() {
       return isAdmin ? <AdminView /> : <div className="alert alert-danger">Acceso no autorizado al panel administrativo.</div>;
     }
     if (activeTab === 'almacen') {
-      return isAlmacen ? <WarehouseView /> : <WarehouseView />;
+      return (isAlmacen || isAdmin) ? <WarehouseView /> : <div className="alert alert-danger">Acceso no autorizado al módulo de almacén.</div>;
     }
     if (activeTab === 'cliente') {
-      return <ClientView />;
+      return (isCliente || isAdmin) ? <ClientView /> : <div className="alert alert-danger">Acceso no autorizado al portal de cliente.</div>;
     }
     return <AdminView />;
   };
