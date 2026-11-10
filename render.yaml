@@ -16,10 +16,7 @@
       - key: SECRET_KEY
         generateValue: true
       - key: FRONTEND_URL
-        fromService:
-          type: web
-          name: elan-watches-frontend
-          property: url
+        value: https://elan-watches-frontend.onrender.com
       - key: SESSION_COOKIE_SAMESITE
         value: None
       - key: SESSION_COOKIE_SECURE
@@ -32,7 +29,6 @@
     name: elan-watches-frontend
     runtime: static
     plan: free
-    region: oregon
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
@@ -42,7 +38,4 @@
         destination: /index.html
     envVars:
       - key: VITE_API_URL
-        fromService:
-          type: web
-          name: elan-watches-backend
-          property: url
+        value: https://elan-watches-backend.onrender.com

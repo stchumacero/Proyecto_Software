@@ -1,5 +1,6 @@
 
 import os
+import re
 
 from flask import Flask, jsonify
 from flask_cors import CORS
@@ -30,8 +31,10 @@ def create_app(test_config=None):
     ]
 
     unique_origins = list(dict.fromkeys(
-        origin.rstrip("/") for origin in allowed_origins if origin
+        origin.rstrip("/") for origin in allowed_origins if origin and isinstance(origin, str)
     ))
+    # Permitir cualquier subdominio en Render para sincronía automática de nombres
+    unique_origins.append(re.compile(r"^https://.*\.onrender\.com$"))
 
     CORS(
         app,
