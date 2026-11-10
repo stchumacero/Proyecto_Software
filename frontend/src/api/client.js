@@ -41,14 +41,14 @@ async function request(url, options = {}) {
     config.body = JSON.stringify(options.body);
   }
 
-  let response;
-  try {
-    const API_URL = import.meta.env.VITE_API_URL || '';
+const API_URL = (import.meta.env.VITE_API_URL || '').replace(/\/+$/, '');
 
-    response = await fetch(`${API_URL}${url}`, config);
-  } catch (netErr) {
-    throw new Error('No se pudo conectar con el servidor backend. Verifique que esté ejecutándose en http://localhost:5000.');
-  }
+let response;
+try {
+  response = await fetch(`${API_URL}${url}`, config);
+} catch (netErr) {
+  throw new Error('No se pudo conectar con el servidor backend. Verifique la URL del servicio.');
+}
 
   // Si la respuesta incluye un nuevo token CSRF en el encabezado
   const newCsrf = response.headers.get('X-CSRF-Token');
