@@ -1,3 +1,4 @@
+
 /**
  * Cliente HTTP para comunicación con la API REST de Élan Watches.
  * Configurado para enviar cookies de sesión (HttpOnly) y cabecera CSRF.
@@ -11,10 +12,18 @@ export function setCsrfToken(token) {
 
 export function getCsrfToken() {
   if (memoryCsrfToken) return memoryCsrfToken;
-  
+
   // Intento de fallback leyendo la cookie XSRF-TOKEN si está disponible
   const match = document.cookie.match(/(^|;)\s*XSRF-TOKEN\s*=\s*([^;]+)/);
+
   return match ? decodeURIComponent(match[2]) : '';
+}
+
+// URL del backend configurada mediante variable de entorno
+const API_URL = (import.meta.env.VITE_API_URL || '').replace(/\/+$/, '');
+
+if (!API_URL) {
+  throw new Error("No se ha configurado VITE_API_URL");
 }
 
 async function request(url, options = {}) {
@@ -32,32 +41,41 @@ async function request(url, options = {}) {
   // Inyectar token CSRF para peticiones mutables
   if (['POST', 'PUT', 'DELETE', 'PATCH'].includes(config.method.toUpperCase())) {
     const token = getCsrfToken();
+
     if (token) {
       config.headers['X-CSRF-Token'] = token;
     }
   }
 
+  // Convertir objetos del body a JSON
   if (options.body && typeof options.body === 'object') {
     config.body = JSON.stringify(options.body);
   }
 
-const API_URL = (import.meta.env.VITE_API_URL || '').replace(/\/+$/, '');
+  let response;
 
-let response;
-try {
-  response = await fetch(`${API_URL}${url}`, config);
-} catch (netErr) {
-  throw new Error('No se pudo conectar con el servidor backend. Verifique la URL del servicio.');
-}
+  try {
+    response = await fetch(`${API_URL}${url}`, {
+      ...config,
+      credentials: 'include'
+    });
+  } catch (netErr) {
+    throw new Error(
+      'No se pudo conectar con el servidor backend. Verifique la URL del servicio.'
+    );
+  }
 
   // Si la respuesta incluye un nuevo token CSRF en el encabezado
   const newCsrf = response.headers.get('X-CSRF-Token');
+
   if (newCsrf) {
     setCsrfToken(newCsrf);
   }
 
   let data = null;
+
   const contentType = response.headers.get('content-type');
+
   if (contentType && contentType.includes('application/json')) {
     try {
       data = await response.json();
@@ -66,22 +84,34 @@ try {
     }
   }
 
+  // Manejo de errores HTTP
   if (!response.ok) {
-    const errorMsg = data?.message || data?.error || `Error ${response.status}: ${response.statusText}`;
+    const errorMsg =
+      data?.message ||
+      data?.error ||
+      `Error ${response.status}: ${response.statusText}`;
+
     const err = new Error(errorMsg);
     err.status = response.status;
     err.data = data;
+
     throw err;
   }
 
   return data;
 }
 
+// Métodos disponibles para consumir la API REST
 export const api = {
   get: (url) => request(url, { method: 'GET' }),
+
   post: (url, body) => request(url, { method: 'POST', body }),
+
   put: (url, body) => request(url, { method: 'PUT', body }),
+
   delete: (url) => request(url, { method: 'DELETE' }),
+
   setCsrfToken,
+
   getCsrfToken
 };
