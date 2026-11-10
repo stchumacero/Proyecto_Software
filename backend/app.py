@@ -1,91 +1,136 @@
+
 import os
+
 from flask import Flask, jsonify
 from flask_cors import CORS
+from werkzeug.security import generate_password_hash
+
 from config import Config
-from database import close_db, init_db
+from database import close_db, init_db, get_db
 from auth_routes import auth_bp
 from user_routes import users_bp
 
+
 def create_app(test_config=None):
     """Fábrica de la aplicación Flask para Élan Watches - Seguridad."""
+
     app = Flask(__name__)
-    
-    # Cargar configuración base
+
+    # Cargar configuración
     app.config.from_object(Config)
 
-    # Permitir sobreescritura de configuración para pruebas automatizadas
     if test_config:
         app.config.update(test_config)
 
-    # Configuración de CORS estricta para el origen del frontend local
+    # Configurar CORS para permitir el acceso desde el frontend
     allowed_origins = [
-        app.config['FRONTEND_URL'],
-        'http://localhost:5173',
-        'http://127.0.0.1:5173'
+        app.config["FRONTEND_URL"],
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
     ]
-    # Eliminar duplicados manteniendo orden
-    unique_origins = list(dict.fromkeys(allowed_origins))
+
+    unique_origins = list(dict.fromkeys(
+        origin.rstrip("/") for origin in allowed_origins if origin
+    ))
 
     CORS(
         app,
         resources={r"/api/*": {"origins": unique_origins}},
         supports_credentials=True,
-        expose_headers=['X-CSRF-Token', 'Set-Cookie']
+        expose_headers=["X-CSRF-Token"],
     )
 
-    # Manejo de ciclo de vida de la base de datos
+    # Cerrar conexiones de base de datos al finalizar cada solicitud
     app.teardown_appcontext(close_db)
 
-    # Inicializar tablas si no existen (sin borrar datos)
+    # Crear las tablas si todavía no existen
     init_db(app)
 
-    # Registro de Blueprints
+    # Crear administrador inicial si se configuraron las variables
+    admin_name = os.environ.get("INIT_ADMIN_NAME", "").strip()
+    admin_email = os.environ.get("INIT_ADMIN_EMAIL", "").strip().lower()
+    admin_password = os.environ.get("INIT_ADMIN_PASSWORD", "")
+
+    if admin_name and admin_email and admin_password:
+
+        if len(admin_password) < 12:
+            raise ValueError(
+                "La contraseña del administrador debe tener "
+                "al menos 12 caracteres."
+            )
+
+        with app.app_context():
+            db = get_db()
+
+            existing_admin = db.execute(
+                """
+                SELECT id
+                FROM users
+                WHERE LOWER(email) = LOWER(?)
+                """,
+                (admin_email,),
+            ).fetchone()
+
+            if existing_admin is None:
+                password_hash = generate_password_hash(admin_password)
+
+                db.execute(
+                    """
+                    INSERT INTO users
+                    (full_name, email, password_hash, role, status)
+                    VALUES (?, ?, ?, 'ADMINISTRADOR', 'ACTIVO')
+                    """,
+                    (admin_name, admin_email, password_hash),
+                )
+
+                db.commit()
+
+                print(
+                    "[ÉLAN] Administrador inicial creado correctamente."
+                )
+            else:
+                print(
+                    "[ÉLAN] El administrador inicial ya existe."
+                )
+
+    # Registrar rutas de autenticación y usuarios
     app.register_blueprint(auth_bp)
     app.register_blueprint(users_bp)
 
-    # Endpoint de verificación de estado
-    @app.route('/api/health', methods=['GET'])
+    # Ruta para comprobar que el backend funciona
+    @app.route("/api/health", methods=["GET"])
     def health_check():
         return jsonify({
             "status": "healthy",
             "service": "Élan Watches - Subsistema Seguridad",
-            "version": "1.0.0"
+            "version": "1.0.0",
         }), 200
 
-    # Manejadores globales de errores para respuestas JSON consistentes y seguras
-    @app.errorhandler(400)
-    def bad_request(error):
-        return jsonify({
-            "error": "BAD_REQUEST",
-            "message": "Solicitud errónea o datos con formato inválido."
-        }), 400
-
+    # Manejo de errores
     @app.errorhandler(404)
     def not_found(error):
         return jsonify({
-            "error": "NOT_FOUND",
-            "message": "El recurso solicitado no fue encontrado en el servidor."
+            "error": "Recurso no encontrado"
         }), 404
 
-    @app.errorhandler(405)
-    def method_not_allowed(error):
-        return jsonify({
-            "error": "METHOD_NOT_ALLOWED",
-            "message": "Método HTTP no permitido para este endpoint."
-        }), 405
-
     @app.errorhandler(500)
-    def internal_server_error(error):
-        # No exponer detalles internos del error o trazas en la respuesta
+    def internal_error(error):
         return jsonify({
-            "error": "INTERNAL_SERVER_ERROR",
-            "message": "Ha ocurrido un error interno en el servidor. Por favor intente más tarde."
+            "error": "Error interno del servidor"
         }), 500
 
     return app
 
+
+# Crear la aplicación
 app = create_app()
 
-if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='127.0.0.1', port=port, debug=True)
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+
+    app.run(
+        host="0.0.0.0",
+        port=port,
+        debug=False,
+    )
