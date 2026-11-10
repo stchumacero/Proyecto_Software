@@ -1,0 +1,48 @@
+﻿services:
+  # ==========================================
+  # 1. BACKEND — SERVICIO WEB FLASK / PYTHON
+  # ==========================================
+  - type: web
+    name: elan-watches-backend
+    runtime: python
+    plan: free
+    region: oregon
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: SECRET_KEY
+        generateValue: true
+      - key: FRONTEND_URL
+        fromService:
+          type: web
+          name: elan-watches-frontend
+          property: url
+      - key: SESSION_COOKIE_SAMESITE
+        value: None
+      - key: SESSION_COOKIE_SECURE
+        value: "True"
+
+  # ==========================================
+  # 2. FRONTEND — SITIO ESTÁTICO REACT / VITE
+  # ==========================================
+  - type: web
+    name: elan-watches-frontend
+    runtime: static
+    plan: free
+    region: oregon
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: elan-watches-backend
+          property: url

@@ -21,6 +21,52 @@ def close_db(e=None):
     if db is not None:
         db.close()
 
+def seed_initial_users(db):
+    """Siembra los 4 usuarios del subsistema si la base de datos se crea por primera vez."""
+    from werkzeug.security import generate_password_hash
+
+    initial_users = [
+        (
+            "Administrador Principal",
+            "admin@elanwatches.com",
+            generate_password_hash("AdminPass2026!"),
+            "ADMINISTRADOR",
+            "ACTIVO"
+        ),
+        (
+            "Gerard Perregaux - Master Almacen",
+            "gerard@elanwatches.com",
+            generate_password_hash("AlmacenPass2026!"),
+            "ALMACEN",
+            "INACTIVO"
+        ),
+        (
+            "Administrador Steffany",
+            "tif.prom.2019@gmail.com",
+            generate_password_hash("AdminPass2026!"),
+            "ADMINISTRADOR",
+            "ACTIVO"
+        ),
+        (
+            "Juan Perez",
+            "juanperes@gmail.com",
+            generate_password_hash("12345678"),
+            "CLIENTE",
+            "ACTIVO"
+        ),
+    ]
+
+    for full_name, email, pwd_hash, role, status in initial_users:
+        db.execute(
+            """
+            INSERT INTO users (full_name, email, password_hash, role, status)
+            VALUES (?, LOWER(?), ?, ?, ?)
+            """,
+            (full_name, email, pwd_hash, role, status)
+        )
+    db.commit()
+    print("[ÉLAN] Base de datos inicializada y sembrada con 4 usuarios de prueba.")
+
 def init_db(app):
     """Inicializa la estructura de la base de datos si no existe.
     No sobrescribe ni borra los datos existentes.
@@ -41,6 +87,12 @@ def init_db(app):
         """
         db.executescript(schema_sql)
         db.commit()
+
+        # Si la base de datos está vacía y no es entorno de pruebas automatizadas
+        if not app.config.get("TESTING"):
+            cursor = db.execute("SELECT COUNT(*) as total FROM users")
+            if cursor.fetchone()["total"] == 0:
+                seed_initial_users(db)
 
 def get_standalone_db(db_path):
     """Retorna una conexión directa a SQLite para scripts CLI (como init_admin.py)."""

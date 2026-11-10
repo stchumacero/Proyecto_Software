@@ -25,16 +25,19 @@ class Config:
         "http://localhost:5173"
     )
 
+    # Detección de entorno Render (Render inyecta RENDER=true por defecto)
+    is_render = os.environ.get("RENDER", "").lower() in ("true", "1")
+
     SESSION_COOKIE_NAME = "elan_session"
     SESSION_COOKIE_HTTPONLY = True
     SESSION_COOKIE_SAMESITE = os.environ.get(
         "SESSION_COOKIE_SAMESITE",
-        "Lax"
+        "None" if is_render else "Lax"
     )
 
     SESSION_COOKIE_SECURE = os.environ.get(
         "SESSION_COOKIE_SECURE",
-        "False"
+        "True" if is_render else "False"
     ).lower() in ("true", "1")
 
     PERMANENT_SESSION_LIFETIME = timedelta(hours=8)

@@ -20,11 +20,10 @@ export function getCsrfToken() {
 }
 
 // URL del backend configurada mediante variable de entorno
-const API_URL = (import.meta.env.VITE_API_URL || '').replace(/\/+$/, '');
-
-if (!API_URL) {
-  throw new Error("No se ha configurado VITE_API_URL");
-}
+const API_URL = (
+  import.meta.env.VITE_API_URL ||
+  (import.meta.env.DEV ? 'http://localhost:5000' : '')
+).replace(/\/+$/, '');
 
 async function request(url, options = {}) {
   const config = {
@@ -50,6 +49,12 @@ async function request(url, options = {}) {
   // Convertir objetos del body a JSON
   if (options.body && typeof options.body === 'object') {
     config.body = JSON.stringify(options.body);
+  }
+
+  if (!API_URL && !import.meta.env.DEV) {
+    throw new Error(
+      'No se ha configurado la variable VITE_API_URL. Configure la URL del backend en las variables de entorno de Render.'
+    );
   }
 
   let response;
