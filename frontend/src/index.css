@@ -902,8 +902,201 @@ a {
     max-width: 100%;
   }
 
-  .filters-group {
-    width: 100%;
-    justify-content: flex-start;
+}
+
+/* ==========================================================================
+   LANDING PAGE — ALTA RELOJERÍA SUIZA (ÉLAN WATCHES)
+   ========================================================================== */
+
+.landing-header-announcement {
+  background: #090a0f;
+  border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+  font-size: 0.72rem;
+  padding: 0.4rem 1.5rem;
+  color: var(--text-secondary);
+}
+
+.landing-header-announcement-inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.landing-hero {
+  position: relative;
+  min-height: 82vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4.5rem 1.5rem 3rem 1.5rem;
+  background: radial-gradient(circle at 50% 25%, rgba(197, 160, 89, 0.12) 0%, rgba(8, 8, 10, 0.98) 75%);
+  overflow: hidden;
+}
+
+.landing-hero::before {
+  content: '';
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(197, 160, 89, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  filter: blur(60px);
+}
+
+.landing-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1.15rem;
+  background: rgba(21, 21, 27, 0.9);
+  border: 1px solid var(--gold-border);
+  border-radius: 50px;
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 1.75rem;
+  box-shadow: 0 0 15px rgba(197, 160, 89, 0.15);
+}
+
+.landing-hero-title {
+  font-family: var(--font-serif);
+  font-size: 3.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.5rem;
+  max-width: 980px;
+}
+
+.landing-hero-title span {
+  color: var(--gold-light);
+  display: block;
+  background: linear-gradient(135deg, #dfbe76 0%, #c5a059 50%, #e2c27b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.landing-hero-subtitle {
+  font-size: 1.05rem;
+  color: #c0c0cb;
+  max-width: 780px;
+  margin: 0 auto 2.25rem auto;
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+.landing-hero-ctas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+}
+
+.btn-private-access {
+  background: rgba(197, 160, 89, 0.1);
+  border: 1.5px solid var(--gold-primary);
+  color: var(--gold-light);
+  padding: 0.65rem 1.4rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 15px rgba(197, 160, 89, 0.2);
+  cursor: pointer;
+}
+
+.btn-private-access:hover {
+  background: var(--gold-primary);
+  color: #0b0b0e;
+  box-shadow: 0 0 25px rgba(197, 160, 89, 0.5);
+  transform: translateY(-2px);
+}
+
+.highlights-banner {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(16, 16, 22, 0.92);
+  border: 1px solid var(--border-muted);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.5rem;
+  box-shadow: var(--shadow-card);
+  position: relative;
+}
+
+.highlights-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.highlight-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--gold-subtle);
+  border: 1px solid var(--gold-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-primary);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.highlight-content-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.highlight-content-sub {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .landing-hero-title {
+    font-size: 2.15rem;
+  }
+  .landing-hero-subtitle {
+    font-size: 0.92rem;
   }
 }
+

@@ -61,6 +61,14 @@ export function Navbar({ activeTab, onSelectTab }) {
                       ⌚ Catálogo E-Commerce
                     </button>
                   </li>
+                  <li>
+                    <button
+                      className={`nav-link ${activeTab === 'landing' ? 'active' : ''}`}
+                      onClick={() => onSelectTab('landing')}
+                    >
+                      🏛️ Tienda Pública
+                    </button>
+                  </li>
                 </>
               )}
               {isAlmacen && (

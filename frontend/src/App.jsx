@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from './context/AuthContext';
 import { Navbar } from './components/Navbar';
+import { LandingPageView } from './views/LandingPageView';
 import { LoginView } from './views/LoginView';
 import { AdminView } from './views/AdminView';
 import { WarehouseView } from './views/WarehouseView';
@@ -8,6 +9,11 @@ import { ClientView } from './views/ClientView';
 
 export function AppContent() {
   const { user, loading, isAuthenticated, isAdmin, isAlmacen, isCliente } = useAuth();
+  
+  // Estado para usuarios no autenticados: 'landing' (público) o 'login' (seguridad)
+  const [viewMode, setViewMode] = useState('landing');
+  
+  // Pestaña activa para usuarios autenticados
   const [activeTab, setActiveTab] = useState('admin');
 
   // Ajustar la vista por defecto según el rol del usuario autenticado
@@ -46,13 +52,23 @@ export function AppContent() {
     );
   }
 
-  // Si no está autenticado, renderizar Login
+  // Si no está autenticado, mostrar Landing Page pública por defecto o Login si se hace clic en "Acceso Privado"
   if (!isAuthenticated) {
-    return <LoginView />;
+    if (viewMode === 'login') {
+      return <LoginView onBackToLanding={() => setViewMode('landing')} />;
+    }
+    return <LandingPageView onGoToLogin={() => setViewMode('login')} />;
   }
 
-  // Renderizar vistas protegidas según rol y navegación
+  // Si está autenticado, renderizar vistas protegidas según rol y navegación
   const renderView = () => {
+    if (activeTab === 'landing') {
+      return (
+        <LandingPageView
+          onGoToLogin={() => setActiveTab(isAdmin ? 'admin' : (isAlmacen ? 'almacen' : 'cliente'))}
+        />
+      );
+    }
     if (activeTab === 'admin') {
       return isAdmin ? <AdminView /> : <div className="alert alert-danger">Acceso no autorizado al panel administrativo.</div>;
     }
@@ -68,7 +84,7 @@ export function AppContent() {
   return (
     <div className="app-wrapper">
       <Navbar activeTab={activeTab} onSelectTab={setActiveTab} />
-      <main className="main-content">
+      <main className={activeTab === 'landing' ? '' : 'main-content'}>
         {renderView()}
       </main>
     </div>

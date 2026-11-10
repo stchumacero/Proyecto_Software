@@ -4,7 +4,7 @@ import { EyeIcon, EyeOffIcon, AlertTriangleIcon, ShieldIcon, UserIcon } from '..
 
 const EMAIL_REGEX = /^[\w\.-]+@([\w-]+\.)+[\w-]{2,4}$/;
 
-export function LoginView() {
+export function LoginView({ onBackToLanding }) {
   const { login } = useAuth();
 
   // Credenciales precargadas del Administrador Principal para facilitar la revisión del docente
@@ -68,6 +68,20 @@ export function LoginView() {
     }}>
       <div style={{ width: '100%', maxWidth: '480px' }}>
         
+        {/* Botón de Retorno a la Landing Page Pública */}
+        {onBackToLanding && (
+          <div style={{ marginBottom: '1.25rem', display: 'flex', justifyContent: 'flex-start' }}>
+            <button
+              type="button"
+              className="btn btn-secondary"
+              style={{ fontSize: '0.74rem', padding: '0.45rem 0.95rem' }}
+              onClick={onBackToLanding}
+            >
+              <span>← Volver a la Tienda Pública</span>
+            </button>
+          </div>
+        )}
+
         {/* Cabecera de Marca de Lujo y Datos Académicos */}
         <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
           <div className="brand-emblem" style={{ width: '60px', height: '60px', margin: '0 auto 1rem auto' }}>

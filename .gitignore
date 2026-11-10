@@ -42,3 +42,6 @@ frontend/dist-ssr/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Directorios de referencia externa
+Lab8 page/
