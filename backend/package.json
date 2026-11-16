@@ -1,9 +1,0 @@
-{
-  "name": "elan-watches-backend",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Backend API REST Python/Flask para Élan Watches",
-  "scripts": {
-    "start": "gunicorn app:app"
-  }
-}
