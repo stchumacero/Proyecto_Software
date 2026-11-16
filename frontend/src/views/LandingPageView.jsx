@@ -10,7 +10,9 @@ import {
   XIcon,
   TruckIcon,
   PackageIcon,
-  QrCodeIcon
+  QrCodeIcon,
+  WarehouseIcon,
+  UserIcon
 } from '../components/Icons';
 
 const WATCH_CATALOG = [
@@ -130,8 +132,9 @@ export function LandingPageView({ onGoToLogin }) {
   const [isCheckoutModalOpen, setIsCheckoutModalOpen] = useState(false);
   const [paymentMethod, setPaymentMethod] = useState('QR'); // 'QR' | 'DEPOSITO' | 'PAYPAL'
   const [customerInfo, setCustomerInfo] = useState({
-    name: 'Cliente Élan',
-    email: 'cliente@elanwatches.com',
+    name: 'Juan Perez',
+    email: 'juanperes@gmail.com',
+    password: 'ClientePass2026!',
     phone: '+591 71234567',
     city: 'Sucre, Bolivia'
   });
@@ -238,8 +241,9 @@ export function LandingPageView({ onGoToLogin }) {
       );
 
       const payload = {
-        customer_name: customerInfo.name,
-        customer_email: customerInfo.email,
+        customer_name: customerInfo.name || 'Cliente Élan',
+        customer_email: customerInfo.email || 'cliente@elanwatches.com',
+        customer_password: customerInfo.password || 'ClientePass2026!',
         payment_method: method,
         payment_reference: refCode,
         items: cart.map(i => ({
@@ -260,7 +264,10 @@ export function LandingPageView({ onGoToLogin }) {
           paymentMethod: res.order.payment_method,
           paymentRef: res.order.payment_reference,
           securitySeal: res.order.security_seal,
-          trackingNumber: res.order.tracking_number
+          trackingNumber: res.order.tracking_number,
+          customerName: customerInfo.name,
+          customerEmail: customerInfo.email,
+          userAccount: res.user_account
         });
         setCart([]);
         setIsCartOpen(false);
@@ -1522,44 +1529,91 @@ export function LandingPageView({ onGoToLogin }) {
                 </div>
               </div>
 
-              {/* Datos de Entrega del Cliente */}
+              {/* Datos de Identificación y Creación de Rol CLIENTE */}
               <div>
-                <label style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-secondary)', display: 'block', marginBottom: '0.4rem' }}>
-                  Datos del Titular de la Adquisición:
-                </label>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.45rem' }}>
+                  <label style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-secondary)' }}>
+                    Datos del Cliente & Verificación de Cuenta:
+                  </label>
+                  <span className="badge badge-cliente" style={{ fontSize: '0.62rem' }}>
+                    Rol Automático: CLIENTE
+                  </span>
+                </div>
+
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem' }}>
-                  <input
-                    type="text"
-                    className="search-input"
-                    placeholder="Nombre Completo"
-                    value={customerInfo.name}
-                    onChange={(e) => setCustomerInfo({ ...customerInfo, name: e.target.value })}
-                    style={{ fontSize: '0.8rem', padding: '0.55rem 0.75rem' }}
-                  />
-                  <input
-                    type="email"
-                    className="search-input"
-                    placeholder="Correo Electrónico"
-                    value={customerInfo.email}
-                    onChange={(e) => setCustomerInfo({ ...customerInfo, email: e.target.value })}
-                    style={{ fontSize: '0.8rem', padding: '0.55rem 0.75rem' }}
-                  />
-                  <input
-                    type="text"
-                    className="search-input"
-                    placeholder="Teléfono Móvil"
-                    value={customerInfo.phone}
-                    onChange={(e) => setCustomerInfo({ ...customerInfo, phone: e.target.value })}
-                    style={{ fontSize: '0.8rem', padding: '0.55rem 0.75rem' }}
-                  />
-                  <input
-                    type="text"
-                    className="search-input"
-                    placeholder="Ciudad / Destino"
-                    value={customerInfo.city}
-                    onChange={(e) => setCustomerInfo({ ...customerInfo, city: e.target.value })}
-                    style={{ fontSize: '0.8rem', padding: '0.55rem 0.75rem' }}
-                  />
+                  <div>
+                    <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)', display: 'block', marginBottom: '2px' }}>Nombre Completo</span>
+                    <input
+                      type="text"
+                      className="search-input"
+                      placeholder="Ej. Juan Perez"
+                      value={customerInfo.name}
+                      onChange={(e) => setCustomerInfo({ ...customerInfo, name: e.target.value })}
+                      style={{ fontSize: '0.8rem', padding: '0.55rem 0.75rem', width: '100%' }}
+                    />
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)', display: 'block', marginBottom: '2px' }}>Correo Electrónico (Usuario)</span>
+                    <input
+                      type="email"
+                      className="search-input"
+                      placeholder="cliente@ejemplo.com"
+                      value={customerInfo.email}
+                      onChange={(e) => setCustomerInfo({ ...customerInfo, email: e.target.value })}
+                      style={{ fontSize: '0.8rem', padding: '0.55rem 0.75rem', width: '100%' }}
+                    />
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)', display: 'block', marginBottom: '2px' }}>Contraseña para Portal Privado</span>
+                    <input
+                      type="text"
+                      className="search-input"
+                      placeholder="Clave (mín. 6 caracteres)"
+                      value={customerInfo.password}
+                      onChange={(e) => setCustomerInfo({ ...customerInfo, password: e.target.value })}
+                      style={{ fontSize: '0.8rem', padding: '0.55rem 0.75rem', width: '100%' }}
+                    />
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)', display: 'block', marginBottom: '2px' }}>Teléfono Móvil</span>
+                    <input
+                      type="text"
+                      className="search-input"
+                      placeholder="+591 71234567"
+                      value={customerInfo.phone}
+                      onChange={(e) => setCustomerInfo({ ...customerInfo, phone: e.target.value })}
+                      style={{ fontSize: '0.8rem', padding: '0.55rem 0.75rem', width: '100%' }}
+                    />
+                  </div>
+                  <div style={{ gridColumn: 'span 2' }}>
+                    <span style={{ fontSize: '0.68rem', color: 'var(--text-muted)', display: 'block', marginBottom: '2px' }}>Dirección de Entrega / Ciudad</span>
+                    <input
+                      type="text"
+                      className="search-input"
+                      placeholder="Ej. Av. Hernando Siles #450, Sucre, Bolivia"
+                      value={customerInfo.city}
+                      onChange={(e) => setCustomerInfo({ ...customerInfo, city: e.target.value })}
+                      style={{ fontSize: '0.8rem', padding: '0.55rem 0.75rem', width: '100%' }}
+                    />
+                  </div>
+                </div>
+
+                <div style={{
+                  marginTop: '0.65rem',
+                  padding: '0.6rem 0.8rem',
+                  background: 'rgba(59, 130, 246, 0.08)',
+                  border: '1px solid rgba(59, 130, 246, 0.25)',
+                  borderRadius: 'var(--radius-sm)',
+                  fontSize: '0.72rem',
+                  color: '#93c5fd',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem'
+                }}>
+                  <ShieldIcon size={14} color="#60a5fa" />
+                  <span>
+                    <strong>Verificación de Seguridad:</strong> Al liquidar tu pedido, el backend verificará tu cuenta en la base de datos SQLite y le asignará el rol <strong>CLIENTE</strong> activo para darte acceso al panel privado y seguimiento en vivo.
+                  </span>
                 </div>
               </div>
 
@@ -1951,17 +2005,48 @@ export function LandingPageView({ onGoToLogin }) {
                 </div>
               </div>
 
-              <p style={{ fontSize: '0.74rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
-                Puede rastrear el progreso de empaque y sellado con precinto en la sección de Rastreo en Vivo.
-              </p>
+              {/* Confirmación de Verificación y Creación de Rol CLIENTE */}
+              <div style={{
+                background: 'rgba(59, 130, 246, 0.08)',
+                border: '1px solid rgba(59, 130, 246, 0.3)',
+                borderRadius: 'var(--radius-sm)',
+                padding: '0.85rem 1rem',
+                textAlign: 'left',
+                fontSize: '0.78rem',
+                marginBottom: '1.25rem',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.35rem'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', color: '#93c5fd', fontWeight: 700 }}>
+                  <ShieldIcon size={16} color="#60a5fa" />
+                  <span>Cuenta de Cliente Verificada & Rol Creado</span>
+                </div>
+                <div style={{ color: 'var(--text-secondary)' }}>
+                  Usuario: <strong style={{ color: 'var(--text-primary)' }}>{confirmedOrder.customerEmail}</strong> &bull; Rol: <span className="badge badge-cliente" style={{ fontSize: '0.65rem' }}>CLIENTE (ACTIVO)</span>
+                </div>
+                <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
+                  Se ha registrado y verificado tu cuenta en la base de datos de seguridad. Puedes iniciar sesión en <strong>"Acceso Privado"</strong> para ver tus compras y dar seguimiento en tiempo real.
+                </div>
+              </div>
 
-              <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center' }}>
+              <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                 <button
                   type="button"
                   className="btn btn-secondary"
                   onClick={() => setConfirmedOrder(null)}
                 >
                   Entendido
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-outline-gold"
+                  onClick={() => {
+                    setConfirmedOrder(null);
+                    onGoToLogin();
+                  }}
+                >
+                  Ingresar a Mi Cuenta (Privado) →
                 </button>
                 <button
                   type="button"

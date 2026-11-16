@@ -9,8 +9,9 @@ Cubre:
 
 import uuid
 from flask import Blueprint, request, jsonify, session
+from werkzeug.security import generate_password_hash
 from database import get_db
-from models import ProductModel, OrderModel
+from models import ProductModel, OrderModel, UserModel
 from decorators import login_required, roles_required, csrf_protect
 
 store_bp = Blueprint("store", __name__, url_prefix="/api")
@@ -82,6 +83,7 @@ def create_order():
 
     customer_name = (data.get("customer_name") or "").strip()
     customer_email = (data.get("customer_email") or "").strip().lower()
+    customer_password = (data.get("customer_password") or "").strip()
     payment_method = (data.get("payment_method") or "").upper().strip()
     payment_reference = (data.get("payment_reference") or "").strip()
     items = data.get("items") or []
@@ -148,9 +150,37 @@ def create_order():
             items=validated_items
         )
 
+        # Verificación y Creación automática de cuenta con Rol CLIENTE
+        user_created = False
+        user_role = "CLIENTE"
+        existing_user = UserModel.find_by_email(db, customer_email)
+        if not existing_user:
+            try:
+                pass_raw = customer_password if len(customer_password) >= 6 else "Cliente2026!"
+                hashed_pw = generate_password_hash(pass_raw)
+                UserModel.create(
+                    db=db,
+                    full_name=customer_name,
+                    email=customer_email,
+                    password_hash=hashed_pw,
+                    role="CLIENTE",
+                    status="ACTIVO"
+                )
+                user_created = True
+            except Exception as user_err:
+                print(f"[STORE] Nota al crear usuario cliente: {user_err}")
+        else:
+            user_role = existing_user.get("role", "CLIENTE")
+
         return jsonify({
             "message": "¡Pago confirmado con éxito! Pedido registrado y asignado a almacén.",
-            "order": new_order
+            "order": new_order,
+            "user_account": {
+                "created": user_created,
+                "email": customer_email,
+                "role": user_role,
+                "status": "ACTIVO"
+            }
         }), 201
 
     except ValueError as val_err:
