@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
+import { api } from '../api/client';
 import {
   ShoppingBagIcon,
   ShieldIcon,
@@ -8,10 +9,13 @@ import {
   EyeIcon,
   CheckCircleIcon,
   AlertTriangleIcon,
-  XIcon
+  XIcon,
+  TruckIcon,
+  PackageIcon,
+  QrCodeIcon
 } from '../components/Icons';
 
-const WATCH_CATALOG = [
+const DEFAULT_CATALOG = [
   {
     id: 'W01',
     name: 'Élan Royal Noir',
@@ -21,6 +25,7 @@ const WATCH_CATALOG = [
     price: 7450,
     priceStr: '$7,450 USD',
     stock: 7,
+    image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80',
     reference: 'REF. ERN-2026-X',
     movement: 'Calibre Automático Élan 8100',
     caseMaterial: 'Titanio Grado 5 con acabado DLC Negro Mate (41 mm)',
@@ -37,12 +42,13 @@ const WATCH_CATALOG = [
     price: 5200,
     priceStr: '$5,200 USD',
     stock: 12,
+    image: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80',
     reference: 'REF. EHC-1936-COSC',
     movement: 'Calibre Manual Élan Heritage 1936 (Certificado COSC)',
     caseMaterial: 'Acero Inoxidable 316L pulido a espejo (39 mm)',
     dial: 'Esmalte Grand Feu marfil con números Breguet aplicados',
     strap: 'Cuero genuino de aligátor marrón cosido a mano',
-    description: 'Inspirado en los cronómetros de navegación del siglo pasado. Manecillas azuladas a fuego a 300°C y cristal de zafiro '
+    description: 'Inspirado en los cronómetros de navegación del siglo pasado. Manecillas azuladas a fuego a 300°C y cristal de zafiro de doble abombado.'
   },
   {
     id: 'W03',
@@ -53,6 +59,7 @@ const WATCH_CATALOG = [
     price: 4850,
     priceStr: '$4,850 USD',
     stock: 9,
+    image: 'https://images.unsplash.com/photo-1547996160-71dfa6309697?auto=format&fit=crop&w=800&q=80',
     reference: 'REF. EVD-300M-D',
     movement: 'Calibre Automático Antimagnético Élan Diver 300',
     caseMaterial: 'Acero 904L ultra-resistente a corrosión marina (42 mm)',
@@ -66,9 +73,10 @@ const WATCH_CATALOG = [
     collection: 'EDICIONES ESPECIALES',
     badge: 'ALTA COMPLICACIÓN',
     badgeClass: 'badge-admin',
-    price: 14900,
-    priceStr: '$14,900 USD',
+    price: 13900,
+    priceStr: '$13,900 USD',
     stock: 3,
+    image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80',
     reference: 'REF. EMT-72H-OR',
     movement: 'Tourbillon Volante de 60 segundos Élan Tourbillon T-01',
     caseMaterial: 'Oro Rosa macizo de 18 quilates 5N (40.5 mm)',
@@ -81,47 +89,57 @@ const WATCH_CATALOG = [
 export function ClientView() {
   const { user } = useAuth();
 
+  const [catalog, setCatalog] = useState(DEFAULT_CATALOG);
   const [activeCategory, setActiveCategory] = useState('TODAS');
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedWatch, setSelectedWatch] = useState(null);
-  const [cart, setCart] = useState([]);
-  const [orderModalOpen, setOrderModalOpen] = useState(false);
-  const [confirmedOrder, setConfirmedOrder] = useState(null);
+  const [clientOrders, setClientOrders] = useState([]);
+  const [loadingOrders, setLoadingOrders] = useState(true);
+
+  // Carga de catálogo y pedidos del cliente
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const prodRes = await api.get('/api/products').catch(() => null);
+        if (prodRes && prodRes.products) {
+          setCatalog(prev => prev.map(local => {
+            const remote = prodRes.products.find(p => p.id === local.id);
+            return remote ? { ...local, stock: remote.stock, price: remote.price, priceStr: `$${remote.price.toLocaleString()} USD` } : local;
+          }));
+        }
+
+        const ordRes = await api.get('/api/orders').catch(() => null);
+        if (ordRes && ordRes.orders) {
+          // Filtrar las del cliente o mostrar todas para modo demo
+          const userOrders = ordRes.orders.filter(o => 
+            !user?.email || o.customer_email === user.email || user.role === 'ADMINISTRADOR' || o.id === 'ELAN-849201'
+          );
+          setClientOrders(userOrders.length > 0 ? userOrders : ordRes.orders.slice(0, 3));
+        } else {
+          // Fallback de demostración
+          setClientOrders([
+            { id: 'ELAN-849201', customer_name: user?.full_name || 'Juan Perez', status: 'PAGADO', payment_method: 'QR', payment_reference: 'QR-BNB-88301', total_amount: 4850, created_at: '2026-11-16 10:15', security_seal: null, tracking_number: null },
+            { id: 'ELAN-310928', customer_name: user?.full_name || 'Juan Perez', status: 'EN_PREPARACION', payment_method: 'DEPOSITO_BANCARIO', payment_reference: 'DEP-BNB-449102', total_amount: 5200, created_at: '2026-11-16 09:30', security_seal: null, tracking_number: null }
+          ]);
+        }
+      } catch (err) {
+        console.warn('Error al cargar datos de cliente:', err);
+      } finally {
+        setLoadingOrders(false);
+      }
+    };
+
+    fetchData();
+  }, [user]);
 
   // Filtrado de relojes
-  const filteredWatches = WATCH_CATALOG.filter(w => {
+  const filteredWatches = catalog.filter(w => {
     const matchCat = activeCategory === 'TODAS' || w.collection === activeCategory;
     const matchSearch = w.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                         w.collection.toLowerCase().includes(searchTerm.toLowerCase()) ||
                         w.reference.toLowerCase().includes(searchTerm.toLowerCase());
     return matchCat && matchSearch;
   });
-
-  const addToCart = (watch) => {
-    setCart(prev => {
-      const existing = prev.find(item => item.id === watch.id);
-      if (existing) {
-        return prev.map(item => item.id === watch.id ? { ...item, qty: item.qty + 1 } : item);
-      }
-      return [...prev, { ...watch, qty: 1 }];
-    });
-  };
-
-  const cartTotal = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
-  const totalItems = cart.reduce((acc, item) => acc + item.qty, 0);
-
-  const handleSimulateOrder = () => {
-    const orderNumber = 'ELAN-' + Math.floor(100000 + Math.random() * 900000);
-    setConfirmedOrder({
-      orderId: orderNumber,
-      items: [...cart],
-      total: cartTotal,
-      date: new Date().toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' }),
-      status: 'Confirmado — En preparación en almacén'
-    });
-    setCart([]);
-    setOrderModalOpen(true);
-  };
 
   return (
     <div>
@@ -157,53 +175,129 @@ export function ClientView() {
               Portal de Cliente — {user?.full_name}
             </div>
             <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)' }}>
-              {user?.email} • Estado de cuenta: <span style={{ color: 'var(--color-success)' }}>{user?.status}</span>
+              {user?.email} • Estado: <span style={{ color: 'var(--color-success)' }}>{user?.status}</span>
             </div>
           </div>
         </div>
 
-        {/* Indicador de Carrito Simulado (RF09) */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-          <div style={{
-            background: 'var(--bg-surface)',
-            padding: '0.45rem 0.95rem',
-            borderRadius: 'var(--radius-sm)',
-            border: '1px solid var(--border-muted)',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.65rem'
-          }}>
-            <ShoppingBagIcon size={16} color="var(--gold-primary)" />
-            <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-              Bolsa: <strong style={{ color: 'var(--text-primary)' }}>{totalItems} piezas</strong> (${cartTotal.toLocaleString()} USD)
-            </span>
-            {totalItems > 0 && (
-              <button
-                className="btn btn-primary"
-                style={{ padding: '0.25rem 0.65rem', fontSize: '0.7rem' }}
-                onClick={handleSimulateOrder}
-              >
-                Checkout
-              </button>
-            )}
-          </div>
-
-          <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.45rem',
-            fontSize: '0.72rem',
-            color: 'var(--text-muted)',
-            borderLeft: '1px solid var(--border-muted)',
-            paddingLeft: '1rem'
-          }}>
-            <ShieldIcon size={14} color="var(--gold-primary)" />
-            <span>HU01–HU12 / RF01–RF13</span>
-          </div>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.45rem',
+          fontSize: '0.72rem',
+          color: 'var(--text-muted)'
+        }}>
+          <ShieldIcon size={14} color="var(--gold-primary)" />
+          <span>HU01–HU12 / RF01–RF13 • Control de Stock & Pagos QR / PayPal</span>
         </div>
       </div>
 
-      {/* Hero Section — Catálogo Curado Élan Watches */}
+      {/* SECCIÓN 1: MIS PEDIDOS Y TRAZABILIDAD EN TIEMPO REAL (5 ETAPAS) */}
+      <div className="card card-luxury" style={{ marginBottom: '2.5rem', padding: '1.75rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem', flexWrap: 'wrap', gap: '0.75rem' }}>
+          <div>
+            <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>
+              Mis Pedidos y Trazabilidad de Alta Relojería
+            </h3>
+            <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
+              Seguimiento en vivo de preparación, precinto de seguridad suizo y despacho
+            </span>
+          </div>
+          <span className="badge badge-cliente">Trazabilidad en Vivo</span>
+        </div>
+
+        {clientOrders.length === 0 ? (
+          <div style={{ textAlign: 'center', padding: '2rem', color: 'var(--text-muted)' }}>
+            No registra pedidos recientes. Puede adquirir piezas desde la página principal o nuestro catálogo curado.
+          </div>
+        ) : (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+            {clientOrders.map(order => {
+              const phases = [
+                { id: 'PAGADO', label: '1. Pago Confirmado', sub: order.payment_method === 'QR' ? '📱 QR Simple' : (order.payment_method === 'PAYPAL' ? '💳 PayPal' : '🏦 Depósito') },
+                { id: 'EN_PREPARACION', label: '2. En Preparación', sub: 'Taller Central' },
+                { id: 'EMPAQUETADO', label: '3. Empacado & Precinto', sub: order.security_seal || 'Sello Suizo' },
+                { id: 'EN_TRANSITO', label: '4. En Tránsito', sub: order.tracking_number || 'DHL Courier' },
+                { id: 'ENTREGADO', label: '5. Entregado', sub: 'Finalizado' }
+              ];
+              const statusOrder = ['PAGADO', 'EN_PREPARACION', 'EMPAQUETADO', 'EN_TRANSITO', 'ENTREGADO'];
+              const currentIndex = statusOrder.indexOf(order.status);
+
+              return (
+                <div
+                  key={order.id}
+                  style={{
+                    background: 'var(--bg-surface)',
+                    border: '1px solid var(--border-muted)',
+                    borderRadius: 'var(--radius-sm)',
+                    padding: '1.25rem'
+                  }}
+                >
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+                    <div>
+                      <span style={{ fontFamily: 'monospace', fontSize: '1.1rem', fontWeight: 700, color: 'var(--gold-light)' }}>
+                        {order.id}
+                      </span>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginLeft: '0.75rem' }}>
+                        Fecha: {order.created_at || '2026-11-16'} &bull; Importe: <strong style={{ color: 'var(--gold-light)' }}>${order.total_amount?.toLocaleString()} USD</strong>
+                      </span>
+                    </div>
+                    <div>
+                      <span className="badge badge-active" style={{ fontSize: '0.7rem' }}>
+                        Estado: {order.status}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Stepper de 5 Fases para el Cliente */}
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))', gap: '0.65rem' }}>
+                    {phases.map((ph, idx) => {
+                      const isDone = idx <= currentIndex;
+                      const isNow = idx === currentIndex;
+                      return (
+                        <div
+                          key={ph.id}
+                          style={{
+                            background: isNow ? 'rgba(197, 160, 89, 0.15)' : (isDone ? 'rgba(16, 185, 129, 0.08)' : 'rgba(255, 255, 255, 0.02)'),
+                            border: isNow ? '1.5px solid var(--gold-primary)' : (isDone ? '1px solid rgba(16, 185, 129, 0.4)' : '1px solid var(--border-muted)'),
+                            borderRadius: '4px',
+                            padding: '0.65rem 0.5rem',
+                            textAlign: 'center'
+                          }}
+                        >
+                          <div style={{
+                            width: '22px',
+                            height: '22px',
+                            borderRadius: '50%',
+                            margin: '0 auto 0.35rem auto',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            fontSize: '0.7rem',
+                            fontWeight: 700,
+                            background: isDone ? 'var(--color-success)' : 'rgba(255,255,255,0.1)',
+                            color: isDone ? '#08080a' : 'var(--text-muted)'
+                          }}>
+                            {isDone ? '✓' : (idx + 1)}
+                          </div>
+                          <div style={{ fontSize: '0.72rem', fontWeight: 600, color: isNow ? 'var(--gold-light)' : (isDone ? '#34d399' : 'var(--text-muted)') }}>
+                            {ph.label}
+                          </div>
+                          <div style={{ fontSize: '0.65rem', color: 'var(--text-muted)', marginTop: '0.15rem', fontFamily: 'monospace' }}>
+                            {ph.sub}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+
+      {/* SECCIÓN 2: CATÁLOGO CURADO ÉLAN WATCHES CON CONTROL DE DISPONIBILIDAD */}
       <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
         <span style={{
           fontSize: '0.75rem',
@@ -214,7 +308,7 @@ export function ClientView() {
           display: 'block',
           marginBottom: '0.5rem'
         }}>
-          CATÁLOGO CURADO 2026
+          CATÁLOGO DE ALTA RELOJERÍA SUIZA
         </span>
         <h2 style={{
           fontFamily: 'var(--font-serif)',
@@ -224,7 +318,7 @@ export function ClientView() {
           letterSpacing: '0.04em',
           marginBottom: '0.75rem'
         }}>
-          Colecciones Destacadas
+          Colecciones de Atelier
         </h2>
         <p style={{
           maxWidth: '680px',
@@ -233,7 +327,7 @@ export function ClientView() {
           fontSize: '0.95rem',
           lineHeight: 1.6
         }}>
-          Cada ejemplar encarna la devoción por la precisión micrométrica y el diseño atemporal. Explora nuestras líneas creadas para ocasiones trascendentales.
+          Existencias y calibres sincronizados en tiempo real con nuestra bóveda central.
         </p>
       </div>
 
@@ -277,7 +371,7 @@ export function ClientView() {
         </div>
       </div>
 
-      {/* Grilla de Relojes de Alta Gama */}
+      {/* Grilla de Relojes con Control de Existencias */}
       <div style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
@@ -303,42 +397,52 @@ export function ClientView() {
                 <span className={`badge ${watch.badgeClass}`}>
                   {watch.badge}
                 </span>
-                <span style={{ fontSize: '0.72rem', color: '#34d399', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
-                  <span className="status-dot active" />
-                  {watch.stock} disponibles
-                </span>
+                {watch.stock <= 0 ? (
+                  <span className="badge badge-inactive" style={{ color: '#ef4444', borderColor: 'rgba(239, 68, 68, 0.4)', background: 'rgba(239, 68, 68, 0.1)', fontSize: '0.68rem', fontWeight: 700 }}>
+                    ● AGOTADO
+                  </span>
+                ) : watch.stock <= 3 ? (
+                  <span className="badge badge-inactive" style={{ color: '#fbbf24', borderColor: 'rgba(251, 191, 36, 0.4)', background: 'rgba(251, 191, 36, 0.1)', fontSize: '0.68rem', fontWeight: 600 }}>
+                    ⚠️ ¡Últimas {watch.stock} piezas!
+                  </span>
+                ) : (
+                  <span style={{ fontSize: '0.72rem', color: '#34d399', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                    <span className="status-dot active" />
+                    {watch.stock} disponibles
+                  </span>
+                )}
               </div>
 
-              {/* Emblema Gráfico Simbólico del Reloj */}
+              {/* Imagen del Reloj */}
               <div style={{
-                height: '140px',
-                background: 'radial-gradient(circle, #201e17 0%, #0d0d10 80%)',
-                borderRadius: 'var(--radius-sm)',
-                border: '1px solid var(--border-muted)',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                marginBottom: '1.25rem',
                 position: 'relative',
-                overflow: 'hidden'
+                height: '180px',
+                borderRadius: 'var(--radius-sm)',
+                overflow: 'hidden',
+                backgroundColor: '#0a0a0e',
+                border: '1px solid var(--border-muted)',
+                marginBottom: '1.25rem'
               }}>
+                <img
+                  src={watch.image}
+                  alt={watch.name}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
+                  loading="lazy"
+                />
                 <div style={{
-                  width: '74px',
-                  height: '74px',
-                  borderRadius: '50%',
-                  border: '2px solid var(--gold-border)',
-                  boxShadow: '0 0 20px rgba(197, 160, 89, 0.25)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  background: '#15151b'
+                  position: 'absolute',
+                  inset: 0,
+                  background: 'linear-gradient(to top, rgba(13,13,16,0.85) 0%, transparent 60%)'
+                }} />
+                <span style={{
+                  position: 'absolute',
+                  bottom: '0.5rem',
+                  left: '0.75rem',
+                  fontSize: '0.68rem',
+                  color: 'var(--gold-light)',
+                  fontWeight: 600,
+                  fontFamily: 'monospace'
                 }}>
-                  <span style={{ fontFamily: 'var(--font-serif)', fontSize: '1.6rem', color: 'var(--gold-light)' }}>
-                    É
-                  </span>
-                </div>
-                <span style={{ fontSize: '0.66rem', color: 'var(--text-muted)', letterSpacing: '0.15em', marginTop: '0.5rem', textTransform: 'uppercase' }}>
                   {watch.reference}
                 </span>
               </div>
@@ -380,7 +484,7 @@ export function ClientView() {
                 </span>
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '0.65rem' }}>
                 <button
                   type="button"
                   className="btn btn-secondary"
@@ -388,16 +492,7 @@ export function ClientView() {
                   onClick={() => setSelectedWatch(watch)}
                 >
                   <EyeIcon size={14} />
-                  <span>Detalles</span>
-                </button>
-                <button
-                  type="button"
-                  className="btn btn-outline-gold"
-                  style={{ fontSize: '0.72rem', padding: '0.55rem' }}
-                  onClick={() => addToCart(watch)}
-                >
-                  <ShoppingBagIcon size={14} />
-                  <span>Añadir</span>
+                  <span>Ver Ficha Técnica Oficial</span>
                 </button>
               </div>
             </div>
@@ -405,7 +500,7 @@ export function ClientView() {
         ))}
       </div>
 
-      {/* Modal Ficha Técnica Detallada (RF07) */}
+      {/* Modal Ficha Técnica Detallada */}
       {selectedWatch && (
         <div className="modal-backdrop" onClick={() => setSelectedWatch(null)}>
           <div className="modal-card" onClick={e => e.stopPropagation()} style={{ maxWidth: '600px' }}>
@@ -457,95 +552,13 @@ export function ClientView() {
               }}>
                 <ShieldIcon size={18} color="var(--gold-primary)" />
                 <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
-                  Garantía Internacional Élan Watches por 5 años con registro en manufactura suiza.
+                  Garantía Internacional Élan Watches por 5 años con precinto de seguridad suizo y registro criptográfico.
                 </span>
               </div>
             </div>
             <div className="modal-footer">
-              <button type="button" className="btn btn-secondary" onClick={() => setSelectedWatch(null)}>
+              <button type="button" className="btn btn-primary" onClick={() => setSelectedWatch(null)}>
                 Cerrar Ficha
-              </button>
-              <button
-                type="button"
-                className="btn btn-primary"
-                onClick={() => {
-                  addToCart(selectedWatch);
-                  setSelectedWatch(null);
-                }}
-              >
-                Añadir al Carrito
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Modal de Simulación de Orden (RF10, RF11, RF13) */}
-      {orderModalOpen && confirmedOrder && (
-        <div className="modal-backdrop" onClick={() => setOrderModalOpen(false)}>
-          <div className="modal-card" onClick={e => e.stopPropagation()} style={{ maxWidth: '520px' }}>
-            <div className="modal-header">
-              <h3 className="modal-title">Pedido Confirmado (Simulación)</h3>
-              <button className="btn-icon" onClick={() => setOrderModalOpen(false)}>
-                <XIcon size={18} />
-              </button>
-            </div>
-            <div className="modal-body" style={{ textAlign: 'center', padding: '2rem 1.5rem' }}>
-              <div style={{
-                width: '60px',
-                height: '60px',
-                borderRadius: '50%',
-                background: 'var(--color-success-bg)',
-                border: '1.5px solid rgba(16, 185, 129, 0.4)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: 'var(--color-success)',
-                margin: '0 auto 1.25rem auto'
-              }}>
-                <CheckCircleIcon size={32} />
-              </div>
-
-              <h4 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.35rem', color: 'var(--text-primary)', marginBottom: '0.5rem' }}>
-                ¡Compra Registrada Exitosamente!
-              </h4>
-              <p style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
-                Código de Seguimiento Único (RF11): <strong style={{ color: 'var(--gold-light)', fontFamily: 'monospace' }}>{confirmedOrder.orderId}</strong>
-              </p>
-
-              <div style={{
-                background: 'var(--bg-surface)',
-                borderRadius: 'var(--radius-sm)',
-                padding: '1rem',
-                border: '1px solid var(--border-muted)',
-                textAlign: 'left',
-                fontSize: '0.8rem',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '0.45rem',
-                marginBottom: '1.25rem'
-              }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                  <span style={{ color: 'var(--text-muted)' }}>Cliente:</span>
-                  <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>{user?.full_name}</span>
-                </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                  <span style={{ color: 'var(--text-muted)' }}>Monto Total:</span>
-                  <span style={{ color: 'var(--gold-light)', fontWeight: 700 }}>${confirmedOrder.total.toLocaleString()} USD</span>
-                </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                  <span style={{ color: 'var(--text-muted)' }}>Estado de Distribución:</span>
-                  <span style={{ color: '#34d399', fontWeight: 600 }}>{confirmedOrder.status}</span>
-                </div>
-              </div>
-
-              <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>
-                De acuerdo con el Documento de Visión (Grupo 22), el proceso de pago ha sido simulado sin almacenar datos bancarios reales.
-              </p>
-            </div>
-            <div className="modal-footer" style={{ justifyContent: 'center' }}>
-              <button type="button" className="btn btn-primary" onClick={() => setOrderModalOpen(false)}>
-                Entendido
               </button>
             </div>
           </div>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" style="background:#08080a; font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Gradientes de Lujo -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6ca85"/>
+      <stop offset="50%" stop-color="#c5a059"/>
+      <stop offset="100%" stop-color="#8f6f32"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14141a"/>
+      <stop offset="100%" stop-color="#0c0c10"/>
+    </linearGradient>
+
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#7e22ce"/>
+    </linearGradient>
+
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <!-- Filtro de Sombra -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+
+    <filter id="glowGold" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#c5a059" flood-opacity="0.5"/>
+    </filter>
+
+    <!-- Marcadores de Flechas -->
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#c5a059"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#34d399"/>
+    </marker>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#c084fc"/>
+    </marker>
+  </defs>
+
+  <!-- Fondo con Cuadricula Tecnica Sutil -->
+  <rect width="1600" height="1000" fill="#08080a"/>
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40"/>
+    </pattern>
+    <rect width="1600" height="1000" fill="url(#grid)"/>
+  </g>
+
+  <!-- ENCABEZADO DEL DIAGRAMA -->
+  <g transform="translate(60, 45)">
+    <rect x="0" y="0" width="1480" height="75" rx="8" fill="#101015" stroke="#252530" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="45" cy="37.5" r="22" fill="#181822" stroke="#c5a059" stroke-width="2"/>
+    <text x="45" y="44" font-family="'Cinzel', Georgia, serif" font-size="20" font-weight="bold" fill="#e6ca85" text-anchor="middle">É</text>
+    <text x="85" y="34" font-family="'Cinzel', Georgia, serif" font-size="22" font-weight="bold" fill="#ffffff" letter-spacing="1.5">ÉLAN WATCHES &bull; MAPA DE INFRAESTRUCTURA Y ARQUITECTURA DE SOFTWARE</text>
+    <text x="85" y="55" font-size="12" fill="#94a3b8" letter-spacing="0.8">SIS 324: Ingeniería de Software | Docente: Ing. Ramiro Alberto Duran Quiroga | Grupo 22 (Chumacero, Anagua, Monasterios)</text>
+    
+    <!-- Insignia Estado -->
+    <rect x="1310" y="22" width="145" height="30" rx="15" fill="#12251a" stroke="#059669" stroke-width="1.5"/>
+    <circle cx="1328" cy="37" r="5" fill="#10b981"/>
+    <text x="1342" y="42" font-size="11" font-weight="bold" fill="#34d399" letter-spacing="0.5">DESPLIEGUE ACTIVO</text>
+  </g>
+
+  <!-- ============================================================== -->
+  <!-- COLUMNA 1: CLIENTE / FRONTEND (REACT + VITE)                   -->
+  <!-- ============================================================== -->
+  <g transform="translate(60, 150)">
+    <!-- Marco Contenedor -->
+    <rect x="0" y="0" width="420" height="520" rx="12" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.8" filter="url(#shadow)"/>
+    
+    <!-- Encabezado de Tarjeta -->
+    <path d="M 0 12 Q 0 0 12 0 L 408 0 Q 420 0 420 12 L 420 50 L 0 50 Z" fill="#0f172a"/>
+    <text x="25" y="32" font-size="15" font-weight="bold" fill="#38bdf8" letter-spacing="1">1. CLIENTE &amp; FRONTEND (SPA)</text>
+    <text x="320" y="32" font-size="11" font-mono="true" fill="#94a3b8">React 18 + Vite</text>
+    <line x1="0" y1="50" x2="420" y2="50" stroke="#1e293b" stroke-width="1.5"/>
+
+    <!-- Componente 1: Tienda Publica / Landing -->
+    <g transform="translate(20, 70)">
+      <rect x="0" y="0" width="380" height="75" rx="8" fill="#161e2e" stroke="#2563eb" stroke-width="1"/>
+      <text x="15" y="25" font-size="13" font-weight="bold" fill="#ffffff">🏛️ Tienda Pública &amp; Catálogo Curado</text>
+      <text x="15" y="45" font-size="11" fill="#94a3b8">&bull; 6 Piezas de Alta Relojería con imágenes HD y Ficha Técnica</text>
+      <text x="15" y="62" font-size="11" fill="#94a3b8">&bull; Ateliers de Ginebra, Carrito Drawer y Simulación de Pedidos</text>
+    </g>
+
+    <!-- Componente 2: Portal de Seguridad / Login -->
+    <g transform="translate(20, 160)">
+      <rect x="0" y="0" width="380" height="95" rx="8" fill="#181528" stroke="#8b5cf6" stroke-width="1"/>
+      <text x="15" y="25" font-size="13" font-weight="bold" fill="#c084fc">🛡️ Módulo de Seguridad &amp; Login</text>
+      <text x="15" y="45" font-size="11" fill="#cbd5e1">&bull; Botón Prominente "Acceso Privado" en cabecera y pie</text>
+      <text x="15" y="62" font-size="11" fill="#cbd5e1">&bull; Credenciales precargadas para evaluación docente inmediata</text>
+      <text x="15" y="79" font-size="11" fill="#cbd5e1">&bull; Botones de prueba rápida: Admin, Almacén y Cliente</text>
+    </g>
+
+    <!-- Componente 3: Paneles segun Rol -->
+    <g transform="translate(20, 270)">
+      <rect x="0" y="0" width="380" height="115" rx="8" fill="#181816" stroke="#c5a059" stroke-width="1"/>
+      <text x="15" y="25" font-size="13" font-weight="bold" fill="#e6ca85">👥 Paneles de Control por Rol (RBAC)</text>
+      <text x="15" y="45" font-size="11" fill="#e2e8f0">&bull; <tspan font-weight="bold" fill="#facc15">ADMINISTRADOR:</tspan> CRUD de usuarios, creación, edición y</text>
+      <text x="24" y="62" font-size="11" fill="#e2e8f0">desactivación lógica con protecciones estrictas.</text>
+      <text x="15" y="80" font-size="11" fill="#e2e8f0">&bull; <tspan font-weight="bold" fill="#60a5fa">ALMACÉN:</tspan> Vista específica con roadmap de inventarios.</text>
+      <text x="15" y="98" font-size="11" fill="#e2e8f0">&bull; <tspan font-weight="bold" fill="#34d399">CLIENTE:</tspan> Panel personal y seguimiento de adquisiciones.</text>
+    </g>
+
+    <!-- Componente 4: Cliente HTTP Fetch con CSRF -->
+    <g transform="translate(20, 400)">
+      <rect x="0" y="0" width="380" height="95" rx="8" fill="#101924" stroke="#0ea5e9" stroke-width="1"/>
+      <text x="15" y="23" font-size="13" font-weight="bold" fill="#38bdf8">🌐 Cliente API REST (client.js)</text>
+      <text x="15" y="42" font-size="11" fill="#94a3b8">&bull; <tspan font-family="monospace" fill="#38bdf8">credentials: 'include'</tspan> (Envío automático de Cookie HttpOnly)</text>
+      <text x="15" y="59" font-size="11" fill="#94a3b8">&bull; Interceptor CSRF: Inyecta cabecera <tspan font-family="monospace" fill="#e6ca85">X-CSRF-Token</tspan></text>
+      <text x="15" y="76" font-size="11" fill="#94a3b8">&bull; Variable dinámica <tspan font-family="monospace" fill="#a78bfa">VITE_API_URL</tspan> con fallback en desarrollo</text>
+    </g>
+  </g>
+
+  <!-- ============================================================== -->
+  <!-- COLUMNA 2: CLOUD & RED (RENDER EDGE, HTTPS, CORS)              -->
+  <!-- ============================================================== -->
+  <g transform="translate(540, 150)">
+    <rect x="0" y="0" width="460" height="520" rx="12" fill="url(#cardGrad)" stroke="#c5a059" stroke-width="1.8" filter="url(#shadow)"/>
+    
+    <path d="M 0 12 Q 0 0 12 0 L 448 0 Q 460 0 460 12 L 460 50 L 0 50 Z" fill="#181510"/>
+    <text x="25" y="32" font-size="15" font-weight="bold" fill="#e6ca85" letter-spacing="1">2. CAPA DE RED &amp; INFRAESTRUCTURA CLOUD</text>
+    <text x="365" y="32" font-size="11" font-mono="true" fill="#94a3b8">Render.com</text>
+    <line x1="0" y1="50" x2="460" y2="50" stroke="#2a2215" stroke-width="1.5"/>
+
+    <!-- Nodo 1: Frontend Static Site -->
+    <g transform="translate(25, 70)">
+      <rect x="0" y="0" width="410" height="90" rx="8" fill="#121820" stroke="#1e3a5f" stroke-width="1"/>
+      <text x="15" y="24" font-size="13" font-weight="bold" fill="#60a5fa">☁️ Render Static Site (Frontend)</text>
+      <text x="15" y="44" font-size="11" fill="#94a3b8">&bull; URL: <tspan font-family="monospace" fill="#38bdf8">https://elan-watches-frontend.onrender.com</tspan></text>
+      <text x="15" y="61" font-size="11" fill="#94a3b8">&bull; Red CDN Global de baja latencia con compresión gzip/brotli</text>
+      <text x="15" y="78" font-size="11" fill="#94a3b8">&bull; Rewrite SPA: <tspan font-family="monospace" fill="#e6ca85">/* ➔ /index.html</tspan> (Soporte rutas limpias)</text>
+    </g>
+
+    <!-- Nodo 2: Canal Seguro HTTPS & CORS -->
+    <g transform="translate(25, 175)">
+      <rect x="0" y="0" width="410" height="150" rx="8" fill="#1c1610" stroke="#c5a059" stroke-width="1.2"/>
+      <text x="15" y="24" font-size="13" font-weight="bold" fill="#facc15">🔒 Canal Seguro &amp; Mitigación Cross-Site</text>
+      
+      <rect x="15" y="35" width="380" height="32" rx="4" fill="#0c0d12"/>
+      <text x="25" y="55" font-size="10.5" font-family="monospace" fill="#38bdf8">Cookie: elan_session; SameSite=None; Secure; HttpOnly</text>
+
+      <text x="15" y="85" font-size="11" fill="#e2e8f0">&bull; <tspan font-weight="bold" fill="#34d399">SameSite=None + Secure=True:</tspan> Permite que la cookie viaje</text>
+      <text x="24" y="101" font-size="11" fill="#e2e8f0">segura entre subdominios distintos de Render vía HTTPS.</text>
+      <text x="15" y="118" font-size="11" fill="#e2e8f0">&bull; <tspan font-weight="bold" fill="#60a5fa">CORS Regex Dinámico:</tspan> <tspan font-family="monospace" fill="#a78bfa">^https://.*.onrender.com$</tspan></text>
+      <text x="24" y="134" font-size="11" fill="#e2e8f0">Acepta automáticamente cualquier subdominio de despliegue.</text>
+    </g>
+
+    <!-- Nodo 3: Backend Web Service -->
+    <g transform="translate(25, 340)">
+      <rect x="0" y="0" width="410" height="155" rx="8" fill="#121e16" stroke="#059669" stroke-width="1"/>
+      <text x="15" y="24" font-size="13" font-weight="bold" fill="#34d399">⚡ Render Web Service (Backend)</text>
+      <text x="15" y="44" font-size="11" fill="#94a3b8">&bull; URL: <tspan font-family="monospace" fill="#34d399">https://elan-watches-backend.onrender.com</tspan></text>
+      <text x="15" y="61" font-size="11" fill="#94a3b8">&bull; Runtime: Python 3.11.9 en contenedor Linux administrado</text>
+      <text x="15" y="78" font-size="11" fill="#94a3b8">&bull; WSGI Server: <tspan font-family="monospace" fill="#e6ca85">gunicorn app:app</tspan> (Producción robusta)</text>
+      <text x="15" y="95" font-size="11" fill="#94a3b8">&bull; Detección Automática de Nube: <tspan font-family="monospace" fill="#c084fc">RENDER=true</tspan></text>
+      <text x="15" y="112" font-size="11" fill="#94a3b8">&bull; IaC con <tspan font-family="monospace" fill="#facc15">render.yaml</tspan> (Blueprint reproducible en 1 clic)</text>
+      <text x="15" y="129" font-size="11" fill="#94a3b8">&bull; Health Check Monitor: <tspan font-family="monospace" fill="#38bdf8">GET /api/health</tspan></text>
+    </g>
+  </g>
+
+  <!-- ============================================================== -->
+  <!-- COLUMNA 3: BACKEND, SEGURIDAD & BASE DE DATOS (PYTHON + SQLITE) -->
+  <!-- ============================================================== -->
+  <g transform="translate(1060, 150)">
+    <rect x="0" y="0" width="480" height="520" rx="12" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1.8" filter="url(#shadow)"/>
+    
+    <path d="M 0 12 Q 0 0 12 0 L 468 0 Q 480 0 480 12 L 480 50 L 0 50 Z" fill="#0f2218"/>
+    <text x="25" y="32" font-size="15" font-weight="bold" fill="#34d399" letter-spacing="1">3. BACKEND &amp; BASE DE DATOS TRANSACCIONAL</text>
+    <text x="390" y="32" font-size="11" font-mono="true" fill="#94a3b8">Flask + SQLite</text>
+    <line x1="0" y1="50" x2="480" y2="50" stroke="#163e2c" stroke-width="1.5"/>
+
+    <!-- Componente 1: Modulos de Aplicacion Flask -->
+    <g transform="translate(25, 70)">
+      <rect x="0" y="0" width="430" height="95" rx="8" fill="#101924" stroke="#1e293b" stroke-width="1"/>
+      <text x="15" y="24" font-size="13" font-weight="bold" fill="#38bdf8">🧩 Arquitectura Modular Limpia</text>
+      <text x="15" y="44" font-size="11" fill="#94a3b8">&bull; <tspan font-family="monospace" fill="#e6ca85">app.py</tspan>: Factoría de aplicación y registro de Blueprints</text>
+      <text x="15" y="61" font-size="11" fill="#94a3b8">&bull; <tspan font-family="monospace" fill="#e6ca85">auth_routes.py</tspan>: Endpoints login, logout y estado (/api/auth/me)</text>
+      <text x="15" y="78" font-size="11" fill="#94a3b8">&bull; <tspan font-family="monospace" fill="#e6ca85">user_routes.py</tspan>: CRUD completo con validación y estados HTTP</text>
+    </g>
+
+    <!-- Componente 2: Motores de Seguridad y Criptografia -->
+    <g transform="translate(25, 175)">
+      <rect x="0" y="0" width="430" height="150" rx="8" fill="#1e1313" stroke="#ef4444" stroke-width="1"/>
+      <text x="15" y="24" font-size="13" font-weight="bold" fill="#f87171">🛡️ Mecanismos de Seguridad y Defensa</text>
+      <text x="15" y="44" font-size="11" fill="#cbd5e1">&bull; <tspan font-weight="bold" fill="#facc15">Werkzeug Hashing:</tspan> Algoritmo Scrypt KDF + Salt Dinámico</text>
+      <text x="15" y="61" font-size="11" fill="#cbd5e1">&bull; <tspan font-weight="bold" fill="#60a5fa">Protección CSRF:</tspan> Validación estricta en POST, PUT y DELETE</text>
+      <text x="15" y="78" font-size="11" fill="#cbd5e1">&bull; <tspan font-weight="bold" fill="#34d399">Decoradores RBAC:</tspan> <tspan font-family="monospace" fill="#a78bfa">@login_required</tspan>, <tspan font-family="monospace" fill="#a78bfa">@roles_required</tspan></text>
+      <text x="15" y="95" font-size="11" fill="#cbd5e1">&bull; <tspan font-weight="bold" fill="#f87171">Reglas de Integridad:</tspan> Prohibido auto-desactivar la cuenta propia</text>
+      <text x="24" y="111" font-size="11" fill="#cbd5e1">e impedimento de desactivar al último administrador activo.</text>
+      <text x="15" y="128" font-size="11" fill="#cbd5e1">&bull; <tspan font-weight="bold" fill="#38bdf8">Cero filtraciones:</tspan> Nunca se devuelven contraseñas ni hashes</text>
+    </g>
+
+    <!-- Componente 3: Motor de Base de Datos SQLite -->
+    <g transform="translate(25, 340)">
+      <rect x="0" y="0" width="430" height="155" rx="8" fill="#13241c" stroke="#10b981" stroke-width="1.2"/>
+      <text x="15" y="24" font-size="13" font-weight="bold" fill="#34d399">🗄️ Motor SQLite &amp; Siembra Automática</text>
+      <text x="15" y="44" font-size="11" fill="#e2e8f0">&bull; Conexión por contexto de petición (<tspan font-family="monospace" fill="#facc15">g.db</tspan>) con cierre automático</text>
+      <text x="15" y="61" font-size="11" fill="#e2e8f0">&bull; <tspan font-family="monospace" fill="#38bdf8">PRAGMA foreign_keys = ON;</tspan> e integridad referencial</text>
+      <text x="15" y="78" font-size="11" fill="#e2e8f0">&bull; Consultas 100% Parametrizadas contra <tspan font-weight="bold" fill="#f87171">Inyección SQL</tspan></text>
+      <text x="15" y="95" font-size="11" fill="#e2e8f0">&bull; <tspan font-weight="bold" fill="#facc15">Auto-Seed en Render:</tspan> Detecta base vacía y siembra los 4</text>
+      <text x="24" y="112" font-size="11" fill="#e2e8f0">usuarios de prueba automáticamente con hashes seguros.</text>
+      <text x="15" y="129" font-size="11" fill="#e2e8f0">&bull; Suite de Pruebas: <tspan font-family="monospace" fill="#a78bfa">pytest</tspan> con 9/9 pruebas unitarias aprobadas</text>
+    </g>
+  </g>
+
+  <!-- ============================================================== -->
+  <!-- LINEAS CONECTORAS ENTRE CAPAS (FLUJO DE DATOS Y PETICIONES)   -->
+  <!-- ============================================================== -->
+  <!-- Cliente -> Red -->
+  <path d="M 480 395 L 535 395" fill="none" stroke="#38bdf8" stroke-width="3" marker-end="url(#arrowBlue)" stroke-dasharray="6,4"/>
+  <text x="508" y="385" font-size="10" font-weight="bold" fill="#38bdf8" text-anchor="middle">HTTPS / REST</text>
+
+  <!-- Red -> Backend -->
+  <path d="M 1000 395 L 1055 395" fill="none" stroke="#34d399" stroke-width="3" marker-end="url(#arrowGreen)" stroke-dasharray="6,4"/>
+  <text x="1028" y="385" font-size="10" font-weight="bold" fill="#34d399" text-anchor="middle">WSGI / JSON</text>
+
+  <!-- ============================================================== -->
+  <!-- SECCION INFERIOR: ROL DE LA INTELIGENCIA ARTIFICIAL (IA)       -->
+  <!-- ============================================================== -->
+  <g transform="translate(60, 700)">
+    <rect x="0" y="0" width="1480" height="250" rx="12" fill="url(#cardGrad)" stroke="#c084fc" stroke-width="1.8" filter="url(#shadow)"/>
+    
+    <path d="M 0 12 Q 0 0 12 0 L 1468 0 Q 1480 0 1480 12 L 1480 45 L 0 45 Z" fill="#1e102e"/>
+    <text x="25" y="28" font-size="15" font-weight="bold" fill="#c084fc" letter-spacing="1">4. EL ROL DE LA INTELIGENCIA ARTIFICIAL EN EL CICLO DE INGENIERÍA DE SOFTWARE</text>
+    <text x="1310" y="28" font-size="11" font-mono="true" fill="#e9d5ff">Copiloto Senior &bull; Antigravity</text>
+    <line x1="0" y1="45" x2="1480" y2="45" stroke="#3b1d5e" stroke-width="1.5"/>
+
+    <!-- Tarjeta IA 1: Arquitectura y Diseño -->
+    <g transform="translate(30, 65)">
+      <rect x="0" y="0" width="330" height="160" rx="8" fill="#140e22" stroke="#7e22ce" stroke-width="1"/>
+      <circle cx="30" cy="30" r="15" fill="#2e1065" stroke="#a855f7" stroke-width="1.5"/>
+      <text x="30" y="36" font-size="14" fill="#d8b4fe" text-anchor="middle">📐</text>
+      <text x="55" y="34" font-size="13" font-weight="bold" fill="#ffffff">Arquitectura &amp; REST</text>
+      <text x="15" y="65" font-size="11" fill="#cbd5e1">&bull; Modelado de entidades y tablas SQLite</text>
+      <text x="15" y="85" font-size="11" fill="#cbd5e1">&bull; Definición de contratos de API REST</text>
+      <text x="15" y="105" font-size="11" fill="#cbd5e1">&bull; Modularización en blueprints y decoradores</text>
+      <text x="15" y="125" font-size="11" fill="#cbd5e1">&bull; Estandarización de códigos de error HTTP</text>
+      <text x="15" y="145" font-size="11" fill="#a855f7" font-weight="bold">Fase de Diseño Conceptual</text>
+    </g>
+
+    <!-- Tarjeta IA 2: Ciberseguridad Defensiva -->
+    <g transform="translate(390, 65)">
+      <rect x="0" y="0" width="330" height="160" rx="8" fill="#140e22" stroke="#7e22ce" stroke-width="1"/>
+      <circle cx="30" cy="30" r="15" fill="#2e1065" stroke="#a855f7" stroke-width="1.5"/>
+      <text x="30" y="36" font-size="14" fill="#d8b4fe" text-anchor="middle">🛡️</text>
+      <text x="55" y="34" font-size="13" font-weight="bold" fill="#ffffff">Ciberseguridad Defensiva</text>
+      <text x="15" y="65" font-size="11" fill="#cbd5e1">&bull; Detección y mitigación OWASP Top 10</text>
+      <text x="15" y="85" font-size="11" fill="#cbd5e1">&bull; Hashing criptográfico Scrypt con Werkzeug</text>
+      <text x="15" y="105" font-size="11" fill="#cbd5e1">&bull; Implementación de tokens de doble envío CSRF</text>
+      <text x="15" y="125" font-size="11" fill="#cbd5e1">&bull; Auditoría anti auto-desactivación de administradores</text>
+      <text x="15" y="145" font-size="11" fill="#a855f7" font-weight="bold">Fase de Blindaje y Hardening</text>
+    </g>
+
+    <!-- Tarjeta IA 3: Testing Automatizado -->
+    <g transform="translate(750, 65)">
+      <rect x="0" y="0" width="330" height="160" rx="8" fill="#140e22" stroke="#7e22ce" stroke-width="1"/>
+      <circle cx="30" cy="30" r="15" fill="#2e1065" stroke="#a855f7" stroke-width="1.5"/>
+      <text x="30" y="36" font-size="14" fill="#d8b4fe" text-anchor="middle">🧪</text>
+      <text x="55" y="34" font-size="13" font-weight="bold" fill="#ffffff">Testing Automatizado (QA)</text>
+      <text x="15" y="65" font-size="11" fill="#cbd5e1">&bull; Generación de suite completa con <tspan font-family="monospace">pytest</tspan></text>
+      <text x="15" y="85" font-size="11" fill="#cbd5e1">&bull; Pruebas de borde: duplicados, inactivos, roles</text>
+      <text x="15" y="105" font-size="11" fill="#cbd5e1">&bull; Aislamiento con bases SQLite temporales</text>
+      <text x="15" y="125" font-size="11" fill="#cbd5e1">&bull; 100% de pruebas aprobadas en tiempo real</text>
+      <text x="15" y="145" font-size="11" fill="#a855f7" font-weight="bold">Fase de Verificación Continua</text>
+    </g>
+
+    <!-- Tarjeta IA 4: DevOps & Despliegue Cloud -->
+    <g transform="translate(1110, 65)">
+      <rect x="0" y="0" width="340" height="160" rx="8" fill="#140e22" stroke="#7e22ce" stroke-width="1"/>
+      <circle cx="30" cy="30" r="15" fill="#2e1065" stroke="#a855f7" stroke-width="1.5"/>
+      <text x="30" y="36" font-size="14" fill="#d8b4fe" text-anchor="middle">🚀</text>
+      <text x="55" y="34" font-size="13" font-weight="bold" fill="#ffffff">DevOps &amp; Infraestructura</text>
+      <text x="15" y="65" font-size="11" fill="#cbd5e1">&bull; Autoría de Blueprint IaC (<tspan font-family="monospace">render.yaml</tspan>)</text>
+      <text x="15" y="85" font-size="11" fill="#cbd5e1">&bull; Corrección de validaciones de sintaxis Render</text>
+      <text x="15" y="105" font-size="11" fill="#cbd5e1">&bull; Estrategia de auto-seed de base de datos</text>
+      <text x="15" y="125" font-size="11" fill="#cbd5e1">&bull; Configuración cross-site cookies SameSite=None</text>
+      <text x="15" y="145" font-size="11" fill="#a855f7" font-weight="bold">Fase de Puesta en Producción</text>
+    </g>
+  </g>
+
+  <!-- Flechas que muestran la IA asistiendo a cada capa -->
+  <path d="M 225 700 L 225 675" fill="none" stroke="#c084fc" stroke-width="2" marker-end="url(#arrowPurple)" stroke-dasharray="4,3"/>
+  <path d="M 770 700 L 770 675" fill="none" stroke="#c084fc" stroke-width="2" marker-end="url(#arrowPurple)" stroke-dasharray="4,3"/>
+  <path d="M 1300 700 L 1300 675" fill="none" stroke="#c084fc" stroke-width="2" marker-end="url(#arrowPurple)" stroke-dasharray="4,3"/>
+
+  <!-- PIE DE PAGINA CON DATOS ACADEMICOS -->
+  <text x="800" y="980" font-size="12" fill="#64748b" text-anchor="middle">
+    Universidad Mayor, Real y Pontificia de San Francisco Xavier de Chuquisaca &bull; Facultad de Tecnología &bull; Carrera de Ingeniería de Sistemas &bull; Sucre, Bolivia
+  </text>
+</svg>

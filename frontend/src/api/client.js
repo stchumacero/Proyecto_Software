@@ -114,6 +114,8 @@ export const api = {
 
   put: (url, body) => request(url, { method: 'PUT', body }),
 
+  patch: (url, body) => request(url, { method: 'PATCH', body }),
+
   delete: (url) => request(url, { method: 'DELETE' }),
 
   setCsrfToken,

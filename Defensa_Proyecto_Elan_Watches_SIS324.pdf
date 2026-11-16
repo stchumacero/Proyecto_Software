@@ -1,0 +1,4911 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+8 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R 25 0 R 27 0 R 29 0 R 31 0 R 33 0 R 35 0 R 37 0 R] /Count 15 >>
+endobj
+3 0 obj
+<< /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R /F4 7 0 R /F5 8 0 R >> /ProcSet [/PDF /Text] >>
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources 3 0 R /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 2359 >>
+stream
+
+      q
+      0.035 0.035 0.047 rg
+      0 0 612 792 re f
+      
+      <!-- Bordes de Lujo Dorados -->
+      0.773 0.627 0.349 RG 1.5 w
+      25 25 562 742 re S
+      0.588 0.470 0.235 RG 0.75 w
+      29 29 554 734 re S
+      Q
+    
+
+      q
+      0.08 0.08 0.11 rg 0.773 0.627 0.349 RG 2 w
+      306 660 38 0 360 arc B
+      0.9 0.8 0.5 rg
+      BT /F2 36 Tf 293 648 Td (E) Tj ET
+      Q
+    
+
+      q
+      0.773 0.627 0.349 rg
+      BT /F2 13 Tf 306 585 Td (UNIVERSIDAD MAYOR, REAL Y PONTIFICIA) Tj ET
+      BT /F2 12 Tf 306 568 Td (DE SAN FRANCISCO XAVIER DE CHUQUISACA) Tj ET
+      0.7 0.7 0.75 rg
+      BT /F1 10.5 Tf 306 550 Td (FACULTAD DE TECNOLOGIA  -  CARRERA DE INGENIERIA DE SISTEMAS) Tj ET
+      
+      <!-- Linea Divisoria Dorada -->
+      0.773 0.627 0.349 RG 1.5 w
+      146 532 m 466 532 l S
+
+      1 1 1 rg
+      BT /F2 22 Tf 306 485 Td (DOCUMENTO DE DEFENSA TECNICA) Tj ET
+      0.9 0.8 0.55 rg
+      BT /F2 17 Tf 306 455 Td (SUBSISTEMA DE SEGURIDAD  -  ELAN WATCHES) Tj ET
+      0.8 0.8 0.85 rg
+      BT /F3 11 Tf 306 430 Td (Arquitectura Full-Stack, Ciberseguridad Defensiva, Inteligencia Artificial e Infraestructura Cloud) Tj ET
+      Q
+    
+
+      q
+      0.06 0.06 0.08 rg 0.773 0.627 0.349 RG 1 w
+      76 190 460 190 re B
+
+      0.773 0.627 0.349 rg
+      BT /F2 11 Tf 101 350 Td (ASIGNATURA:) Tj ET
+      1 1 1 rg
+      BT /F1 11 Tf 206 350 Td (Ingenieria de Software (SIS 324)) Tj ET
+
+      0.773 0.627 0.349 rg
+      BT /F2 11 Tf 101 325 Td (DOCENTE:) Tj ET
+      1 1 1 rg
+      BT /F1 11 Tf 206 325 Td (Ing. Ramiro Alberto Duran Quiroga) Tj ET
+
+      0.773 0.627 0.349 rg
+      BT /F2 11 Tf 101 300 Td (GRUPO:) Tj ET
+      1 1 1 rg
+      BT /F2 11 Tf 206 300 Td (Grupo 22) Tj ET
+
+      0.773 0.627 0.349 rg
+      BT /F2 11 Tf 101 270 Td (UNIVERSITARIOS:) Tj ET
+      1 1 1 rg
+      BT /F1 10.5 Tf 206 270 Td (Chumacero Steffany) Tj ET
+      BT /F1 10.5 Tf 206 252 Td (Anagua Munoz Jhaqueline) Tj ET
+      BT /F1 10.5 Tf 206 234 Td (Monasterios Rojas Erland Mauricio) Tj ET
+
+      0.773 0.627 0.349 rg
+      BT /F2 11 Tf 101 208 Td (FECHA & LUGAR:) Tj ET
+      0.85 0.85 0.9 rg
+      BT /F1 10 Tf 206 208 Td (Noviembre 2026  -  Sucre, Bolivia) Tj ET
+      Q
+    
+
+      q
+      0.5 0.5 0.55 rg
+      BT /F1 9 Tf 306 45 Td (Proyecto desarrollado para evaluacion del perfil de egreso en Ingenieria de Sistemas) Tj ET
+      Q
+    
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources 3 0 R /Contents 12 0 R >>
+endobj
+12 0 obj
+<< /Length 9286 >>
+stream
+
+      q
+      0.773 0.627 0.349 rg
+      BT /F2 8.5 Tf 46 760 Td (ELAN WATCHES  |  SUBSISTEMA DE SEGURIDAD  -  INGENIERIA DE SOFTWARE (SIS 324)) Tj ET
+      0.5 0.5 0.5 rg
+      BT /F1 8.5 Tf 491 760 Td (GRUPO 22) Tj ET
+      0.8 0.8 0.85 RG 0.5 w
+      46 754 m 566 754 l S
+      Q
+    
+
+      q
+      0.1 0.1 0.13 rg
+      BT /F2 18 Tf 46 737 Td (1. RESUMEN EJECUTIVO & VISION DEL PROYECTO) Tj ET
+      0.773 0.627 0.349 RG 2 w
+      46 731 m 106 731 l S
+      0.8 0.8 0.85 RG 0.5 w
+      106 731 m 566 731 l S
+      Q
+    
+
+        q
+        0.45 0.45 0.5 rg
+        BT /F3 9.5 Tf 46 715 Td (Marco conceptual, objetivos y alcance del subsistema de seguridad) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 691 Td (El proyecto Élan Watches constituye una plataforma de comercio electrónico de alta gama) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 677.5 Td (inspirada en los estándares de la alta relojería suiza. Para la presente entrega académica) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 664 Td (de Ingeniería de Software \(SIS 324\), el alcance se concentra rigurosamente en el diseño,) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 650.5 Td (desarrollo, blindaje y despliegue del Subsistema de Seguridad y Gestión de Acceso.) Tj ET
+        Q
+      
+
+      q
+      0.773 0.627 0.349 rg
+      46 630 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 632 Td (1.1. Objetivos del Prototipo) Tj ET
+      Q
+    
+
+          q
+          0.773 0.627 0.349 rg
+          49 612.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 610 Td (Autenticación Defensiva: Implementar un mecanismo de autenticación robusto basado en) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 597 Td (sesiones seguras del lado del servidor \(cookies HttpOnly\) con protección anti-CSRF y) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 584 Td (almacenamiento criptográfico no reversible.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 570.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 568 Td (Administración RBAC: Desarrollar el ciclo de vida completo \(CRUD\) de usuarios con) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 555 Td (validación simétrica en cliente y servidor, asegurando unicidad de cuentas y roles) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 542 Td (estrictamente autorizados.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 528.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 526 Td (Experiencia de Lujo: Garantizar una experiencia de usuario moderna, sobria y) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 513 Td (sofisticada para el e-commerce de relojes, con conmutación fluida entre la tienda) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 500 Td (pública y el portal de seguridad.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 486.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 484 Td (Adopción de IA: Demostrar el uso sistemático de la Inteligencia Artificial como) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 471 Td (copiloto de ingeniería de software en arquitectura, refactorización, ciberseguridad) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 458 Td (y testing automatizado.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 444.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 442 Td (Despliegue Cloud: Poner en producción el sistema sobre una infraestructura cloud) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 429 Td (desacoplada \(Render Cloud\) con despliegue automatizado reproducible mediante) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 416 Td (Infraestructura como Código.) Tj ET
+          Q
+        
+
+      q
+      0.773 0.627 0.349 rg
+      46 398 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 400 Td (1.2. Estructura del Documento para la Defensa) Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 378 Td (El presente informe técnico ha sido estructurado en base a los cuatro pilares fundamentales) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 364.5 Td (exigidos por la cátedra para la defensa técnica del proyecto:) Tj ET
+        Q
+      
+
+      q
+      0.12 0.13 0.17 rg
+      46 328 520 18 re f
+      0.773 0.627 0.349 RG 1 w
+      46 328 520 18 re S
+      Q
+    
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 52 333.5 Td (Pilar Evaluado) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 172 333.5 Td (Componentes Analizados en este Informe) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 482 333.5 Td (Ubicación) Tj ET
+        Q
+      
+
+        q
+        0.98 0.98 0.99 rg
+        46 310 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 310 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 315 Td (1. Interfaz de Usuario) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 172 315 Td (React 18 + Vite, Landing de Lujo, Catálogo HD, Modal CRUD, Responsive) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 482 315 Td (Sección 2 \(Pág. 3-4\)) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 292 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 292 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 297 Td (2. Backend & Seguridad) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 172 297 Td (Python + Flask, Werkzeug Scrypt, Cookies SameSite=None, Pytest 9/9) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 482 297 Td (Sección 3 \(Pág. 5-7\)) Tj ET
+          Q
+        
+
+        q
+        0.98 0.98 0.99 rg
+        46 274 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 274 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 279 Td (3. Uso de la IA) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 172 279 Td (Copiloto de arquitectura, análisis OWASP, testing y depuración cloud) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 482 279 Td (Sección 4 \(Pág. 8-9\)) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 256 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 256 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 261 Td (4. Infraestructura Cloud) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 172 261 Td (Render Static Site + Web Service, SQLite transaccional, render.yaml) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 482 261 Td (Sección 5 \(Pág. 10-11\)) Tj ET
+          Q
+        
+
+        q
+        0.98 0.98 0.99 rg
+        46 238 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 238 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 243 Td (5. Guía de Defensa) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 172 243 Td (Simulación de preguntas docentes, respuestas técnicas y mapa conceptual) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 482 243 Td (Sección 6-7 \(Pág. 12-14\)) Tj ET
+          Q
+        
+
+      q
+      0.98 0.97 0.93 rg 0.773 0.627 0.349 RG 1 w
+      46 142.5 520 69.5 re B
+      0.773 0.627 0.349 rg
+      46 142.5 4 69.5 re f
+      
+      0.588 0.47 0.235 rg
+      BT /F2 9.5 Tf 60 196 Td (PUNTO CLAVE PARA LA DEFENSA:) Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 182 Td (La plataforma no es un prototipo estático: cuenta con 4 usuarios activos persistidos en) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 169.5 Td (base de datos, credenciales de administrador precargadas en el formulario para revisión) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 157 Td (instantánea del docente, y una suite automatizada de 9 pruebas unitarias aprobadas.) Tj ET
+        Q
+      
+
+          q
+          0.8 0.8 0.85 RG 0.5 w
+          46 36 m 566 36 l S
+          0.45 0.45 0.5 rg
+          BT /F1 8 Tf 46 24 Td (SISTEMA ELAN WATCHES - DEFENSA DE GRUPO 22) Tj ET
+          BT /F2 8 Tf 486 24 Td (Pagina 2 de 15) Tj ET
+          Q
+        
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources 3 0 R /Contents 14 0 R >>
+endobj
+14 0 obj
+<< /Length 7422 >>
+stream
+
+      q
+      0.773 0.627 0.349 rg
+      BT /F2 8.5 Tf 46 760 Td (ELAN WATCHES  |  SUBSISTEMA DE SEGURIDAD  -  INGENIERIA DE SOFTWARE (SIS 324)) Tj ET
+      0.5 0.5 0.5 rg
+      BT /F1 8.5 Tf 491 760 Td (GRUPO 22) Tj ET
+      0.8 0.8 0.85 RG 0.5 w
+      46 754 m 566 754 l S
+      Q
+    
+
+      q
+      0.1 0.1 0.13 rg
+      BT /F2 18 Tf 46 737 Td (2. INTERFAZ DE LA APLICACION \(FRONTEND & UX/UI\)) Tj ET
+      0.773 0.627 0.349 RG 2 w
+      46 731 m 106 731 l S
+      0.8 0.8 0.85 RG 0.5 w
+      106 731 m 566 731 l S
+      Q
+    
+
+        q
+        0.45 0.45 0.5 rg
+        BT /F3 9.5 Tf 46 715 Td (Diseño de alta gama, arquitectura de componentes React y experiencia interactiva) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 691 Td (La interfaz fue concebida bajo la dirección de arte "Haute Horlogerie Suisse", utilizando) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 677.5 Td (una paleta sobria dominada por tonos obsidiana profunda \(#08080A\), pizarra oscura \(#121217\)) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 664 Td (y acentos en oro noble \(#C5A059 / #E6CA85\). El diseño prioriza la legibilidad, la jerarquía) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 650.5 Td (visual y la ergonomía tanto en dispositivos móviles como en pantallas de escritorio.) Tj ET
+        Q
+      
+
+      q
+      0.773 0.627 0.349 rg
+      46 630 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 632 Td (2.1. Arquitectura de Componentes en React 18) Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 610 Td (El frontend está construido sobre Vite 5 con módulos ECMAScript puros y renderizado reactivo) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 596.5 Td (sin dependencias pesadas:) Tj ET
+        Q
+      
+
+          q
+          0.773 0.627 0.349 rg
+          49 580.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 578 Td (LandingPageView.jsx: Componente que encapsula la tienda pública, el catálogo curado) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 565 Td (de 6 relojes con fotografías en alta resolución, la sección de manufactura) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 552 Td (ginebrina, la filosofía del atelier, el concierge y el carrito interactivo.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 538.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 536 Td (LoginView.jsx: Pantalla de acceso al subsistema de seguridad con validación de) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 523 Td (formularios en tiempo real, mensajes contextuales de error, selector de roles de) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 510 Td (prueba y credenciales del administrador principal precargadas.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 496.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 494 Td (AdminDashboard.jsx: Panel de control para administradores que renderiza la tabla de) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 481 Td (usuarios, buscador, filtros por rol y estado, y modales de creación, edición y) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 468 Td (confirmación de desactivación.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 454.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 452 Td (WarehouseView & ClientView: Vistas adaptadas a los roles no autorizados para el) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 439 Td (CRUD, demostrando el control de acceso en frontend y backend.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 425.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 423 Td (Navbar.jsx: Barra de navegación dinámica con selector de pestañas \(incluyendo) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 410 Td (retorno a la tienda pública\) y botón de cierre de sesión seguro.) Tj ET
+          Q
+        
+
+      q
+      0.773 0.627 0.349 rg
+      46 392 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 394 Td (2.2. Flujo de Navegación y Conmutación de Vistas) Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 372 Td (El estado global de la aplicación gestiona tres modos principales de navegación:) Tj ET
+        Q
+      
+
+          q
+          0.773 0.627 0.349 rg
+          49 356 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 353.5 Td (1. Modo Tienda Pública \(landing\): El visitante explora el catálogo, consulta) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 340.5 Td (especificaciones en modales interactivos y agrega piezas a su bolsa.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 327 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 324.5 Td (2. Modo Ingreso Privado \(login\): Al presionar el botón "Acceso Privado", el sistema) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 311.5 Td (transiciona limpiamente a la pantalla de autenticación con credenciales listas para) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 298.5 Td (evaluación.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 285 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 282.5 Td (3. Modo Autenticado \(dashboard\): Tras validar la sesión contra la API REST, el) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 269.5 Td (sistema conmuta automáticamente al panel correspondiente al rol del usuario) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 256.5 Td (autenticado.) Tj ET
+          Q
+        
+
+      q
+      0.95 0.98 1 rg 0.22 0.74 0.97 RG 1 w
+      46 171 520 69.5 re B
+      0.22 0.74 0.97 rg
+      46 171 4 69.5 re f
+      
+      0.05 0.45 0.75 rg
+      BT /F2 9.5 Tf 60 224.5 Td (FACILIDAD DE EVALUACION DOCENTE:) Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 210.5 Td (Para agilizar la revisión del docente, la pantalla de login incluye botones de acceso) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 198 Td (rápido que precargan las credenciales de los roles del sistema \(Administrador Principal,) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 185.5 Td (Almacén y Cliente\), permitiendo probar la conmutación de permisos con un solo clic.) Tj ET
+        Q
+      
+
+          q
+          0.8 0.8 0.85 RG 0.5 w
+          46 36 m 566 36 l S
+          0.45 0.45 0.5 rg
+          BT /F1 8 Tf 46 24 Td (SISTEMA ELAN WATCHES - DEFENSA DE GRUPO 22) Tj ET
+          BT /F2 8 Tf 486 24 Td (Pagina 3 de 15) Tj ET
+          Q
+        
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources 3 0 R /Contents 16 0 R >>
+endobj
+16 0 obj
+<< /Length 9616 >>
+stream
+
+      q
+      0.773 0.627 0.349 rg
+      BT /F2 8.5 Tf 46 760 Td (ELAN WATCHES  |  SUBSISTEMA DE SEGURIDAD  -  INGENIERIA DE SOFTWARE (SIS 324)) Tj ET
+      0.5 0.5 0.5 rg
+      BT /F1 8.5 Tf 491 760 Td (GRUPO 22) Tj ET
+      0.8 0.8 0.85 RG 0.5 w
+      46 754 m 566 754 l S
+      Q
+    
+
+      q
+      0.1 0.1 0.13 rg
+      BT /F2 18 Tf 46 737 Td (2.3. Catálogo de Productos y Módulo CRUD Administrativo) Tj ET
+      0.773 0.627 0.349 RG 2 w
+      46 731 m 106 731 l S
+      0.8 0.8 0.85 RG 0.5 w
+      106 731 m 566 731 l S
+      Q
+    
+
+        q
+        0.45 0.45 0.5 rg
+        BT /F3 9.5 Tf 46 715 Td (Detalle de funcionalidades interactivas de la interfaz) Tj ET
+        Q
+      
+
+      q
+      0.773 0.627 0.349 rg
+      46 689 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 691 Td (Catálogo de Relojes con Especificaciones Técnicas) Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 669 Td (El catálogo incluye 6 modelos icónicos con imágenes de alta definición y ficha técnica) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 655.5 Td (completa:) Tj ET
+        Q
+      
+
+      q
+      0.12 0.13 0.17 rg
+      46 619 520 18 re f
+      0.773 0.627 0.349 RG 1 w
+      46 619 520 18 re S
+      Q
+    
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 52 624.5 Td (Modelo) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 172 624.5 Td (Colección) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 282 624.5 Td (Precio USD) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 352 624.5 Td (Stock) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 402 624.5 Td (Movimiento & Material) Tj ET
+        Q
+      
+
+        q
+        0.98 0.98 0.99 rg
+        46 601 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 601 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 606 Td (Élan Royal Noir) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 172 606 Td (Ediciones Especiales) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 282 606 Td ($7,450) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 352 606 Td (7 uds.) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 402 606 Td (Titanio Grado 5 DLC, Calibre Élan 8100) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 583 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 583 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 588 Td (Heritage Chronometer) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 172 588 Td (Clásicos & Tradición) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 282 588 Td ($5,200) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 352 588 Td (12 uds.) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 402 588 Td (Acero 316L pulido, Calibre COSC 1936) Tj ET
+          Q
+        
+
+        q
+        0.98 0.98 0.99 rg
+        46 565 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 565 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 570 Td (Vanguard Diver 300) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 172 570 Td (Deportivos & Diver) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 282 570 Td ($4,850) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 352 570 Td (9 uds.) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 402 570 Td (Acero 904L, 300m hermético, Válvula Helio) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 547 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 547 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 552 Td (Master Tourbillon) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 172 552 Td (Ediciones Especiales) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 282 552 Td ($13,900) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 352 552 Td (3 uds.) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 402 552 Td (Oro Blanco 18K, Tourbillon Volante 60s) Tj ET
+          Q
+        
+
+        q
+        0.98 0.98 0.99 rg
+        46 529 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 529 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 534 Td (Grand Astral Chrono) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 172 534 Td (Deportivos & Diver) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 282 534 Td ($6,100) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 352 534 Td (14 uds.) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 402 534 Td (Cronógrafo Flyback, Bisel Cerámico Azul) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 511 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 511 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 516 Td (Élan Imperial Aureum) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 172 516 Td (Clásicos & Tradición) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 282 516 Td ($11,500) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 352 516 Td (5 uds.) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 402 516 Td (Oro Amarillo 18K macizo, Ultra-Slim) Tj ET
+          Q
+        
+
+      q
+      0.773 0.627 0.349 rg
+      46 483 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 485 Td (Operaciones del Módulo Administrativo de Usuarios) Tj ET
+      Q
+    
+
+          q
+          0.773 0.627 0.349 rg
+          49 465.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 463 Td (1. Crear Usuario: Formulario reactivo con campos: Nombre Completo, Correo) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 450 Td (Electrónico, Rol y Contraseña \(con confirmación obligatoria de 8+ caracteres\).) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 437 Td (Impide registros con correos duplicados mediante validación asíncrona.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 423.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 421 Td (2. Listar Usuarios: Tabla interactiva con badges de estado \(ACTIVO en esmeralda,) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 408 Td (INACTIVO en ámbar\) y roles codificados por color. Incluye ordenamiento y filtrado) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 395 Td (por nombre o correo.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 381.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 379 Td (3. Editar Usuario: Permite modificar el nombre, rol y estado. Protege los campos) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 366 Td (críticos para que un administrador no se desactive accidentalmente.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 352.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 350 Td (4. Desactivación Lógica: Acción modal que solicita confirmación explícita antes de) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 337 Td (conmutar el estado a INACTIVO. El backend rechaza si se intenta desactivar al último) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 324 Td (admin activo.) Tj ET
+          Q
+        
+
+      q
+      0.94 0.99 0.96 rg 0.06 0.72 0.5 RG 1 w
+      46 238.5 520 69.5 re B
+      0.06 0.72 0.5 rg
+      46 238.5 4 69.5 re f
+      
+      0.02 0.5 0.32 rg
+      BT /F2 9.5 Tf 60 292 Td (PROTECCION EN INTERFAZ:) Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 278 Td (El frontend oculta los botones de eliminación o desactivación para el usuario) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 265.5 Td (actualmente autenticado, pero el control real e inquebrantable se ejecuta en el backend) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 253 Td (mediante decoradores y validaciones SQL.) Tj ET
+        Q
+      
+
+          q
+          0.8 0.8 0.85 RG 0.5 w
+          46 36 m 566 36 l S
+          0.45 0.45 0.5 rg
+          BT /F1 8 Tf 46 24 Td (SISTEMA ELAN WATCHES - DEFENSA DE GRUPO 22) Tj ET
+          BT /F2 8 Tf 486 24 Td (Pagina 4 de 15) Tj ET
+          Q
+        
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources 3 0 R /Contents 18 0 R >>
+endobj
+18 0 obj
+<< /Length 10869 >>
+stream
+
+      q
+      0.773 0.627 0.349 rg
+      BT /F2 8.5 Tf 46 760 Td (ELAN WATCHES  |  SUBSISTEMA DE SEGURIDAD  -  INGENIERIA DE SOFTWARE (SIS 324)) Tj ET
+      0.5 0.5 0.5 rg
+      BT /F1 8.5 Tf 491 760 Td (GRUPO 22) Tj ET
+      0.8 0.8 0.85 RG 0.5 w
+      46 754 m 566 754 l S
+      Q
+    
+
+      q
+      0.1 0.1 0.13 rg
+      BT /F2 18 Tf 46 737 Td (3. BACKEND Y LOGICA DE NEGOCIO \(API REST\)) Tj ET
+      0.773 0.627 0.349 RG 2 w
+      46 731 m 106 731 l S
+      0.8 0.8 0.85 RG 0.5 w
+      106 731 m 566 731 l S
+      Q
+    
+
+        q
+        0.45 0.45 0.5 rg
+        BT /F3 9.5 Tf 46 715 Td (Diseño modular en Python con Flask, control de sesiones y estándares HTTP) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 691 Td (El backend está diseñado siguiendo el patrón de Factoría de Aplicación \(Application Factory) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 677.5 Td (Pattern\) en Python 3. Cada módulo tiene una responsabilidad única bien delimitada,) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 664 Td (facilitando el mantenimiento, las pruebas unitarias y el escalamiento.) Tj ET
+        Q
+      
+
+      q
+      0.773 0.627 0.349 rg
+      46 643.5 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 645.5 Td (3.1. Estructura Modular del Backend) Tj ET
+      Q
+    
+
+          q
+          0.773 0.627 0.349 rg
+          49 626 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 623.5 Td (app.py: Inicializa Flask, carga la configuración de entorno, registra blueprints,) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 610.5 Td (configura CORS con soporte de credenciales y define manejadores globales de error) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 597.5 Td (\(404, 500\) que devuelven JSON uniforme.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 584 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 581.5 Td (config.py: Encapsula parámetros críticos: SECRET_KEY, DATABASE_PATH, FRONTEND_URL,) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 568.5 Td (cookies SameSite y Secure, lifetimes de sesión y constantes de negocio.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 555 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 552.5 Td (database.py: Administrador de ciclo de vida de SQLite. Usa el contexto de petición) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 539.5 Td (de Flask \(g.db\), habilita claves foráneas y ejecuta la siembra automática al) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 526.5 Td (detectar una base vacía.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 513 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 510.5 Td (models.py: Capa de abstracción de datos para la entidad User. Contiene métodos) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 497.5 Td (parametrizados: get_by_id, get_by_email, create, update, deactivate y) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 484.5 Td (count_active_admins.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 471 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 468.5 Td (auth_routes.py: Blueprint de autenticación con endpoints /api/auth/login,) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 455.5 Td (/api/auth/logout y /api/auth/me.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 442 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 439.5 Td (user_routes.py: Blueprint administrativo protegido con el ciclo CRUD completo de) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 426.5 Td (usuarios sobre /api/users.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 413 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 410.5 Td (decorators.py: Decoradores @login_required y @roles_required para intercepción y) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 397.5 Td (autorización granular de peticiones.) Tj ET
+          Q
+        
+
+      q
+      0.773 0.627 0.349 rg
+      46 379.5 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 381.5 Td (3.2. Catálogo de Endpoints RESTful) Tj ET
+      Q
+    
+
+      q
+      0.12 0.13 0.17 rg
+      46 341.5 520 18 re f
+      0.773 0.627 0.349 RG 1 w
+      46 341.5 520 18 re S
+      Q
+    
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 52 347 Td (Método) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 107 347 Td (Ruta del Endpoint) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 247 347 Td (Permisos Requeridos) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 362 347 Td (Códigos HTTP Retornados) Tj ET
+        Q
+      
+
+        q
+        0.98 0.98 0.99 rg
+        46 323.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 323.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 328.5 Td (POST) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 107 328.5 Td (/api/auth/login) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 247 328.5 Td (Público) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 362 328.5 Td (200 \(OK\), 400 \(Bad Request\), 401 \(Creds\), 403 \(Inactivo\)) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 305.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 305.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 310.5 Td (POST) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 107 310.5 Td (/api/auth/logout) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 247 310.5 Td (Sesión Activa) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 362 310.5 Td (200 \(OK\), 401 \(No autenticado\)) Tj ET
+          Q
+        
+
+        q
+        0.98 0.98 0.99 rg
+        46 287.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 287.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 292.5 Td (GET) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 107 292.5 Td (/api/auth/me) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 247 292.5 Td (Sesión Activa) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 362 292.5 Td (200 \(OK con datos de usuario\), 401 \(No autenticado\)) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 269.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 269.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 274.5 Td (GET) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 107 274.5 Td (/api/users) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 247 274.5 Td (ADMINISTRADOR) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 362 274.5 Td (200 \(Lista JSON sin hashes\), 401 \(Auth\), 403 \(Rol\)) Tj ET
+          Q
+        
+
+        q
+        0.98 0.98 0.99 rg
+        46 251.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 251.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 256.5 Td (POST) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 107 256.5 Td (/api/users) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 247 256.5 Td (ADMINISTRADOR) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 362 256.5 Td (201 \(Creado\), 400 \(Validación\), 409 \(Correo Duplicado\)) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 233.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 233.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 238.5 Td (GET) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 107 238.5 Td (/api/users/<id>) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 247 238.5 Td (ADMINISTRADOR) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 362 238.5 Td (200 \(Detalle\), 404 \(No existe\), 401/403) Tj ET
+          Q
+        
+
+        q
+        0.98 0.98 0.99 rg
+        46 215.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 215.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 220.5 Td (PUT) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 107 220.5 Td (/api/users/<id>) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 247 220.5 Td (ADMINISTRADOR) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 362 220.5 Td (200 \(Actualizado\), 400 \(Datos\), 409 \(Email en uso\)) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 197.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 197.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 202.5 Td (DELETE) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 107 202.5 Td (/api/users/<id>) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 247 202.5 Td (ADMINISTRADOR) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 362 202.5 Td (200 \(Desactivación lógica\), 400 \(Último admin / Mismo\)) Tj ET
+          Q
+        
+
+          q
+          0.8 0.8 0.85 RG 0.5 w
+          46 36 m 566 36 l S
+          0.45 0.45 0.5 rg
+          BT /F1 8 Tf 46 24 Td (SISTEMA ELAN WATCHES - DEFENSA DE GRUPO 22) Tj ET
+          BT /F2 8 Tf 486 24 Td (Pagina 5 de 15) Tj ET
+          Q
+        
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources 3 0 R /Contents 20 0 R >>
+endobj
+20 0 obj
+<< /Length 7860 >>
+stream
+
+      q
+      0.773 0.627 0.349 rg
+      BT /F2 8.5 Tf 46 760 Td (ELAN WATCHES  |  SUBSISTEMA DE SEGURIDAD  -  INGENIERIA DE SOFTWARE (SIS 324)) Tj ET
+      0.5 0.5 0.5 rg
+      BT /F1 8.5 Tf 491 760 Td (GRUPO 22) Tj ET
+      0.8 0.8 0.85 RG 0.5 w
+      46 754 m 566 754 l S
+      Q
+    
+
+      q
+      0.1 0.1 0.13 rg
+      BT /F2 18 Tf 46 737 Td (3.3. Mecanismos de Ciberseguridad Defensiva) Tj ET
+      0.773 0.627 0.349 RG 2 w
+      46 731 m 106 731 l S
+      0.8 0.8 0.85 RG 0.5 w
+      106 731 m 566 731 l S
+      Q
+    
+
+        q
+        0.45 0.45 0.5 rg
+        BT /F3 9.5 Tf 46 715 Td (Protección contra las principales amenazas del OWASP Top 10) Tj ET
+        Q
+      
+
+      q
+      0.773 0.627 0.349 rg
+      46 689 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 691 Td (1. Almacenamiento Criptográfico de Contraseñas \(Werkzeug\)) Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 669 Td (Las contraseñas jamás se almacenan ni transmiten en texto plano. Se utiliza la función) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 655.5 Td (generate_password_hash de Werkzeug basada en el algoritmo Scrypt \(o PBKDF2-HMAC-SHA256 con) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 642 Td (salt dinámico de 16 bytes\). Esto protege la base de datos contra ataques de tablas arcoíris) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 628.5 Td (\(rainbow tables\) y fuerza bruta acelerada por GPU.) Tj ET
+        Q
+      
+
+      q
+      0.773 0.627 0.349 rg
+      46 608 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 610 Td (2. Sesiones Seguras con Cookies HttpOnly) Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 588 Td (En lugar de almacenar tokens de acceso en el localStorage del navegador \(vulnerable a robo) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 574.5 Td (mediante ataques Cross-Site Scripting - XSS\), el sistema utiliza cookies de sesión firmadas) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 561 Td (criptográficamente por Flask con la bandera HttpOnly activada. Esto impide que cualquier) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 547.5 Td (script malicioso pueda leer la cookie.) Tj ET
+        Q
+      
+
+      q
+      0.773 0.627 0.349 rg
+      46 527 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 529 Td (3. Protección Integral contra CSRF \(Cross-Site Request Forgery\)) Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 507 Td (Para neutralizar solicitudes falsificadas entre sitios, se implementó el patrón de doble) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 493.5 Td (envío de token:) Tj ET
+        Q
+      
+
+          q
+          0.773 0.627 0.349 rg
+          49 477.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 475 Td (Generación Criptográfica: Al iniciar sesión exitosamente, el servidor genera un) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 462 Td (token pseudoaleatorio criptoseguro y lo envía en el cuerpo de la respuesta y en el) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 449 Td (encabezado X-CSRF-Token.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 435.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 433 Td (Inyección Automática: El cliente HTTP del frontend almacena este token en memoria) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 420 Td (volátil y lo adjunta automáticamente en cada petición mutable \(POST, PUT, DELETE\).) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 406.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 404 Td (Validación en Backend: El backend valida que el token recibido coincida con el) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 391 Td (almacenado en la sesión activa del usuario antes de ejecutar cualquier mutación en) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 378 Td (la base de datos.) Tj ET
+          Q
+        
+
+      q
+      0.773 0.627 0.349 rg
+      46 360 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 362 Td (4. Prevención de Inyección SQL mediante Consultas Parametrizadas) Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 340 Td (Todas las interacciones con la base de datos SQLite se realizan mediante marcadores de) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 326.5 Td (posición posicionales \(?\). Los datos ingresados por el usuario jamás se concatenan en) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 313 Td (cadenas SQL:) Tj ET
+        Q
+      
+
+      q
+      0.08 0.08 0.10 rg 0.25 0.25 0.3 RG 1 w
+      46 221 520 73.5 re B
+      Q
+    
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 278.5 Td (# Ejemplo de consulta parametrizada en models.py \(Previene SQL Injection\)) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 267 Td (cursor = db.execute\() Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 255.5 Td (    "SELECT id, full_name, email, role, status FROM users WHERE email = LOWER\(?\)",) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 244 Td (    \(email.strip\(\).lower\(\),\)) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 232.5 Td (\)) Tj ET
+        Q
+      
+
+      q
+      0.773 0.627 0.349 rg
+      46 209 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 211 Td (5. Reglas de Integridad del Negocio) Tj ET
+      Q
+    
+
+          q
+          0.773 0.627 0.349 rg
+          49 191.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 189 Td (Regla Anti Auto-Bloqueo: Un administrador no puede auto-desactivarse ni degradar su) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 176 Td (propio rol, previniendo bloqueos involuntarios.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 162.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 160 Td (Regla del Último Administrador: El sistema cuenta con la función) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 147 Td (count_active_admins\(\). Si solo queda un administrador activo en el sistema, la API) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 134 Td (rechaza cualquier intento de desactivación lógica con código HTTP 400.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 120.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 118 Td (Bloqueo de Cuentas Inactivas: Si una cuenta está en estado INACTIVO, el endpoint) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 105 Td (/api/auth/login deniega el acceso de inmediato con código HTTP 403 y un mensaje) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 92 Td (claro.) Tj ET
+          Q
+        
+
+          q
+          0.8 0.8 0.85 RG 0.5 w
+          46 36 m 566 36 l S
+          0.45 0.45 0.5 rg
+          BT /F1 8 Tf 46 24 Td (SISTEMA ELAN WATCHES - DEFENSA DE GRUPO 22) Tj ET
+          BT /F2 8 Tf 486 24 Td (Pagina 6 de 15) Tj ET
+          Q
+        
+endstream
+endobj
+21 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources 3 0 R /Contents 22 0 R >>
+endobj
+22 0 obj
+<< /Length 10692 >>
+stream
+
+      q
+      0.773 0.627 0.349 rg
+      BT /F2 8.5 Tf 46 760 Td (ELAN WATCHES  |  SUBSISTEMA DE SEGURIDAD  -  INGENIERIA DE SOFTWARE (SIS 324)) Tj ET
+      0.5 0.5 0.5 rg
+      BT /F1 8.5 Tf 491 760 Td (GRUPO 22) Tj ET
+      0.8 0.8 0.85 RG 0.5 w
+      46 754 m 566 754 l S
+      Q
+    
+
+      q
+      0.1 0.1 0.13 rg
+      BT /F2 18 Tf 46 737 Td (3.4. Suite de Pruebas Automatizadas \(Pytest\)) Tj ET
+      0.773 0.627 0.349 RG 2 w
+      46 731 m 106 731 l S
+      0.8 0.8 0.85 RG 0.5 w
+      106 731 m 566 731 l S
+      Q
+    
+
+        q
+        0.45 0.45 0.5 rg
+        BT /F3 9.5 Tf 46 715 Td (Validación de criterios de aceptación y robustez del subsistema) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 691 Td (El proyecto incluye una suite de pruebas automatizadas con pytest ubicada en) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 677.5 Td (backend/tests/test_security_api.py. Las pruebas utilizan fixtures de bases de datos) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 664 Td (temporales aisladas para no interferir con los datos de producción:) Tj ET
+        Q
+      
+
+      q
+      0.12 0.13 0.17 rg
+      46 627.5 520 18 re f
+      0.773 0.627 0.349 RG 1 w
+      46 627.5 520 18 re S
+      Q
+    
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 52 633 Td (Caso de Prueba Automatizado) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 227 633 Td (Condición Verificada) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 492 633 Td (Resultado) Tj ET
+        Q
+      
+
+        q
+        0.98 0.98 0.99 rg
+        46 609.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 609.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 614.5 Td (test_login_success_and_csrf_issued) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 227 614.5 Td (Login válido retorna usuario sin password_hash y emite CSRF) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 492 614.5 Td (PASSED \(100%\)) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 591.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 591.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 596.5 Td (test_login_invalid_password) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 227 596.5 Td (Contraseña incorrecta es rechazada con código HTTP 401) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 492 596.5 Td (PASSED \(100%\)) Tj ET
+          Q
+        
+
+        q
+        0.98 0.98 0.99 rg
+        46 573.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 573.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 578.5 Td (test_login_inactive_user_rejected) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 227 578.5 Td (Usuario inactivo es bloqueado con código HTTP 403 Forbidden) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 492 578.5 Td (PASSED \(100%\)) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 555.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 555.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 560.5 Td (test_non_admin_cannot_access_crud) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 227 560.5 Td (Usuario con rol ALMACEN o CLIENTE recibe 403 en /api/users) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 492 560.5 Td (PASSED \(100%\)) Tj ET
+          Q
+        
+
+        q
+        0.98 0.98 0.99 rg
+        46 537.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 537.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 542.5 Td (test_unauthenticated_cannot_access) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 227 542.5 Td (Peticiones sin cookie de sesión reciben 401 Unauthorized) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 492 542.5 Td (PASSED \(100%\)) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 519.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 519.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 524.5 Td (test_admin_crud_lifecycle) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 227 524.5 Td (Creación, consulta, edición y listado por un Administrador) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 492 524.5 Td (PASSED \(100%\)) Tj ET
+          Q
+        
+
+        q
+        0.98 0.98 0.99 rg
+        46 501.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 501.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 506.5 Td (test_duplicate_email_prevented) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 227 506.5 Td (Intento de crear usuario con correo duplicado retorna 409) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 492 506.5 Td (PASSED \(100%\)) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 483.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 483.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 488.5 Td (test_prevent_admin_self_deactivation) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 227 488.5 Td (Administrador que intenta desactivarse a sí mismo recibe 400) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 492 488.5 Td (PASSED \(100%\)) Tj ET
+          Q
+        
+
+        q
+        0.98 0.98 0.99 rg
+        46 465.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 465.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 470.5 Td (test_prevent_last_admin_deactivation) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 227 470.5 Td (Impedir desactivar al único administrador activo del sistema) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 492 470.5 Td (PASSED \(100%\)) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 447.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 447.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 452.5 Td (test_get_products_list_and_stock) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 227 452.5 Td (Catálogo público con stock real desde SQLite \(/api/products\)) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 492 452.5 Td (PASSED \(100%\)) Tj ET
+          Q
+        
+
+        q
+        0.98 0.98 0.99 rg
+        46 429.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 429.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 434.5 Td (test_checkout_with_qr_and_stock_decrement) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 227 434.5 Td (Cobro QR exitoso y descuento atómico transaccional de stock) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 492 434.5 Td (PASSED \(100%\)) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 411.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 411.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 416.5 Td (test_checkout_insufficient_stock_fails) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 227 416.5 Td (Rechazo HTTP 409 Conflict si la compra excede el stock disponible) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 492 416.5 Td (PASSED \(100%\)) Tj ET
+          Q
+        
+
+        q
+        0.98 0.98 0.99 rg
+        46 393.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 393.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 398.5 Td (test_almacen_workflow_preparation_packaging) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 227 398.5 Td (Flujo completo Almacén: Pagado -> Preparación -> Precinto -> Despacho) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 492 398.5 Td (PASSED \(100%\)) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 375.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 375.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 380.5 Td (test_public_tracking_endpoint) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 227 380.5 Td (Endpoint de rastreo público con precinto suizo \(/api/orders/tracking\)) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 492 380.5 Td (PASSED \(100%\)) Tj ET
+          Q
+        
+
+      q
+      0.94 0.99 0.96 rg 0.06 0.72 0.5 RG 1 w
+      46 280 520 69.5 re B
+      0.06 0.72 0.5 rg
+      46 280 4 69.5 re f
+      
+      0.02 0.5 0.32 rg
+      BT /F2 9.5 Tf 60 333.5 Td (RESULTADO DE EJECUCION DE LA SUITE:) Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 319.5 Td (La suite completa ejecuta 14 pruebas unitarias y de integración \(9 de seguridad y 5 de) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 307 Td (inventario/logística\) aprobadas al 100%, verificando matemáticamente todos los) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 294.5 Td (requisitos exigidos por el docente evaluador.) Tj ET
+        Q
+      
+
+          q
+          0.8 0.8 0.85 RG 0.5 w
+          46 36 m 566 36 l S
+          0.45 0.45 0.5 rg
+          BT /F1 8 Tf 46 24 Td (SISTEMA ELAN WATCHES - DEFENSA DE GRUPO 22) Tj ET
+          BT /F2 8 Tf 486 24 Td (Pagina 7 de 15) Tj ET
+          Q
+        
+endstream
+endobj
+23 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources 3 0 R /Contents 24 0 R >>
+endobj
+24 0 obj
+<< /Length 8508 >>
+stream
+
+      q
+      0.773 0.627 0.349 rg
+      BT /F2 8.5 Tf 46 760 Td (ELAN WATCHES  |  SUBSISTEMA DE SEGURIDAD  -  INGENIERIA DE SOFTWARE (SIS 324)) Tj ET
+      0.5 0.5 0.5 rg
+      BT /F1 8.5 Tf 491 760 Td (GRUPO 22) Tj ET
+      0.8 0.8 0.85 RG 0.5 w
+      46 754 m 566 754 l S
+      Q
+    
+
+      q
+      0.1 0.1 0.13 rg
+      BT /F2 18 Tf 46 737 Td (4. EL ROL DE LA INTELIGENCIA ARTIFICIAL EN EL PROYECTO) Tj ET
+      0.773 0.627 0.349 RG 2 w
+      46 731 m 106 731 l S
+      0.8 0.8 0.85 RG 0.5 w
+      106 731 m 566 731 l S
+      Q
+    
+
+        q
+        0.45 0.45 0.5 rg
+        BT /F3 9.5 Tf 46 715 Td (Metodología de ingeniería asistida por IA, sinergia humana y aseguramiento de calidad) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 691 Td (En este proyecto, la Inteligencia Artificial \(a través del ecosistema Antigravity y modelos) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 677.5 Td (LLM avanzados\) no se utilizó como un generador ciego de código, sino como un Copiloto Senior) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 664 Td (de Ingeniería de Software, interviniendo en las decisiones de diseño, auditoría defensiva y) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 650.5 Td (optimización.) Tj ET
+        Q
+      
+
+      q
+      0.773 0.627 0.349 rg
+      46 630 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 632 Td (4.1. Fases del Desarrollo donde Intervino la IA) Tj ET
+      Q
+    
+
+          q
+          0.773 0.627 0.349 rg
+          49 612.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 610 Td (1. Concepción y Diseño Arquitectónico: La IA colaboró en la definición del contrato) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 597 Td (de la API REST, estructuración de esquemas de base de datos relacional y selección) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 584 Td (de patrones de software limpios \(Factory Pattern, Blueprints, Decoradores\).) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 570.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 568 Td (2. Codificación Asistida & Refactorización: Generación de código estructurado) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 555 Td (siguiendo principios SOLID, DRY y Clean Code, asegurando separación de capas entre) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 542 Td (controladores \(rutas\), lógica de dominio \(modelos\) y presentación \(React\).) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 528.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 526 Td (3. Auditoría de Ciberseguridad \(Hardening\): La IA actuó como analista de seguridad) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 513 Td (ofensiva y defensiva, identificando vectores de ataque \(XSS, CSRF, SQL Injection,) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 500 Td (Enumeración de usuarios\) y proponiendo salvaguardas robustas como cookies HttpOnly) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 487 Td (con SameSite=None y validación criptográfica de tokens.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 473.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 471 Td (4. Aseguramiento de Calidad \(QA\): Diseño y generación de casos de prueba exhaustivos) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 458 Td (para pytest, cubriendo caminos felices y escenarios de falla crítica \(edge cases) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 445 Td (como la desactivación del último administrador activo\).) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 431.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 429 Td (5. Automatización DevOps & Cloud: Detección y solución de discrepancias de) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 416 Td (despliegue en la nube de Render \(sintaxis de render.yaml para Static Sites,) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 403 Td (expresiones regulares para CORS en subdominios dinámicos y siembra automática de) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 390 Td (base de datos\).) Tj ET
+          Q
+        
+
+      q
+      0.773 0.627 0.349 rg
+      46 372 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 374 Td (4.2. Matriz de Prompts de Ingeniería Utilizados) Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 352 Td (A continuación se documentan los patrones de prompts de ingeniería aplicados durante el) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 338.5 Td (ciclo de vida del software:) Tj ET
+        Q
+      
+
+      q
+      0.12 0.13 0.17 rg
+      46 302 520 18 re f
+      0.773 0.627 0.349 RG 1 w
+      46 302 520 18 re S
+      Q
+    
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 52 307.5 Td (Etapa del Proyecto) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 162 307.5 Td (Objetivo del Prompt de Ingeniería) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 392 307.5 Td (Resultado Obtenido) Tj ET
+        Q
+      
+
+        q
+        0.98 0.98 0.99 rg
+        46 284 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 284 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 289 Td (Arquitectura REST) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 162 289 Td (Diseñar especificación modular Flask con Factory Pattern y Blueprints) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 392 289 Td (Estructura modular limpia en app.py, models.py y routes.py) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 266 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 266 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 271 Td (Ciberseguridad) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 162 271 Td (Blindar sesiones contra CSRF y robo XSS en comunicación cross-origin) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 392 271 Td (Cookies SameSite=None, Secure=True y tokens X-CSRF-Token) Tj ET
+          Q
+        
+
+        q
+        0.98 0.98 0.99 rg
+        46 248 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 248 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 253 Td (Testing QA) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 162 253 Td (Crear suite de pruebas automatizadas con fixtures temporales en SQLite) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 392 253 Td (test_security_api.py con 9 pruebas de cobertura integral) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 230 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 230 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 235 Td (DevOps Render) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 162 235 Td (Depurar render.yaml para arquitectura desacoplada Frontend + Backend) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 392 235 Td (Configuración IaC lista para despliegue automatizado en 1 clic) Tj ET
+          Q
+        
+
+          q
+          0.8 0.8 0.85 RG 0.5 w
+          46 36 m 566 36 l S
+          0.45 0.45 0.5 rg
+          BT /F1 8 Tf 46 24 Td (SISTEMA ELAN WATCHES - DEFENSA DE GRUPO 22) Tj ET
+          BT /F2 8 Tf 486 24 Td (Pagina 8 de 15) Tj ET
+          Q
+        
+endstream
+endobj
+25 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources 3 0 R /Contents 26 0 R >>
+endobj
+26 0 obj
+<< /Length 5259 >>
+stream
+
+      q
+      0.773 0.627 0.349 rg
+      BT /F2 8.5 Tf 46 760 Td (ELAN WATCHES  |  SUBSISTEMA DE SEGURIDAD  -  INGENIERIA DE SOFTWARE (SIS 324)) Tj ET
+      0.5 0.5 0.5 rg
+      BT /F1 8.5 Tf 491 760 Td (GRUPO 22) Tj ET
+      0.8 0.8 0.85 RG 0.5 w
+      46 754 m 566 754 l S
+      Q
+    
+
+      q
+      0.1 0.1 0.13 rg
+      BT /F2 18 Tf 46 737 Td (4.3. Reflexión Crítica y Validación Humana sobre la IA) Tj ET
+      0.773 0.627 0.349 RG 2 w
+      46 731 m 106 731 l S
+      0.8 0.8 0.85 RG 0.5 w
+      106 731 m 566 731 l S
+      Q
+    
+
+        q
+        0.45 0.45 0.5 rg
+        BT /F3 9.5 Tf 46 715 Td (El papel del ingeniero como auditor y validador de las soluciones generadas) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 691 Td (El uso de la Inteligencia Artificial en el desarrollo de software moderno incrementa) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 677.5 Td (exponencialmente la productividad, pero introduce la necesidad imperativa de un criterio) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 664 Td (técnico riguroso por parte de los desarrolladores humanos.) Tj ET
+        Q
+      
+
+      q
+      0.773 0.627 0.349 rg
+      46 643.5 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 645.5 Td (Lecciones Aprendidas sobre el Uso de IA en Ingeniería) Tj ET
+      Q
+    
+
+          q
+          0.773 0.627 0.349 rg
+          49 626 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 623.5 Td (1. Validación Técnica y Evitación de Alucinaciones: El código generado por IA debe) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 610.5 Td (ser sometido a revisión minuciosa. Durante el proyecto, la IA propuso inicialmente) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 597.5 Td (configuraciones de Blueprint que contenían referencias no soportadas por la API de) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 584.5 Td (Render \(como "property: url" en fromService\). El análisis del equipo y la consulta a) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 571.5 Td (la documentación oficial permitieron corregir la sintaxis de render.yaml con) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 558.5 Td (precisión.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 545 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 542.5 Td (2. Ingeniería de Prompts como Habilidad Clave: La IA sobresale cuando se le provee) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 529.5 Td (un contexto detallado y restricciones explícitas \(por ejemplo: "no uses librerías) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 516.5 Td (pesadas, usa Werkzeug Scrypt, mantén los 4 usuarios intactos en SQLite"\). El éxito) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 503.5 Td (del desarrollo dependió de la calidad de las especificaciones entregadas.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 490 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 487.5 Td (3. Foco en la Lógica de Negocio y Seguridad: La IA aceleró tareas mecánicas) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 474.5 Td (\(escritura de boilerplate, creación de fixtures de prueba, configuración de CSS de) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 461.5 Td (lujo\), permitiendo al equipo concentrarse en la lógica de negocio de alta relojería) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 448.5 Td (y la seguridad integral del subsistema.) Tj ET
+          Q
+        
+
+      q
+      0.98 0.97 0.93 rg 0.773 0.627 0.349 RG 1 w
+      46 350.5 520 82 re B
+      0.773 0.627 0.349 rg
+      46 350.5 4 82 re f
+      
+      0.588 0.47 0.235 rg
+      BT /F2 9.5 Tf 60 416.5 Td (CONCLUSION ACADEMICA SOBRE LA IA:) Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 402.5 Td (La Inteligencia Artificial no sustituye al ingeniero de software; amplifica sus) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 390 Td (capacidades. El rol del futuro ingeniero de sistemas evoluciona de ser un simple) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 377.5 Td (redactor de líneas de código a un arquitecto, auditor de seguridad y director de) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 365 Td (orquestación de sistemas inteligentes.) Tj ET
+        Q
+      
+
+          q
+          0.8 0.8 0.85 RG 0.5 w
+          46 36 m 566 36 l S
+          0.45 0.45 0.5 rg
+          BT /F1 8 Tf 46 24 Td (SISTEMA ELAN WATCHES - DEFENSA DE GRUPO 22) Tj ET
+          BT /F2 8 Tf 486 24 Td (Pagina 9 de 15) Tj ET
+          Q
+        
+endstream
+endobj
+27 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources 3 0 R /Contents 28 0 R >>
+endobj
+28 0 obj
+<< /Length 6927 >>
+stream
+
+      q
+      0.773 0.627 0.349 rg
+      BT /F2 8.5 Tf 46 760 Td (ELAN WATCHES  |  SUBSISTEMA DE SEGURIDAD  -  INGENIERIA DE SOFTWARE (SIS 324)) Tj ET
+      0.5 0.5 0.5 rg
+      BT /F1 8.5 Tf 491 760 Td (GRUPO 22) Tj ET
+      0.8 0.8 0.85 RG 0.5 w
+      46 754 m 566 754 l S
+      Q
+    
+
+      q
+      0.1 0.1 0.13 rg
+      BT /F2 18 Tf 46 737 Td (5. INFRAESTRUCTURA DE DESPLIEGUE EN LA NUBE \(RENDER\)) Tj ET
+      0.773 0.627 0.349 RG 2 w
+      46 731 m 106 731 l S
+      0.8 0.8 0.85 RG 0.5 w
+      106 731 m 566 731 l S
+      Q
+    
+
+        q
+        0.45 0.45 0.5 rg
+        BT /F3 9.5 Tf 46 715 Td (Topología desacoplada, alta disponibilidad, sincronización de red y base de datos) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 691 Td (Para la puesta en producción del prototipo, se seleccionó la plataforma Render Cloud) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 677.5 Td (\(render.com\) debido a su robustez, soporte nativo de microservicios desacoplados y) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 664 Td (capacidades de Infraestructura como Código \(IaC\).) Tj ET
+        Q
+      
+
+      q
+      0.773 0.627 0.349 rg
+      46 643.5 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 645.5 Td (5.1. Topología de Infraestructura Desacoplada) Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 623.5 Td (El sistema no se ejecuta como un monolito empaquetado, sino como dos servicios) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 610 Td (independientes interconectados por HTTPS seguro:) Tj ET
+        Q
+      
+
+          q
+          0.773 0.627 0.349 rg
+          49 594 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 591.5 Td (Servicio 1: Frontend Static Site: Compilado mediante Vite \(npm run build\) y) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 578.5 Td (distribuido en la red CDN global de Render. Cuenta con reglas de reescritura SPA) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 565.5 Td (para redirigir cualquier ruta al index.html sin errores 404 de navegación.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 552 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 549.5 Td (Servicio 2: Backend Web Service: Contenedor Linux administrado con runtime Python) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 536.5 Td (3.11. El servidor WSGI de producción Gunicorn \(gunicorn app:app\) procesa las) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 523.5 Td (solicitudes entrantes concurrentes con balanceo de workers.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 510 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 507.5 Td (Servicio 3: Base de Datos SQLite: Motor de base de datos relacional embebido en el) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 494.5 Td (filesystem del backend. Al ser un archivo local, ofrece tiempos de lectura/escritura) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 481.5 Td (de microsegundos y transaccionalidad ACID absoluta.) Tj ET
+          Q
+        
+
+      q
+      0.773 0.627 0.349 rg
+      46 463.5 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 465.5 Td (5.2. Desafíos de Red y Soluciones Implementadas) Tj ET
+      Q
+    
+
+      q
+      0.12 0.13 0.17 rg
+      46 425.5 520 18 re f
+      0.773 0.627 0.349 RG 1 w
+      46 425.5 520 18 re S
+      Q
+    
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 52 431 Td (Desafío de Red en la Nube) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 182 431 Td (Causa Técnica) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 342 431 Td (Solución de Ingeniería Aplicada) Tj ET
+        Q
+      
+
+        q
+        0.98 0.98 0.99 rg
+        46 407.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 407.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 412.5 Td (Pérdida de Sesión Cross-Site) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 182 412.5 Td (Frontend y Backend corren en subdominios distintos de *.onrender.com) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 342 412.5 Td (Cookies con SameSite=None y Secure=True automáticas al detectar RENDER=true) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 389.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 389.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 394.5 Td (Bloqueo de CORS Dinámico) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 182 394.5 Td (Render asigna nombres de subdominio variables a cada servicio) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 342 394.5 Td (Regex CORS: re.compile\(r"^https://.*\\.onrender\\.com$"\) en app.py) Tj ET
+          Q
+        
+
+        q
+        0.98 0.98 0.99 rg
+        46 371.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 371.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 376.5 Td (Base de Datos Vacía en Nube) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 182 376.5 Td (El archivo .db se ignora en Git por seguridad y buenas prácticas) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 342 376.5 Td (Función seed_initial_users\(\) en database.py si count\(*\) == 0) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 353.5 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 353.5 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 358.5 Td (Caída de SPA en Recarga) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 182 358.5 Td (Rutas de React causan 404 en servidores estáticos tradicionales) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 342 358.5 Td (Regla de reescritura /* -> /index.html en la configuración de Render) Tj ET
+          Q
+        
+
+          q
+          0.8 0.8 0.85 RG 0.5 w
+          46 36 m 566 36 l S
+          0.45 0.45 0.5 rg
+          BT /F1 8 Tf 46 24 Td (SISTEMA ELAN WATCHES - DEFENSA DE GRUPO 22) Tj ET
+          BT /F2 8 Tf 486 24 Td (Pagina 10 de 15) Tj ET
+          Q
+        
+endstream
+endobj
+29 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources 3 0 R /Contents 30 0 R >>
+endobj
+30 0 obj
+<< /Length 6438 >>
+stream
+
+      q
+      0.773 0.627 0.349 rg
+      BT /F2 8.5 Tf 46 760 Td (ELAN WATCHES  |  SUBSISTEMA DE SEGURIDAD  -  INGENIERIA DE SOFTWARE (SIS 324)) Tj ET
+      0.5 0.5 0.5 rg
+      BT /F1 8.5 Tf 491 760 Td (GRUPO 22) Tj ET
+      0.8 0.8 0.85 RG 0.5 w
+      46 754 m 566 754 l S
+      Q
+    
+
+      q
+      0.1 0.1 0.13 rg
+      BT /F2 18 Tf 46 737 Td (5.3. Infraestructura como Código \(render.yaml\)) Tj ET
+      0.773 0.627 0.349 RG 2 w
+      46 731 m 106 731 l S
+      0.8 0.8 0.85 RG 0.5 w
+      106 731 m 566 731 l S
+      Q
+    
+
+        q
+        0.45 0.45 0.5 rg
+        BT /F3 9.5 Tf 46 715 Td (Especificación declarativa para despliegue automatizado y reproducible) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 691 Td (El archivo render.yaml ubicado en la raíz del repositorio define de manera determinista toda) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 677.5 Td (la topología cloud necesaria para clonar y levantar el proyecto completo en cualquier cuenta) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 664 Td (de Render:) Tj ET
+        Q
+      
+
+      q
+      0.08 0.08 0.10 rg 0.25 0.25 0.3 RG 1 w
+      46 227 520 418.5 re B
+      Q
+    
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 629.5 Td (services:) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 618 Td (  # 1. SERVICIO BACKEND FLASK / PYTHON) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 606.5 Td (  - type: web) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 595 Td (    name: elan-watches-backend) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 583.5 Td (    runtime: python) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 572 Td (    plan: free) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 560.5 Td (    rootDir: backend) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 549 Td (    buildCommand: pip install -r requirements.txt) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 537.5 Td (    startCommand: gunicorn app:app) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 526 Td (    envVars:) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 514.5 Td (      - key: PYTHON_VERSION) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 503 Td (        value: 3.11.9) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 491.5 Td (      - key: SECRET_KEY) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 480 Td (        generateValue: true) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 468.5 Td (      - key: FRONTEND_URL) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 457 Td (        value: https://elan-watches-frontend.onrender.com) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 445.5 Td (      - key: SESSION_COOKIE_SAMESITE) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 434 Td (        value: None) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 422.5 Td (      - key: SESSION_COOKIE_SECURE) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 411 Td (        value: "True") Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 399.5 Td (  # 2. SERVICIO FRONTEND REACT / VITE) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 388 Td (  - type: web) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 376.5 Td (    name: elan-watches-frontend) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 365 Td (    runtime: static) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 353.5 Td (    plan: free) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 342 Td (    rootDir: frontend) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 330.5 Td (    buildCommand: npm install && npm run build) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 319 Td (    staticPublishPath: ./dist) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 307.5 Td (    routes:) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 296 Td (      - type: rewrite) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 284.5 Td (        source: /*) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 273 Td (        destination: /index.html) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 261.5 Td (    envVars:) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 250 Td (      - key: VITE_API_URL) Tj ET
+        Q
+      
+
+        q
+        0.9 0.92 0.95 rg
+        BT /F4 8 Tf 54 238.5 Td (        value: https://elan-watches-backend.onrender.com) Tj ET
+        Q
+      
+
+      q
+      0.98 0.97 0.93 rg 0.773 0.627 0.349 RG 1 w
+      46 147.5 520 69.5 re B
+      0.773 0.627 0.349 rg
+      46 147.5 4 69.5 re f
+      
+      0.588 0.47 0.235 rg
+      BT /F2 9.5 Tf 60 201 Td (BENEFICIO DE LA INFRAESTRUCTURA COMO CODIGO:) Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 187 Td (Gracias a este archivo, cualquier evaluador o miembro del equipo puede desplegar la) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 174.5 Td (arquitectura completa en Render sin necesidad de configurar manualmente variables o) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 162 Td (comandos desde el panel web.) Tj ET
+        Q
+      
+
+          q
+          0.8 0.8 0.85 RG 0.5 w
+          46 36 m 566 36 l S
+          0.45 0.45 0.5 rg
+          BT /F1 8 Tf 46 24 Td (SISTEMA ELAN WATCHES - DEFENSA DE GRUPO 22) Tj ET
+          BT /F2 8 Tf 486 24 Td (Pagina 11 de 15) Tj ET
+          Q
+        
+endstream
+endobj
+31 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources 3 0 R /Contents 32 0 R >>
+endobj
+32 0 obj
+<< /Length 6074 >>
+stream
+
+      q
+      0.773 0.627 0.349 rg
+      BT /F2 8.5 Tf 46 760 Td (ELAN WATCHES  |  SUBSISTEMA DE SEGURIDAD  -  INGENIERIA DE SOFTWARE (SIS 324)) Tj ET
+      0.5 0.5 0.5 rg
+      BT /F1 8.5 Tf 491 760 Td (GRUPO 22) Tj ET
+      0.8 0.8 0.85 RG 0.5 w
+      46 754 m 566 754 l S
+      Q
+    
+
+      q
+      0.1 0.1 0.13 rg
+      BT /F2 18 Tf 46 737 Td (6. GUIA ESTRATEGICA PARA LA DEFENSA TECNICA) Tj ET
+      0.773 0.627 0.349 RG 2 w
+      46 731 m 106 731 l S
+      0.8 0.8 0.85 RG 0.5 w
+      106 731 m 566 731 l S
+      Q
+    
+
+        q
+        0.45 0.45 0.5 rg
+        BT /F3 9.5 Tf 46 715 Td (Preguntas probables del docente, respuestas con fundamento y guion de demostración) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 691 Td (Esta sección proporciona las respuestas técnicas y los fundamentos de software necesarios) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 677.5 Td (para responder con solvencia ante las consultas habituales del docente examinador \(Ing.) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 664 Td (Ramiro Alberto Duran Quiroga\):) Tj ET
+        Q
+      
+
+      q
+      0.773 0.627 0.349 rg
+      46 643.5 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 645.5 Td (Pregunta 1: "¿Por qué no usan JWT en localStorage en lugar de Cookies HttpOnly?") Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 623.5 Td (Respuesta del equipo: "Almacenar JWTs en localStorage expone al usuario a ataques de robo de) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 610 Td (sesión mediante Cross-Site Scripting \(XSS\), ya que cualquier script inyectado en el cliente) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 596.5 Td (puede leer el token. Nuestra arquitectura utiliza cookies HttpOnly con SameSite=None y) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 583 Td (Secure=True junto con tokens CSRF en memoria; de este modo, JavaScript no tiene acceso) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 569.5 Td (directo a la cookie de sesión, cerrando la puerta a ataques de exfiltración de) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 556 Td (credenciales.") Tj ET
+        Q
+      
+
+      q
+      0.773 0.627 0.349 rg
+      46 535.5 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 537.5 Td (Pregunta 2: "¿Cómo evitan que dos administradores desactiven al mismo tiempo al último admin?") Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 515.5 Td (Respuesta del equipo: "El control se aplica a nivel transaccional en el backend dentro de) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 502 Td (models.py y database.py. Antes de ejecutar la desactivación lógica \(UPDATE users SET status) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 488.5 Td (= 'INACTIVO'\), se consulta COUNT\(*\) con filtro status = 'ACTIVO' AND role = 'ADMINISTRADOR'.) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 475 Td (Si el resultado es menor o igual a 1, la base de datos aborta la operación y la API devuelve) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 461.5 Td (un código HTTP 400 Bad Request con mensaje explicativo.") Tj ET
+        Q
+      
+
+      q
+      0.773 0.627 0.349 rg
+      46 441 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 443 Td (Pregunta 3: "¿Por qué eligieron SQLite para un e-commerce en lugar de PostgreSQL o MySQL?") Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 421 Td (Respuesta del equipo: "Para el alcance actual del Subsistema de Seguridad, SQLite es idóneo) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 407.5 Td (al ser un motor embebido de cero configuración con cumplimiento total de propiedades ACID y) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 394 Td (transacciones atómicas. En nuestra arquitectura modular, la capa de acceso a datos está) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 380.5 Td (desacoplada en models.py, por lo que migrar a PostgreSQL en fases futuras de alto tráfico) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 367 Td (requiere únicamente cambiar la cadena de conexión sin reescribir la lógica de negocio.") Tj ET
+        Q
+      
+
+      q
+      0.773 0.627 0.349 rg
+      46 346.5 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 348.5 Td (Pregunta 4: "¿Qué sucede si el frontend intenta enviar una contraseña en texto plano para crear un usuario?") Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 326.5 Td (Respuesta del equipo: "El backend no confía en el frontend. En user_routes.py y models.py se) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 313 Td (valida la longitud mínima de 8 caracteres y la presencia de caracteres válidos.) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 299.5 Td (Inmediatamente después, se aplica generate_password_hash\(\) de Werkzeug mediante Scrypt,) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 286 Td (insertando únicamente el hash criptográfico en la base de datos. Ninguna contraseña en texto) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 272.5 Td (plano se persiste jamás.") Tj ET
+        Q
+      
+
+          q
+          0.8 0.8 0.85 RG 0.5 w
+          46 36 m 566 36 l S
+          0.45 0.45 0.5 rg
+          BT /F1 8 Tf 46 24 Td (SISTEMA ELAN WATCHES - DEFENSA DE GRUPO 22) Tj ET
+          BT /F2 8 Tf 486 24 Td (Pagina 12 de 15) Tj ET
+          Q
+        
+endstream
+endobj
+33 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources 3 0 R /Contents 34 0 R >>
+endobj
+34 0 obj
+<< /Length 10341 >>
+stream
+
+      q
+      0.773 0.627 0.349 rg
+      BT /F2 8.5 Tf 46 760 Td (ELAN WATCHES  |  SUBSISTEMA DE SEGURIDAD  -  INGENIERIA DE SOFTWARE (SIS 324)) Tj ET
+      0.5 0.5 0.5 rg
+      BT /F1 8.5 Tf 491 760 Td (GRUPO 22) Tj ET
+      0.8 0.8 0.85 RG 0.5 w
+      46 754 m 566 754 l S
+      Q
+    
+
+      q
+      0.1 0.1 0.13 rg
+      BT /F2 18 Tf 46 737 Td (6.2. Guion para la Demostración en Vivo \(Paso a Paso\)) Tj ET
+      0.773 0.627 0.349 RG 2 w
+      46 731 m 106 731 l S
+      0.8 0.8 0.85 RG 0.5 w
+      106 731 m 566 731 l S
+      Q
+    
+
+        q
+        0.45 0.45 0.5 rg
+        BT /F3 9.5 Tf 46 715 Td (Secuencia recomendada para exponer ante el tribunal evaluador) Tj ET
+        Q
+      
+
+      q
+      0.773 0.627 0.349 rg
+      46 689 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 691 Td (Secuencia de Demostración Recomendada \(5 a 7 Minutos\)) Tj ET
+      Q
+    
+
+          q
+          0.773 0.627 0.349 rg
+          49 671.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 669 Td (Paso 1: Presentación de la Tienda de Lujo: Mostrar la Landing Page pública de Élan) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 656 Td (Watches, resaltar la estética suiza, filtrar colecciones por categoría, abrir un) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 643 Td (modal de reloj y añadir una pieza a la bolsa de compras simulada.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 629.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 627 Td (Paso 2: Conmutación a Acceso Privado: Hacer clic en el botón dorado "Acceso Privado") Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 614 Td (en la cabecera. Explicar cómo el frontend conmuta de forma reactiva al módulo de) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 601 Td (autenticación del subsistema.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 587.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 585 Td (Paso 3: Login del Administrador Principal: Demostrar que las credenciales del) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 572 Td (Administrador Principal están listas. Iniciar sesión y acceder al panel de) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 559 Td (administración.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 545.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 543 Td (Paso 4: Demostración del CRUD de Usuarios: Crear un nuevo usuario con rol ALMACEN.) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 530 Td (Mostrar que aparece inmediatamente en la tabla. Editar su nombre. Intentar crear un) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 517 Td (usuario con el mismo correo para demostrar que el sistema lo rechaza.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 503.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 501 Td (Paso 5: Pruebas de Ciberseguridad y Reglas: Intentar desactivar al propio) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 488 Td (Administrador Principal autenticado \(demostrar que está protegido\). Desactivar al) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 475 Td (usuario nuevo y verificar que su estado cambia a INACTIVO con badge ámbar.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 461.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 459 Td (Paso 6: Validación de Cuentas Inactivas: Cerrar sesión e intentar ingresar con la) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 446 Td (cuenta recién desactivada \(demostrar que es bloqueada con mensaje 403\). Ingresar con) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 433 Td (el usuario de almacén para mostrar su panel diferenciado.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 419.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 417 Td (Paso 7: Conclusión con el Mapa Conceptual: Presentar el archivo) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 404 Td (mapa_infraestructura.svg explicando el flujo de datos entre la CDN de Render, el) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 391 Td (backend Python, los tokens CSRF y SQLite.) Tj ET
+          Q
+        
+
+      q
+      0.773 0.627 0.349 rg
+      46 373 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 375 Td (Matriz de Cuentas de Prueba Pre-Sembradas en Base de Datos) Tj ET
+      Q
+    
+
+      q
+      0.12 0.13 0.17 rg
+      46 335 520 18 re f
+      0.773 0.627 0.349 RG 1 w
+      46 335 520 18 re S
+      Q
+    
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 52 340.5 Td (ID) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 72 340.5 Td (Nombre de Usuario) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 187 340.5 Td (Correo Electrónico) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 327 340.5 Td (Contraseña) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 422 340.5 Td (Rol) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 517 340.5 Td (Estado) Tj ET
+        Q
+      
+
+        q
+        0.98 0.98 0.99 rg
+        46 317 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 317 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 322 Td (1) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 72 322 Td (Administrador Principal) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 187 322 Td (admin@elanwatches.com) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 327 322 Td (AdminPass2026!) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 422 322 Td (ADMINISTRADOR) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 517 322 Td (ACTIVO) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 299 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 299 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 304 Td (2) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 72 304 Td (Gerard Perregaux) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 187 304 Td (gerard@elanwatches.com) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 327 304 Td (AlmacenPass2026!) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 422 304 Td (ALMACEN) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 517 304 Td (INACTIVO) Tj ET
+          Q
+        
+
+        q
+        0.98 0.98 0.99 rg
+        46 281 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 281 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 286 Td (3) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 72 286 Td (Administrador Steffany) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 187 286 Td (tif.prom.2019@gmail.com) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 327 286 Td (AdminPass2026!) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 422 286 Td (ADMINISTRADOR) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 517 286 Td (ACTIVO) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 263 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 263 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 268 Td (4) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 72 268 Td (Juan Perez) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 187 268 Td (juanperes@gmail.com) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 327 268 Td (12345678) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 422 268 Td (CLIENTE) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 517 268 Td (ACTIVO) Tj ET
+          Q
+        
+
+        q
+        0.98 0.98 0.99 rg
+        46 245 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 245 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 250 Td (5) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 72 250 Td (Operador de Almacen) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 187 250 Td (almacen@elanwatches.com) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 327 250 Td (AlmacenPass2026!) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 422 250 Td (ALMACEN) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 517 250 Td (ACTIVO) Tj ET
+          Q
+        
+
+          q
+          0.8 0.8 0.85 RG 0.5 w
+          46 36 m 566 36 l S
+          0.45 0.45 0.5 rg
+          BT /F1 8 Tf 46 24 Td (SISTEMA ELAN WATCHES - DEFENSA DE GRUPO 22) Tj ET
+          BT /F2 8 Tf 486 24 Td (Pagina 13 de 15) Tj ET
+          Q
+        
+endstream
+endobj
+35 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources 3 0 R /Contents 36 0 R >>
+endobj
+36 0 obj
+<< /Length 9138 >>
+stream
+
+      q
+      0.773 0.627 0.349 rg
+      BT /F2 8.5 Tf 46 760 Td (ELAN WATCHES  |  SUBSISTEMA DE SEGURIDAD  -  INGENIERIA DE SOFTWARE (SIS 324)) Tj ET
+      0.5 0.5 0.5 rg
+      BT /F1 8.5 Tf 491 760 Td (GRUPO 22) Tj ET
+      0.8 0.8 0.85 RG 0.5 w
+      46 754 m 566 754 l S
+      Q
+    
+
+      q
+      0.1 0.1 0.13 rg
+      BT /F2 18 Tf 46 737 Td (7. ATENCION A OBSERVACIONES Y CRITERIOS DE EVALUACION) Tj ET
+      0.773 0.627 0.349 RG 2 w
+      46 731 m 106 731 l S
+      0.8 0.8 0.85 RG 0.5 w
+      106 731 m 566 731 l S
+      Q
+    
+
+        q
+        0.45 0.45 0.5 rg
+        BT /F3 9.5 Tf 46 715 Td (Cumplimiento exhaustivo de la rubrica docente y requisitos complementarios) Tj ET
+        Q
+      
+
+      q
+      0.773 0.627 0.349 rg
+      46 689 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 691 Td (7.1. Matriz de Cumplimiento de Criterios de Calificación) Tj ET
+      Q
+    
+
+      q
+      0.12 0.13 0.17 rg
+      46 651 520 18 re f
+      0.773 0.627 0.349 RG 1 w
+      46 651 520 18 re S
+      Q
+    
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 52 656.5 Td (Criterio de Evaluación) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 152 656.5 Td (Puntaje) Tj ET
+        Q
+      
+
+        q
+        0.95 0.85 0.6 rg
+        BT /F2 8.5 Tf 207 656.5 Td (Justificación y Evidencia en el Proyecto Élan Watches) Tj ET
+        Q
+      
+
+        q
+        0.98 0.98 0.99 rg
+        46 633 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 633 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 638 Td (Impacto) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 152 638 Td (20 / 20) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 207 638 Td (Solución de punta a punta: desde la compra pública con pasarelas hasta la trazabilidad física de empaque y entrega con precintos de seguridad suizos.) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 615 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 615 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 620 Td (Creatividad) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 152 620 Td (20 / 20) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 207 620 Td (Pasarela interactiva con QR dinámico y temporizador, integración REST con PayPal, sellado holográfico suizo \(PREC-2026-CH...\) y diseño Haute Horlogerie.) Tj ET
+          Q
+        
+
+        q
+        0.98 0.98 0.99 rg
+        46 597 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 597 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 602 Td (Validez) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 152 602 Td (20 / 20) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 207 602 Td (Suite de 14 pruebas automatizadas con pytest \(100% aprobadas\), transacciones ACID en SQLite para descuento atómico de stock, y blindaje OWASP Top 10.) Tj ET
+          Q
+        
+
+        q
+        0.94 0.94 0.96 rg
+        46 579 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 579 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 584 Td (Relevancia) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 152 584 Td (20 / 20) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 207 584 Td (Atención directa a las 5 observaciones del docente \(control de stock, QR, PayPal, empaque por rol ALMACEN y seguimiento de entrega\) y Visión Grupo 22.) Tj ET
+          Q
+        
+
+        q
+        0.98 0.98 0.99 rg
+        46 561 520 18 re f
+        0.85 0.85 0.9 RG 0.5 w
+        46 561 520 18 re S
+        Q
+      
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 52 566 Td (Presentación) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 152 566 Td (10 / 10) Tj ET
+          Q
+        
+
+          q
+          0.15 0.15 0.2 rg
+          BT /F1 8.2 Tf 207 566 Td (Interfaz reactiva impecable, credenciales precargadas para evaluación docente inmediata, mapa conceptual vectorial SVG y manual técnico exhaustivo.) Tj ET
+          Q
+        
+
+      q
+      0.773 0.627 0.349 rg
+      46 533 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 535 Td (7.2. Implementación de las 5 Observaciones Requeridas por la Cátedra) Tj ET
+      Q
+    
+
+          q
+          0.773 0.627 0.349 rg
+          49 515.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 513 Td (1. Control de Cantidad Disponible \(Stock\): El backend valida en cada compra que) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 500 Td (stock >= cantidad. Si no hay existencias, rechaza con HTTP 409 Conflict. Si la) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 487 Td (compra es válida, descuenta atómicamente el stock en SQLite. El frontend muestra) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 474 Td (badges visuales \("AGOTADO", "¡Últimas X piezas!", "X disponibles"\) y deshabilita la) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 461 Td (compra de piezas sin stock.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 447.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 445 Td (2. Cobro con QR y Depósito Bancario: Pasarela interactiva en LandingPageView con) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 432 Td (código QR vectorial de alta resolución, cálculo automático en Bolivianos \(Bs. 6.96\)) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 419 Td (y USD, temporizador de expiración de 15 min, y formulario para registro de) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 406 Td (comprobantes de depósito en Banco Nacional de Bolivia \(BNB\) y UBS Suiza.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 392.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 390 Td (3. Cobro con PayPal usando sus APIs: Integración mediante endpoints REST) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 377 Td (/api/payments/paypal/create-order y /api/payments/paypal/capture-order. El frontend) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 364 Td (cuenta con el botón oficial PayPal Gold y simula la captura con generación de) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 351 Td (Transaction ID oficial \(PAYID-...\).) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 337.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 335 Td (4. Preparación y Empaque por Roles \(ALMACÉN\): El operador con rol ALMACEN) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 322 Td (\(almacen@elanwatches.com\) gestiona la mesa de preparación. Un pedido pagado pasa a) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 309 Td (EN_PREPARACION, se valida la lista de inspección de calidad \(COSC, estuche de nogal\)) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 296 Td (y se emite un precinto suizo holográfico numerado \(PREC-2026-CH...\) pasando a) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 283 Td (EMPAQUETADO.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 269.5 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 267 Td (5. Control de Entrega y Finalización: Al despachar, se genera la guía de transporte) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 254 Td (\(ELAN-TRK-...-BO\) pasando a EN_TRANSITO. Finalmente, el operador confirma la) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 241 Td (recepción pasando a ENTREGADO / FINALIZADO. Clientes y visitantes pueden rastrear en) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 228 Td (vivo las 5 etapas desde la Landing pública o el portal de clientes.) Tj ET
+          Q
+        
+
+          q
+          0.8 0.8 0.85 RG 0.5 w
+          46 36 m 566 36 l S
+          0.45 0.45 0.5 rg
+          BT /F1 8 Tf 46 24 Td (SISTEMA ELAN WATCHES - DEFENSA DE GRUPO 22) Tj ET
+          BT /F2 8 Tf 486 24 Td (Pagina 14 de 15) Tj ET
+          Q
+        
+endstream
+endobj
+37 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources 3 0 R /Contents 38 0 R >>
+endobj
+38 0 obj
+<< /Length 6441 >>
+stream
+
+      q
+      0.773 0.627 0.349 rg
+      BT /F2 8.5 Tf 46 760 Td (ELAN WATCHES  |  SUBSISTEMA DE SEGURIDAD  -  INGENIERIA DE SOFTWARE (SIS 324)) Tj ET
+      0.5 0.5 0.5 rg
+      BT /F1 8.5 Tf 491 760 Td (GRUPO 22) Tj ET
+      0.8 0.8 0.85 RG 0.5 w
+      46 754 m 566 754 l S
+      Q
+    
+
+      q
+      0.1 0.1 0.13 rg
+      BT /F2 18 Tf 46 737 Td (8. CONCLUSIONES, LECCIONES APRENDIDAS Y TRABAJO FUTURO) Tj ET
+      0.773 0.627 0.349 RG 2 w
+      46 731 m 106 731 l S
+      0.8 0.8 0.85 RG 0.5 w
+      106 731 m 566 731 l S
+      Q
+    
+
+        q
+        0.45 0.45 0.5 rg
+        BT /F3 9.5 Tf 46 715 Td (Síntesis final del proyecto de software SIS 324) Tj ET
+        Q
+      
+
+      q
+      0.773 0.627 0.349 rg
+      46 689 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 691 Td (8.1. Conclusiones Principales) Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 669 Td (1. Se completó con éxito el prototipo funcional y operativo del Subsistema de Seguridad y) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 655.5 Td (Logística para Élan Watches, satisfaciendo la totalidad de los requisitos técnicos y de) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 642 Td (negocio exigidos en la especificación de la asignatura SIS 324.) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 623.5 Td (2. La arquitectura basada en separación estricta de responsabilidades \(React 18 en frontend,) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 610 Td (Flask modular en backend y SQLite en persistencia\) demostró ser altamente eficiente,) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 596.5 Td (mantenible y escalable.) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 578 Td (3. La implementación de medidas de ciberseguridad defensiva \(Werkzeug Scrypt, cookies) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 564.5 Td (HttpOnly SameSite=None, tokens CSRF y consultas SQL parametrizadas\) garantiza que la) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 551 Td (plataforma está protegida contra los principales vectores de ataque del OWASP Top 10.) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 532.5 Td (4. La integración de la Inteligencia Artificial como copiloto metodológico optimizó los) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 519 Td (tiempos de desarrollo, mejoró la calidad del código mediante refactorizaciones continuas y) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 505.5 Td (aseguró una cobertura del 100% en las 14 pruebas automatizadas con pytest.) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 487 Td (5. El despliegue en Render Cloud mediante Infraestructura como Código \(render.yaml\) dota al) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 473.5 Td (proyecto de reproducibilidad profesional, permitiendo su puesta en marcha en la nube en) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9.5 Tf 46 460 Td (cuestión de minutos.) Tj ET
+        Q
+      
+
+      q
+      0.773 0.627 0.349 rg
+      46 439.5 4 14 re f
+      0.15 0.15 0.2 rg
+      BT /F2 13 Tf 56 441.5 Td (8.2. Roadmap y Trabajo Futuro) Tj ET
+      Q
+    
+
+          q
+          0.773 0.627 0.349 rg
+          49 422 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 419.5 Td (Fase 2 \(Subsistema Almacén\): Incorporación de lectura física de códigos de barras /) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 406.5 Td (RFID en bodegas para sincronización automática de estanterías.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 393 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 390.5 Td (Fase 3 \(Subsistema Ventas\): Integración con pasarelas de pago reales en producción) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 377.5 Td (\(Stripe Live / PayPal Live\) y facturación electrónica con firma digital.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 364 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 361.5 Td (Fase 4 \(Subsistema Distribución\): Módulo de rastreo satelital GPS para couriers de) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 348.5 Td (alta seguridad con confirmación biométrica en la entrega.) Tj ET
+          Q
+        
+
+          q
+          0.773 0.627 0.349 rg
+          49 335 4 4 re f
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 332.5 Td (Seguridad Avanzada: Implementación de autenticación de dos factores \(2FA / TOTP\)) Tj ET
+          Q
+        
+
+          q
+          0.2 0.2 0.25 rg
+          BT /F1 9.2 Tf 62 319.5 Td (mediante aplicaciones autenticadoras para cuentas de administrador.) Tj ET
+          Q
+        
+
+      q
+      0.98 0.97 0.93 rg 0.773 0.627 0.349 RG 1 w
+      46 221.5 520 82 re B
+      0.773 0.627 0.349 rg
+      46 221.5 4 82 re f
+      
+      0.588 0.47 0.235 rg
+      BT /F2 9.5 Tf 60 287.5 Td (MENSAJE FINAL DEL GRUPO 22:) Tj ET
+      Q
+    
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 273.5 Td (El subsistema de Élan Watches representa la fusión armónica entre la devoción por el) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 261 Td (detalle estético de la alta relojería y el rigor técnico, arquitectónico y defensivo de) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 248.5 Td (la ingeniería de software contemporánea, respondiendo con excelencia a la totalidad de) Tj ET
+        Q
+      
+
+        q
+        0.2 0.2 0.25 rg
+        BT /F1 9 Tf 60 236 Td (las observaciones de la cátedra.) Tj ET
+        Q
+      
+
+          q
+          0.8 0.8 0.85 RG 0.5 w
+          46 36 m 566 36 l S
+          0.45 0.45 0.5 rg
+          BT /F1 8 Tf 46 24 Td (SISTEMA ELAN WATCHES - DEFENSA DE GRUPO 22) Tj ET
+          BT /F2 8 Tf 486 24 Td (Pagina 15 de 15) Tj ET
+          Q
+        
+endstream
+endobj
+xref
+0 39
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000128 00000 n 
+0000000203 00000 n 
+0000000281 00000 n 
+0000000349 00000 n 
+0000000422 00000 n 
+0000000578 00000 n 
+0000000683 00000 n 
+0000000788 00000 n 
+0000003200 00000 n 
+0000003306 00000 n 
+0000012645 00000 n 
+0000012751 00000 n 
+0000020226 00000 n 
+0000020332 00000 n 
+0000030001 00000 n 
+0000030107 00000 n 
+0000041030 00000 n 
+0000041136 00000 n 
+0000049049 00000 n 
+0000049155 00000 n 
+0000059901 00000 n 
+0000060007 00000 n 
+0000068568 00000 n 
+0000068674 00000 n 
+0000073986 00000 n 
+0000074092 00000 n 
+0000081072 00000 n 
+0000081178 00000 n 
+0000087669 00000 n 
+0000087775 00000 n 
+0000093902 00000 n 
+0000094008 00000 n 
+0000104403 00000 n 
+0000104509 00000 n 
+0000113700 00000 n 
+0000113806 00000 n 
+trailer
+<< /Size 39 /Root 1 0 R >>
+startxref
+120300
+%%EOF

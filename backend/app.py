@@ -10,6 +10,7 @@ from config import Config
 from database import close_db, init_db, get_db
 from auth_routes import auth_bp
 from user_routes import users_bp
+from store_routes import store_bp
 
 
 def create_app(test_config=None):
@@ -96,9 +97,10 @@ def create_app(test_config=None):
                     "[ÉLAN] El administrador inicial ya existe."
                 )
 
-    # Registrar rutas de autenticación y usuarios
+    # Registrar rutas de autenticación, usuarios y comercio/almacén
     app.register_blueprint(auth_bp)
     app.register_blueprint(users_bp)
+    app.register_blueprint(store_bp)
 
     # Ruta para comprobar que el backend funciona
     @app.route("/api/health", methods=["GET"])

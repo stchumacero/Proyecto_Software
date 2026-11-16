@@ -28,6 +28,21 @@ def admin_required(f):
         return f(*args, **kwargs)
     return decorated_function
 
+def roles_required(*allowed_roles):
+    """Decorador que verifica que el usuario autenticado posea al menos uno de los roles autorizados."""
+    def decorator(f):
+        @wraps(f)
+        def decorated_function(*args, **kwargs):
+            role = session.get('user_role')
+            if role not in allowed_roles:
+                return jsonify({
+                    "error": "FORBIDDEN",
+                    "message": f"Acceso restringido. Requiere uno de los siguientes roles: {', '.join(allowed_roles)}."
+                }), 403
+            return f(*args, **kwargs)
+        return decorated_function
+    return decorator
+
 def csrf_protect(f):
     """Decorador para validar el token CSRF en solicitudes que modifican el estado (POST, PUT, DELETE)."""
     @wraps(f)
