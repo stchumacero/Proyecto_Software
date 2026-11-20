@@ -23,9 +23,9 @@ const DEFAULT_CATALOG = [
     badge: 'EDICIÓN ESPECIAL',
     badgeClass: 'badge-admin',
     price: 7450,
-    priceStr: '$7,450 USD',
+    priceStr: 'Bs. 7,450',
     stock: 7,
-    image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80',
+    image: '/images/elan-royal-noir.jpg',
     reference: 'REF. ERN-2026-X',
     movement: 'Calibre Automático Élan 8100',
     caseMaterial: 'Titanio Grado 5 con acabado DLC Negro Mate (41 mm)',
@@ -40,9 +40,9 @@ const DEFAULT_CATALOG = [
     badge: 'CLÁSICO SUIZO',
     badgeClass: 'badge-cliente',
     price: 5200,
-    priceStr: '$5,200 USD',
+    priceStr: 'Bs. 5,200',
     stock: 12,
-    image: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80',
+    image: '/images/heritage-chronometer.jpg',
     reference: 'REF. EHC-1936-COSC',
     movement: 'Calibre Manual Élan Heritage 1936 (Certificado COSC)',
     caseMaterial: 'Acero Inoxidable 316L pulido a espejo (39 mm)',
@@ -57,9 +57,9 @@ const DEFAULT_CATALOG = [
     badge: 'DEPORTIVO SUBMARINO',
     badgeClass: 'badge-almacen',
     price: 4850,
-    priceStr: '$4,850 USD',
+    priceStr: 'Bs. 4,850',
     stock: 9,
-    image: 'https://images.unsplash.com/photo-1547996160-71dfa6309697?auto=format&fit=crop&w=800&q=80',
+    image: '/images/vanguard-diver-300.jpg',
     reference: 'REF. EVD-300M-D',
     movement: 'Calibre Automático Antimagnético Élan Diver 300',
     caseMaterial: 'Acero 904L ultra-resistente a corrosión marina (42 mm)',
@@ -69,20 +69,54 @@ const DEFAULT_CATALOG = [
   },
   {
     id: 'W04',
-    name: 'Master Tourbillon Oro Rosa',
+    name: 'Master Tourbillon Nocturne',
     collection: 'EDICIONES ESPECIALES',
     badge: 'ALTA COMPLICACIÓN',
     badgeClass: 'badge-admin',
     price: 13900,
-    priceStr: '$13,900 USD',
+    priceStr: 'Bs. 13,900',
     stock: 3,
-    image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80',
+    image: '/images/master-tourbillon-nocturne.jpg',
     reference: 'REF. EMT-72H-OR',
     movement: 'Tourbillon Volante de 60 segundos Élan Tourbillon T-01',
-    caseMaterial: 'Oro Rosa macizo de 18 quilates 5N (40.5 mm)',
+    caseMaterial: 'Oro Blanco macizo de 18 quilates (41 mm)',
     dial: 'Guilloché realizado artesanalmente con apertura a las 6h',
     strap: 'Piel de caimán negro de escama cuadrada con cierre en oro 18K',
     description: 'La máxima cumbre de la alta relojería artesanal: jaula de tourbillon ultraligera de titanio que anula los efectos de la gravedad terrestre.'
+  },
+  {
+    id: 'W05',
+    name: 'Grand Astral Chrono',
+    collection: 'DEPORTIVOS & DIVER',
+    badge: 'CRONÓGRAFO DEPORTIVO',
+    badgeClass: 'badge-almacen',
+    price: 6100,
+    priceStr: 'Bs. 6,100',
+    stock: 14,
+    image: '/images/grand-astral-chrono.jpg',
+    reference: 'REF. EAC-775-FLY',
+    movement: 'Calibre Automático Cronógrafo Flyback con rueda de pilares',
+    caseMaterial: 'Acero 316L con bisel en taquímetro cerámico azul (42 mm)',
+    dial: 'Azul petróleo con rayos de sol y subesferas plateadas azuleadas',
+    strap: 'Correa de caucho náutico azul con pespuntes en contraste',
+    description: 'Cronógrafo de alta precisión diseñado para medir intervalos de velocidad con función de retorno al vuelo inmediato (Flyback).'
+  },
+  {
+    id: 'W06',
+    name: 'Élan Imperial Aureum',
+    collection: 'CLÁSICOS & TRADICIÓN',
+    badge: 'CLÁSICO EN ORO 18K',
+    badgeClass: 'badge-cliente',
+    price: 11500,
+    priceStr: 'Bs. 11,500',
+    stock: 5,
+    image: '/images/elan-imperial-aureum.jpg',
+    reference: 'REF. EIA-440-GOLD',
+    movement: 'Calibre Automático Ultra-Slim Élan 440 (espesor de 3.2 mm)',
+    caseMaterial: 'Oro Amarillo macizo de 18 quilates (40 mm)',
+    dial: 'Marfil guilloché rayos de sol con manecillas de hoja doradas',
+    strap: 'Brazalete eslabonado en oro 18 quilates con cierre invisible',
+    description: 'Símbolo indiscutible de distinción y elegancia perpetua, forjado enteramente en oro noble suizo con perfil ultra-plano.'
   }
 ];
 
@@ -104,7 +138,7 @@ export function ClientView() {
         if (prodRes && prodRes.products) {
           setCatalog(prev => prev.map(local => {
             const remote = prodRes.products.find(p => p.id === local.id);
-            return remote ? { ...local, stock: remote.stock, price: remote.price, priceStr: `$${remote.price.toLocaleString()} USD` } : local;
+            return remote ? { ...local, stock: remote.stock, price: remote.price, image: remote.image || local.image, priceStr: `Bs. ${remote.price.toLocaleString()}` } : local;
           }));
         }
 
@@ -239,7 +273,7 @@ export function ClientView() {
                         {order.id}
                       </span>
                       <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginLeft: '0.75rem' }}>
-                        Fecha: {order.created_at || '2026-11-16'} &bull; Importe: <strong style={{ color: 'var(--gold-light)' }}>${order.total_amount?.toLocaleString()} USD</strong>
+                        Fecha: {order.created_at || '2026-11-16'} &bull; Importe: <strong style={{ color: 'var(--gold-light)' }}>Bs. {order.total_amount?.toLocaleString()}</strong>
                       </span>
                     </div>
                     <div>

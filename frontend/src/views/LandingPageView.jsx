@@ -23,9 +23,9 @@ const WATCH_CATALOG = [
     badge: 'EDICIÓN ESPECIAL',
     badgeClass: 'badge-admin',
     price: 7450,
-    priceStr: '$7,450 USD',
+    priceStr: 'Bs. 7,450',
     stock: 7,
-    image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80',
+    image: '/images/elan-royal-noir.jpg',
     reference: 'REF. ERN-2026-X',
     movement: 'Calibre Automático Élan 8100 (28,800 alt/h)',
     caseMaterial: 'Titanio Grado 5 con acabado DLC Negro Mate (41 mm)',
@@ -40,9 +40,9 @@ const WATCH_CATALOG = [
     badge: 'CLÁSICO SUIZO',
     badgeClass: 'badge-cliente',
     price: 5200,
-    priceStr: '$5,200 USD',
+    priceStr: 'Bs. 5,200',
     stock: 12,
-    image: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80',
+    image: '/images/heritage-chronometer.jpg',
     reference: 'REF. EHC-1936-COSC',
     movement: 'Calibre Manual Élan Heritage 1936 (Certificado Oficial COSC)',
     caseMaterial: 'Acero Inoxidable 316L pulido a espejo (39 mm)',
@@ -57,9 +57,9 @@ const WATCH_CATALOG = [
     badge: 'DEPORTIVO SUBMARINO',
     badgeClass: 'badge-almacen',
     price: 4850,
-    priceStr: '$4,850 USD',
+    priceStr: 'Bs. 4,850',
     stock: 9,
-    image: 'https://images.unsplash.com/photo-1547996160-71dfa6309697?auto=format&fit=crop&w=800&q=80',
+    image: '/images/vanguard-diver-300.jpg',
     reference: 'REF. EVD-300M-D',
     movement: 'Calibre Automático Antimagnético Élan Diver 300',
     caseMaterial: 'Acero 904L ultra-resistente a corrosión marina (42 mm)',
@@ -74,9 +74,9 @@ const WATCH_CATALOG = [
     badge: 'ALTA COMPLICACIÓN',
     badgeClass: 'badge-admin',
     price: 13900,
-    priceStr: '$13,900 USD',
+    priceStr: 'Bs. 13,900',
     stock: 3,
-    image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80',
+    image: '/images/master-tourbillon-nocturne.jpg',
     reference: 'REF. EMT-72H-OR',
     movement: 'Tourbillon Volante de 60 segundos Élan Tourbillon T-01 (72h reserva)',
     caseMaterial: 'Oro Blanco macizo de 18 quilates con fondo zafiro (41 mm)',
@@ -91,9 +91,9 @@ const WATCH_CATALOG = [
     badge: 'CRONÓGRAFO DEPORTIVO',
     badgeClass: 'badge-almacen',
     price: 6100,
-    priceStr: '$6,100 USD',
+    priceStr: 'Bs. 6,100',
     stock: 14,
-    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80',
+    image: '/images/grand-astral-chrono.jpg',
     reference: 'REF. EAC-775-FLY',
     movement: 'Calibre Automático Cronógrafo Flyback con rueda de pilares',
     caseMaterial: 'Acero 316L con bisel en taquímetro cerámico azul (42 mm)',
@@ -108,9 +108,9 @@ const WATCH_CATALOG = [
     badge: 'CLÁSICO EN ORO 18K',
     badgeClass: 'badge-cliente',
     price: 11500,
-    priceStr: '$11,500 USD',
+    priceStr: 'Bs. 11,500',
     stock: 5,
-    image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80',
+    image: '/images/elan-imperial-aureum.jpg',
     reference: 'REF. EIA-440-GOLD',
     movement: 'Calibre Automático Ultra-Slim Élan 440 (espesor de 3.2 mm)',
     caseMaterial: 'Oro Amarillo macizo de 18 quilates (40 mm)',
@@ -162,7 +162,8 @@ export function LandingPageView({ onGoToLogin }) {
               ...localItem,
               stock: remote.stock,
               price: remote.price,
-              priceStr: `$${remote.price.toLocaleString()} USD`
+              image: remote.image || localItem.image,
+              priceStr: `Bs. ${remote.price.toLocaleString()}`
             };
           }
           return localItem;
@@ -1140,7 +1141,7 @@ export function LandingPageView({ onGoToLogin }) {
                     {trackingResult.id}
                   </div>
                   <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', marginTop: '0.2rem' }}>
-                    Cliente: <strong>{trackingResult.customer_name}</strong> • Total: <strong style={{ color: 'var(--gold-light)' }}>${trackingResult.total_amount?.toLocaleString()} USD</strong>
+                    Cliente: <strong>{trackingResult.customer_name}</strong> • Total: <strong style={{ color: 'var(--gold-light)' }}>Bs. {trackingResult.total_amount?.toLocaleString()}</strong>
                   </div>
                 </div>
 
@@ -1410,7 +1411,7 @@ export function LandingPageView({ onGoToLogin }) {
                       <div style={{ flex: 1, minWidth: 0 }}>
                         <div style={{ fontWeight: 600, color: 'var(--text-primary)', fontSize: '0.85rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{item.name}</div>
                         <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>{item.reference} • Cantidad: {item.qty}</div>
-                        <div style={{ fontSize: '0.82rem', color: 'var(--gold-light)', fontWeight: 700 }}>${(item.price * item.qty).toLocaleString()} USD</div>
+                        <div style={{ fontSize: '0.82rem', color: 'var(--gold-light)', fontWeight: 700 }}>Bs. {(item.price * item.qty).toLocaleString()}</div>
                       </div>
                       <button
                         className="btn-icon danger"
@@ -1431,7 +1432,7 @@ export function LandingPageView({ onGoToLogin }) {
                   }}>
                     <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Total Estimado:</span>
                     <span style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', fontWeight: 700, color: 'var(--gold-light)' }}>
-                      ${cartTotal.toLocaleString()} USD
+                      Bs. {cartTotal.toLocaleString()}
                     </span>
                   </div>
                 </div>
@@ -1494,13 +1495,13 @@ export function LandingPageView({ onGoToLogin }) {
                     Total a Liquidar ({cart.length} pieza{cart.length > 1 ? 's' : ''}):
                   </span>
                   <div style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', fontWeight: 700, color: 'var(--gold-light)' }}>
-                    ${cartTotal.toLocaleString()} USD
+                    Bs. {cartTotal.toLocaleString()}
                   </div>
                 </div>
                 <div style={{ textAlign: 'right' }}>
-                  <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>Tipo de Cambio Oficial (6.96):</span>
+                  <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>Moneda Nacional:</span>
                   <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#93c5fd', fontFamily: 'monospace' }}>
-                    Bs. {(cartTotal * 6.96).toLocaleString()} BOB
+                    {cartTotal.toLocaleString()} BS
                   </div>
                 </div>
               </div>
@@ -1753,7 +1754,7 @@ export function LandingPageView({ onGoToLogin }) {
                   </div>
 
                   <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)' }}>
-                    Beneficiario: <strong>Élan Watches S.A.</strong> &bull; BNB / BISA &bull; Importe: <strong>Bs. {(cartTotal * 6.96).toLocaleString()}</strong>
+                    Beneficiario: <strong>Élan Watches S.A.</strong> &bull; BNB / BISA &bull; Importe: <strong>Bs. {cartTotal.toLocaleString()}</strong>
                   </div>
 
                   <button
@@ -1874,7 +1875,7 @@ export function LandingPageView({ onGoToLogin }) {
                   </div>
 
                   <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
-                    🔒 Transacción protegida por PayPal Sandbox API • Moneda: USD
+                    🔒 Transacción protegida por Pasarela Segura • Moneda: BS
                   </span>
                 </div>
               )}
@@ -1965,7 +1966,7 @@ export function LandingPageView({ onGoToLogin }) {
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                   <span style={{ color: 'var(--text-muted)' }}>Monto Liquidado:</span>
-                  <strong style={{ color: 'var(--gold-light)' }}>${confirmedOrder.total?.toLocaleString()} USD</strong>
+                  <strong style={{ color: 'var(--gold-light)' }}>Bs. {confirmedOrder.total?.toLocaleString()}</strong>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                   <span style={{ color: 'var(--text-muted)' }}>Método de Cobro:</span>

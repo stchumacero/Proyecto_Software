@@ -84,7 +84,7 @@ def seed_initial_products(db):
             "EDICIONES ESPECIALES",
             7450.0,
             7,
-            "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80",
+            "/images/elan-royal-noir.jpg",
             "Pieza insignia con caja de titanio DLC y calibre manufactura de alta frecuencia.",
             "Calibre Automático Élan 8100 (28,800 alt/h)",
             "Titanio Grado 5 con acabado DLC Negro Mate (41 mm)",
@@ -98,7 +98,7 @@ def seed_initial_products(db):
             "CLÁSICOS & TRADICIÓN",
             5200.0,
             12,
-            "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
+            "/images/heritage-chronometer.jpg",
             "Inspirado en los cronómetros suizos de navegación histórica. Certificado COSC.",
             "Calibre Manual Élan Heritage 1936 (Certificado Oficial COSC)",
             "Acero Inoxidable 316L pulido a espejo (39 mm)",
@@ -112,7 +112,7 @@ def seed_initial_products(db):
             "DEPORTIVOS & DIVER",
             4850.0,
             9,
-            "https://images.unsplash.com/photo-1547996160-71dfa6309697?auto=format&fit=crop&w=800&q=80",
+            "/images/vanguard-diver-300.jpg",
             "Instrumento profesional con hermeticidad de 300 metros y válvula de escape de helio.",
             "Calibre Automático Antimagnético Élan Diver 300",
             "Acero 904L ultra-resistente a corrosión marina (42 mm)",
@@ -126,7 +126,7 @@ def seed_initial_products(db):
             "EDICIONES ESPECIALES",
             13900.0,
             3,
-            "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+            "/images/master-tourbillon-nocturne.jpg",
             "La máxima cumbre de la alta relojería artesanal: jaula de tourbillon ultraligera.",
             "Tourbillon Volante de 60 segundos Élan Tourbillon T-01 (72h reserva)",
             "Oro Blanco macizo de 18 quilates con fondo zafiro (41 mm)",
@@ -140,7 +140,7 @@ def seed_initial_products(db):
             "DEPORTIVOS & DIVER",
             6100.0,
             14,
-            "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+            "/images/grand-astral-chrono.jpg",
             "Cronógrafo de alta precisión con función de retorno al vuelo inmediato (Flyback).",
             "Calibre Automático Cronógrafo Flyback con rueda de pilares",
             "Acero 316L con bisel en taquímetro cerámico azul (42 mm)",
@@ -154,7 +154,7 @@ def seed_initial_products(db):
             "CLÁSICOS & TRADICIÓN",
             11500.0,
             5,
-            "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
+            "/images/elan-imperial-aureum.jpg",
             "Símbolo indiscutible de distinción y elegancia perpetua forjado en oro noble suizo.",
             "Calibre Automático Ultra-Slim Élan 440 (espesor de 3.2 mm)",
             "Oro Amarillo macizo de 18 quilates (40 mm)",
@@ -355,10 +355,8 @@ def init_db(app):
                 )
                 db.commit()
 
-            # Productos (Control de Stock)
-            prod_count = db.execute("SELECT COUNT(*) as total FROM products").fetchone()["total"]
-            if prod_count == 0:
-                seed_initial_products(db)
+            # Productos (Control de Stock e Imágenes)
+            seed_initial_products(db)
 
             # Pedidos (Trazabilidad y Preparación)
             order_count = db.execute("SELECT COUNT(*) as total FROM orders").fetchone()["total"]
