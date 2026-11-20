@@ -9,6 +9,7 @@ import {
   EyeIcon,
   TrashIcon,
   ShieldIcon,
+  CheckCircleIcon,
   AlertTriangleIcon
 } from '../components/Icons';
 import { UserFormModal } from '../components/UserFormModal';
@@ -162,21 +163,56 @@ export function AdminView() {
 
       {/* Grilla de Métricas de Seguridad */}
       <div className="stats-grid">
-        <div className="stat-card">
-          <span className="stat-label">Total Cuentas</span>
-          <span className="stat-value">{metrics.total}</span>
+        <div className="stat-card stat-card-total">
+          <div className="stat-card-header">
+            <span className="stat-label">Total Cuentas</span>
+            <div className="stat-icon-wrapper total" title="Total de usuarios registrados">
+              <UsersIcon size={20} />
+            </div>
+          </div>
+          <div className="stat-card-body">
+            <span className="stat-value">{metrics.total}</span>
+            <span className="stat-subtext">Directorio general</span>
+          </div>
         </div>
-        <div className="stat-card">
-          <span className="stat-label">Cuentas Activas</span>
-          <span className="stat-value green">{metrics.active}</span>
+
+        <div className="stat-card stat-card-active">
+          <div className="stat-card-header">
+            <span className="stat-label">Cuentas Activas</span>
+            <div className="stat-icon-wrapper active" title="Cuentas con acceso habilitado">
+              <CheckCircleIcon size={20} />
+            </div>
+          </div>
+          <div className="stat-card-body">
+            <span className="stat-value green">{metrics.active}</span>
+            <span className="stat-subtext">Operativas con acceso</span>
+          </div>
         </div>
-        <div className="stat-card">
-          <span className="stat-label">Cuentas Inactivas</span>
-          <span className="stat-value red">{metrics.inactive}</span>
+
+        <div className="stat-card stat-card-inactive">
+          <div className="stat-card-header">
+            <span className="stat-label">Cuentas Inactivas</span>
+            <div className="stat-icon-wrapper inactive" title="Cuentas con acceso revocado">
+              <AlertTriangleIcon size={20} />
+            </div>
+          </div>
+          <div className="stat-card-body">
+            <span className="stat-value red">{metrics.inactive}</span>
+            <span className="stat-subtext">Acceso suspendido</span>
+          </div>
         </div>
-        <div className="stat-card">
-          <span className="stat-label">Administradores</span>
-          <span className="stat-value gold">{metrics.admins}</span>
+
+        <div className="stat-card stat-card-admins">
+          <div className="stat-card-header">
+            <span className="stat-label">Administradores</span>
+            <div className="stat-icon-wrapper admins" title="Cuentas con privilegios de administrador">
+              <ShieldIcon size={20} />
+            </div>
+          </div>
+          <div className="stat-card-body">
+            <span className="stat-value gold">{metrics.admins}</span>
+            <span className="stat-subtext">Control y auditoría</span>
+          </div>
         </div>
       </div>
 

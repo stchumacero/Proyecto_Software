@@ -271,27 +271,62 @@ export function WarehouseView() {
 
       {/* Grilla de Métricas de Almacén */}
       <div className="stats-grid" style={{ marginBottom: '2rem' }}>
-        <div className="stat-card">
-          <span className="stat-label">Total Referencias</span>
-          <span className="stat-value">{stockItems.length} modelos</span>
+        <div className="stat-card stat-card-total">
+          <div className="stat-card-header">
+            <span className="stat-label">Total Referencias</span>
+            <div className="stat-icon-wrapper total" title="Variedad de modelos en almacén">
+              <PackageIcon size={20} />
+            </div>
+          </div>
+          <div className="stat-card-body">
+            <span className="stat-value">{stockItems.length} <small className="stat-unit">modelos</small></span>
+            <span className="stat-subtext">Catálogo en almacén</span>
+          </div>
         </div>
-        <div className="stat-card">
-          <span className="stat-label">Unidades en Bóveda</span>
-          <span className="stat-value green">
-            {stockItems.reduce((acc, i) => acc + i.stock, 0)} piezas
-          </span>
+
+        <div className="stat-card stat-card-active">
+          <div className="stat-card-header">
+            <span className="stat-label">Unidades en Bóveda</span>
+            <div className="stat-icon-wrapper active" title="Total de existencias físicas disponibles">
+              <WarehouseIcon size={20} />
+            </div>
+          </div>
+          <div className="stat-card-body">
+            <span className="stat-value green">
+              {stockItems.reduce((acc, i) => acc + i.stock, 0)} <small className="stat-unit green">piezas</small>
+            </span>
+            <span className="stat-subtext">Stock físico en bóveda</span>
+          </div>
         </div>
-        <div className="stat-card">
-          <span className="stat-label">Alertas Stock Crítico (&le; 3)</span>
-          <span className="stat-value gold">
-            {stockItems.filter(i => i.stock <= i.minStock).length} piezas
-          </span>
+
+        <div className="stat-card stat-card-admins">
+          <div className="stat-card-header">
+            <span className="stat-label">Alertas Stock Crítico (≤ 3)</span>
+            <div className="stat-icon-wrapper admins" title="Modelos con existencia igual o menor al umbral mínimo">
+              <AlertTriangleIcon size={20} />
+            </div>
+          </div>
+          <div className="stat-card-body">
+            <span className="stat-value gold">
+              {stockItems.filter(i => i.stock <= i.minStock).length} <small className="stat-unit gold">piezas</small>
+            </span>
+            <span className="stat-subtext">Reposición prioritaria</span>
+          </div>
         </div>
-        <div className="stat-card">
-          <span className="stat-label">Pedidos en Flujo Logístico</span>
-          <span className="stat-value">
-            {orders.filter(o => o.status !== 'ENTREGADO').length} activos
-          </span>
+
+        <div className="stat-card stat-card-total">
+          <div className="stat-card-header">
+            <span className="stat-label">Pedidos en Logística</span>
+            <div className="stat-icon-wrapper total" title="Órdenes activas en preparación o tránsito">
+              <TruckIcon size={20} />
+            </div>
+          </div>
+          <div className="stat-card-body">
+            <span className="stat-value">
+              {orders.filter(o => o.status !== 'ENTREGADO').length} <small className="stat-unit">activos</small>
+            </span>
+            <span className="stat-subtext">En preparación o tránsito</span>
+          </div>
         </div>
       </div>
 

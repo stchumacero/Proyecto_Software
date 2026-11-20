@@ -42,7 +42,7 @@ export function Navbar({ activeTab, onSelectTab }) {
                       className={`nav-link ${activeTab === 'admin' ? 'active' : ''}`}
                       onClick={() => onSelectTab('admin')}
                     >
-                      🛡️ Seguridad & Usuarios
+                      🛡️ Seguridad
                     </button>
                   </li>
                   <li>
@@ -50,7 +50,7 @@ export function Navbar({ activeTab, onSelectTab }) {
                       className={`nav-link ${activeTab === 'almacen' ? 'active' : ''}`}
                       onClick={() => onSelectTab('almacen')}
                     >
-                      📦 Vista Almacén
+                      📦 Almacén
                     </button>
                   </li>
                   <li>
@@ -58,7 +58,7 @@ export function Navbar({ activeTab, onSelectTab }) {
                       className={`nav-link ${activeTab === 'cliente' ? 'active' : ''}`}
                       onClick={() => onSelectTab('cliente')}
                     >
-                      ⌚ Catálogo E-Commerce
+                      ⌚ Catálogo
                     </button>
                   </li>
                   <li>
@@ -66,7 +66,7 @@ export function Navbar({ activeTab, onSelectTab }) {
                       className={`nav-link ${activeTab === 'landing' ? 'active' : ''}`}
                       onClick={() => onSelectTab('landing')}
                     >
-                      🏛️ Tienda Pública
+                      🏛️ Tienda
                     </button>
                   </li>
                 </>
@@ -77,7 +77,7 @@ export function Navbar({ activeTab, onSelectTab }) {
                     className={`nav-link ${activeTab === 'almacen' ? 'active' : ''}`}
                     onClick={() => onSelectTab('almacen')}
                   >
-                    📦 Módulo de Almacén
+                    📦 Almacén
                   </button>
                 </li>
               )}
@@ -87,7 +87,7 @@ export function Navbar({ activeTab, onSelectTab }) {
                     className={`nav-link ${activeTab === 'cliente' ? 'active' : ''}`}
                     onClick={() => onSelectTab('cliente')}
                   >
-                    ⌚ Catálogo & Pedidos
+                    ⌚ Catálogo
                   </button>
                 </li>
               )}

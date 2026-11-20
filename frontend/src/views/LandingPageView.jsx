@@ -351,31 +351,7 @@ export function LandingPageView({ onGoToLogin }) {
   return (
     <div style={{ backgroundColor: 'var(--bg-main)', minHeight: '100vh', color: 'var(--text-primary)' }}>
       
-      {/* 1. Barra Superior de Contexto Académico */}
-      <div className="landing-header-announcement">
-        <div className="landing-header-announcement-inner">
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-            <span style={{
-              background: 'rgba(197, 160, 89, 0.15)',
-              border: '1px solid var(--gold-border)',
-              color: 'var(--gold-light)',
-              padding: '0.15rem 0.5rem',
-              borderRadius: '3px',
-              fontSize: '0.65rem',
-              fontWeight: 700
-            }}>
-              ACADÉMICO
-            </span>
-            <span>Ingeniería de Software (SIS 324) • Grupo 22 • Docente: Ing. Ramiro Alberto Duran Quiroga</span>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', fontSize: '0.7rem', color: 'var(--text-muted)' }}>
-            <span>Manufacture d'Horlogerie Suisse • Genève</span>
-            <span>Sucre, 2026</span>
-          </div>
-        </div>
-      </div>
-
-      {/* 2. Barra de Navegación de Lujo */}
+      {/* Barra de Navegación de Lujo */}
       <header className="navbar" style={{ position: 'sticky', top: 0, zIndex: 100 }}>
         <div className="navbar-inner">
           {/* Logo Élan Watches */}
